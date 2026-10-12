@@ -1,0 +1,31 @@
+{
+  "protocol": "run18-three-studies-fixed240-three-segments",
+  "state": "READY_FOR_OFFLINE_VALIDATION_NOT_PAID_AUTHORIZATION",
+  "file_sha256": {
+    "run.py": "e069f4d1971d5f39bf86ef6b24214825ebb1f5a7e8d8f743b3ffc9d7c7092bcc",
+    "dataset.json": "306f6eca14fff5dc94a8b8f61df15ed0c0aa61861b99453efa6a185bbb2e0b9e",
+    "PROTOCOL.md": "f5685a771463034f660ffb8c14f111aaa33035734d360cd630a6944c34e64d22"
+  },
+  "independent_three_segment_audit_sha256": "1eac647e4175ab32a398da8799cedb472b031156d158822c00c2459d900c2f72",
+  "bound_source_sha256": {
+    "process/tokenmatched-holdout240-completion-independent-audit-20261009/final-audit.json": "1eac647e4175ab32a398da8799cedb472b031156d158822c00c2459d900c2f72",
+    "process/tokenmatched-holdout240-completion-20261009/ready.json": "b29ed6db7955f1605434197921e672b46a899015dd2b686cd442af18492e126b",
+    "process/tokenmatched-holdout240-completion-20261009/completion-result.json": "3397fe4e5a48138e991ae489774fe092505b69b80f768c80dd577d3b148619e0",
+    "process/tokenmatched-holdout240-completion-20261009/completion-process-result.json": "50a30a25b6df613b5cbefcfaeed7fceccc1da33aed7c406528af0d498e54eb1a",
+    "process/tokenmatched-holdout240-completion-20261009/completion-budget-before.json": "11ffe5ea9215cf554a77ba4515a45710cc588ec8023bba8d630cd36cde6e710e",
+    "process/tokenmatched-holdout240-completion-20261009/completion-budget-after.json": "ba9381c3d4667f22c2cc22d2951a0f9e65e821b2971e5457dda4df33e5fed3e6",
+    "process/tokenmatched-holdout240-completion-20261009/model_calls.jsonl": "034cb1e3e5d5bf485b3eb002bfa5617b8b6115a9efa1621c286692a1cd614e0d",
+    "process/tokenmatched-holdout240-completion-20261009/combined-three-segments.jsonl": "ef15014dd30603771918bc4b96fde73186574ecee6764e151f0481247b971dce",
+    "process/tokenmatched-holdout240-completion-20261009/eligible-ids.json": "f00fc5f0ddd412c88b030248ac97c13d3eec6d7d56eebe32c245981fa2e489b6",
+    "process/tokenmatched-holdout240-completion-20261009/dataset.json": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+    "process/tokenmatched-holdout240-completion-20261009/prior-evidence/segment1/calls.jsonl": "ef2e9d64033a205f487316e15818932a50c63b9142f4625b826b4f19cd670cdf",
+    "process/tokenmatched-holdout240-completion-20261009/prior-evidence/segment2/calls.jsonl": "79bc1a396c43ff23470464d4e38721c63cbfb79f8a24f3d01f42b0f9b2db912f",
+    "process/tokenmatched-holdout240-completion-20261009/calls.jsonl": "0a5c6e6611a406c4786044374400a5d07860bdc1c8ef624bb8c49cb6b7f50b0a"
+  },
+  "public_host_path_projection": {
+    "kind": "PUBLIC_INFORMATIONAL_HOST_PATH_PROJECTION",
+    "original_private_dataset_sha256": "d95910361a4f78ea8205db6ba4cbb4eb42247e45d1b5007239c88e15d5f24fa9",
+    "original_private_manifest_sha256": "db4e3f9ecc30ea1fda9dc27596a69b5aa86e3f0d800f2d92cd888570caf38311",
+    "scientific_source_hashes_retained": "Original bound_source_sha256 and independent_three_segment_audit_sha256 remain unchanged; dataset.json binds actual public projected bytes."
+  }
+}

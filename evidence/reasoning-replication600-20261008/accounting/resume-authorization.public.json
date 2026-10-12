@@ -1,0 +1,40 @@
+{
+  "kind": "DERIVED_PUBLIC_ACCOUNTING_PROJECTION",
+  "original_sha256": "6db980de41c6a5306335c13c89fd0bcfb19d77fbf9cd24b287bfdf4f326c24bd",
+  "ledger_before": {
+    "schema_version": "1.0",
+    "policy": {
+      "model": "deepseek-flash",
+      "budget_cny": "176.785881",
+      "input_cny_per_million": "2",
+      "output_cny_per_million": "8",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 32768
+    },
+    "charged_micro_cny": 175936064,
+    "reserved_calls": 3741,
+    "settled_calls": 3741,
+    "unmetered_calls": 13,
+    "active_reservations": {},
+    "updated_at": "2026-10-07T00:12:13.629500+00:00"
+  },
+  "ledger_after": {
+    "schema_version": "1.0",
+    "policy": {
+      "model": "deepseek-flash",
+      "budget_cny": "184.259846",
+      "input_cny_per_million": "2",
+      "output_cny_per_million": "8",
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 32768
+    },
+    "charged_micro_cny": 175936064,
+    "reserved_calls": 3741,
+    "settled_calls": 3741,
+    "unmetered_calls": 13,
+    "active_reservations": {},
+    "updated_at": "2026-10-08T08:30:26.257652+00:00"
+  },
+  "refund_cny": "0",
+  "new_paid_ledger_created": false
+}

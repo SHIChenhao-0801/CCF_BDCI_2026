@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "gate": {
+    "name": "artifact-provenance-gate",
+    "version": "0.1.0"
+  },
+  "run": {
+    "task_id": "pilot-m04",
+    "manager_run_id": "pilot-m04-iteration-001",
+    "iteration": 1
+  },
+  "evaluated_at": "2026-09-30T00:00:00Z",
+  "decision": "BLOCKED",
+  "summary": {
+    "passed": 3,
+    "failed": 2,
+    "skipped": 0,
+    "warnings": 0
+  },
+  "coverage": {
+    "final_paper": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "experiments/pilot-m04-iteration-001/paper/main.pdf"
+      ]
+    },
+    "runtime_usage": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "model_calls.jsonl"
+      ]
+    },
+    "citations": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "experiments/pilot-m04-iteration-001/paper/main.aux"
+      ]
+    },
+    "numeric_claims": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    },
+    "experiment_protocol": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    },
+    "negative_results": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    }
+  },
+  "inputs": [
+    {
+      "role": "compiled_aux",
+      "path": "experiments/pilot-m04-iteration-001/paper/main.aux",
+      "present": true,
+      "sha256": "1e4907ca750596c7af3d6f08f63a03e3eed3c10f1c7c822a3a6af69df9296c64"
+    },
+    {
+      "role": "final_paper",
+      "path": "experiments/pilot-m04-iteration-001/paper/main.pdf",
+      "present": true,
+      "sha256": "acab696eafeae6d2a3acd168518a891ac7756efd502c0eb1c6c5f418ade13725"
+    },
+    {
+      "role": "manager_state",
+      "path": "experiments/pilot-m04-iteration-001/manager/state.json",
+      "present": true,
+      "sha256": "4053683ffd009e02457a60b0e1494496a7ad3f5d601e71f6286388cc053cdbe8"
+    },
+    {
+      "role": "runtime_usage",
+      "path": "model_calls.jsonl",
+      "present": true,
+      "sha256": "e87218918835c0d57cbccc7b05d7ee45793ebd5fd2f0a8534d8653171d94ad37"
+    }
+  ],
+  "checks": [
+    {
+      "id": "APG001",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Final paper PDF is a nonempty regular file.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-m04-iteration-001/paper/main.pdf"
+        },
+        {
+          "key": "size_bytes",
+          "value": 32
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG002",
+      "severity": "blocker",
+      "status": "FAIL",
+      "message": "No successful terminal Reporting report was found.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-m04-iteration-001/manager/state.json"
+        },
+        {
+          "key": "report_count",
+          "value": 1
+        }
+      ],
+      "remediation": "Complete the Reporting module successfully before finalization."
+    },
+    {
+      "id": "APG003",
+      "severity": "blocker",
+      "status": "FAIL",
+      "message": "No successful Reporting report declares artifacts.",
+      "evidence": [],
+      "remediation": "Complete Reporting and preserve its artifact paths."
+    },
+    {
+      "id": "APG004",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Model-call ledger is complete and token counts are aggregable.",
+      "evidence": [
+        {
+          "key": "duplicate_count",
+          "value": 0
+        },
+        {
+          "key": "input_tokens",
+          "value": 12
+        },
+        {
+          "key": "output_tokens",
+          "value": 7
+        },
+        {
+          "key": "path",
+          "value": "model_calls.jsonl"
+        },
+        {
+          "key": "unique_call_count",
+          "value": 1
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG005",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "All compiled citation keys are resolved.",
+      "evidence": [
+        {
+          "key": "cited_key_count",
+          "value": 2
+        },
+        {
+          "key": "path",
+          "value": "experiments/pilot-m04-iteration-001/paper/main.aux"
+        },
+        {
+          "key": "resolved_key_count",
+          "value": 2
+        }
+      ],
+      "remediation": null
+    }
+  ]
+}

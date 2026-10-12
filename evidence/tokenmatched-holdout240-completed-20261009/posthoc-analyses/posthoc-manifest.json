@@ -1,0 +1,38 @@
+{
+  "status": "FROZEN_POSTHOC_EXPORT",
+  "scope": "Original three-segment 240-item scientific evidence; zero new API calls. Parent public-manifest is unchanged.",
+  "files": {
+    "evidence-notes.md": {
+      "bytes": 5774,
+      "sha256": "0b236fd6f0a5b3a2d4857f95779e7aa3df372cf5bed69716865cc1949766dba1"
+    },
+    "evidence.json": {
+      "bytes": 9829,
+      "sha256": "24093710a9706c4c38e1257e0a35d0dce312d011f7b070e46283cb6638c3e64a"
+    },
+    "exact-prompt-example.json": {
+      "bytes": 8691,
+      "sha256": "2ac437e52c56fa7bbc20cd8b8fb2dadf7963bdd2bb22562db2340da6aa809918"
+    },
+    "paired-output-tokens.json": {
+      "bytes": 39677,
+      "sha256": "f280d23227f63da0a4ca20d9e414af088418cfb1612dfbca79193c4dcf34073f"
+    },
+    "README.md": {
+      "bytes": 1358,
+      "sha256": "83167ba188ee0e318d98a04096e9272de2cf1e14b7fbcca8e8d6282bd25e3057"
+    },
+    "replay-proof.json": {
+      "bytes": 3248,
+      "sha256": "44900510a02213fe5554bd7e45d45146dbd5b441aed20ef6b9b074c44c02e53c"
+    },
+    "replay_posthoc.py": {
+      "bytes": 7792,
+      "sha256": "8bdf885cd74f3ebed73e0eb57f116a4a0cc5c5d52bc65b4d868633d94654e34e"
+    },
+    "six-cells.tex": {
+      "bytes": 525,
+      "sha256": "be728f81e8b653049193dd8f3355205cf0a5a2a3890f3886af9d87b8e60bcc27"
+    }
+  }
+}

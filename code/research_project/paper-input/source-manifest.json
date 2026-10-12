@@ -1,0 +1,166 @@
+{
+  "sources": [
+    {
+      "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+      "url": "https://arxiv.org/abs/2303.17651",
+      "source_type": "paper",
+      "local_path": "sources/2303.17651.html",
+      "summary": "Verified primary arXiv publication metadata and abstract; use only as contextual related work, not evidence of this experiment's results.",
+      "abstract": "",
+      "key_findings": [],
+      "limitations": [
+        "Primary record/abstract retrieved; do not claim complete PDF review unless a separate full text is retrieved and inspected."
+      ],
+      "retrieval_mode": "downloaded_html",
+      "citation": {
+        "authors": [
+          "Madaan, Aman",
+          "Tandon, Niket",
+          "Gupta, Prakhar",
+          "Hallinan, Skyler",
+          "Gao, Luyu",
+          "Wiegreffe, Sarah",
+          "Alon, Uri",
+          "Dziri, Nouha",
+          "Prabhumoye, Shrimai",
+          "Yang, Yiming",
+          "Gupta, Shashank",
+          "Majumder, Bodhisattwa Prasad",
+          "Hermann, Katherine",
+          "Welleck, Sean",
+          "Yazdanbakhsh, Amir",
+          "Clark, Peter"
+        ],
+        "year": "2023",
+        "venue": "arXiv",
+        "doi": "10.48550/arXiv.2303.17651"
+      },
+      "sha256": "626360a4c312ff51d381308d03fcbb8c931912f90b6956f9843fb185e5f1100f",
+      "retrieved_date": "2026-10-05"
+    },
+    {
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "url": "https://arxiv.org/abs/2310.01798",
+      "source_type": "paper",
+      "local_path": "sources/2310.01798.html",
+      "summary": "Verified primary arXiv publication metadata and abstract; use only as contextual related work, not evidence of this experiment's results.",
+      "abstract": "",
+      "key_findings": [],
+      "limitations": [
+        "Primary record/abstract retrieved; do not claim complete PDF review unless a separate full text is retrieved and inspected."
+      ],
+      "retrieval_mode": "downloaded_html",
+      "citation": {
+        "authors": [
+          "Huang, Jie",
+          "Chen, Xinyun",
+          "Mishra, Swaroop",
+          "Zheng, Huaixiu Steven",
+          "Yu, Adams Wei",
+          "Song, Xinying",
+          "Zhou, Denny"
+        ],
+        "year": "2023",
+        "venue": "arXiv",
+        "doi": "10.48550/arXiv.2310.01798"
+      },
+      "sha256": "b9a6cee520360f2c1b86754737bf469c7d9110545b158f1c59a3197a731e78fa",
+      "retrieved_date": "2026-10-05"
+    },
+    {
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "url": "https://arxiv.org/abs/2210.03629",
+      "source_type": "paper",
+      "local_path": "sources/2210.03629.html",
+      "summary": "Verified primary arXiv publication metadata and abstract; use only as contextual related work, not evidence of this experiment's results.",
+      "abstract": "",
+      "key_findings": [],
+      "limitations": [
+        "Primary record/abstract retrieved; do not claim complete PDF review unless a separate full text is retrieved and inspected."
+      ],
+      "retrieval_mode": "downloaded_html",
+      "citation": {
+        "authors": [
+          "Yao, Shunyu",
+          "Zhao, Jeffrey",
+          "Yu, Dian",
+          "Du, Nan",
+          "Shafran, Izhak",
+          "Narasimhan, Karthik",
+          "Cao, Yuan"
+        ],
+        "year": "2022",
+        "venue": "arXiv",
+        "doi": "10.48550/arXiv.2210.03629"
+      },
+      "sha256": "66a324b6bf6075b6534db3df10867474023791818c05099d5d6e7e776a624d87",
+      "retrieved_date": "2026-10-05"
+    },
+    {
+      "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2303.11366",
+      "source_type": "paper",
+      "local_path": "sources/2303.11366.html",
+      "summary": "Verified primary arXiv publication metadata and abstract; use only as contextual related work, not evidence of this experiment's results.",
+      "abstract": "",
+      "key_findings": [],
+      "limitations": [
+        "Primary record/abstract retrieved; do not claim complete PDF review unless a separate full text is retrieved and inspected."
+      ],
+      "retrieval_mode": "downloaded_html",
+      "citation": {
+        "authors": [
+          "Shinn, Noah",
+          "Cassano, Federico",
+          "Berman, Edward",
+          "Gopinath, Ashwin",
+          "Narasimhan, Karthik",
+          "Yao, Shunyu"
+        ],
+        "year": "2023",
+        "venue": "arXiv",
+        "doi": "10.48550/arXiv.2303.11366"
+      },
+      "sha256": "b218d29df0a0b750337cbaddef0568f0c9fc209590e8a2e9bbf92b7269a27059",
+      "retrieved_date": "2026-10-05"
+    },
+    {
+      "title": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "url": "https://arxiv.org/abs/2305.11738v4",
+      "local_path": "sources/critic.html",
+      "citation": {
+        "authors": [
+          "Gou, Zhibin",
+          "Shao, Zhihong",
+          "Gong, Yeyun",
+          "Shen, Yelong",
+          "Yang, Yujiu",
+          "Duan, Nan",
+          "Chen, Weizhu"
+        ],
+        "year": "2023",
+        "doi": "10.48550/arXiv.2305.11738"
+      }
+    },
+    {
+      "title": "SymDiag: Explainable Diagnosis for LLM Reasoning via Neuro-Symbolic Verification",
+      "url": "https://arxiv.org/abs/2608.08786v1",
+      "local_path": "sources/symdiag.html",
+      "citation": {
+        "authors": [
+          "Cui, Wenyao",
+          "Zhang, Huaping",
+          "Huang, Yongyi",
+          "Li, Qiuchi",
+          "Xu, Jian",
+          "Liu, Cheng-Lin",
+          "Gao, Chunxiao",
+          "Wang, Juan",
+          "Zhang, Baohua"
+        ],
+        "year": "2026",
+        "doi": "10.1145/3770855.3818004"
+      }
+    }
+  ]
+}

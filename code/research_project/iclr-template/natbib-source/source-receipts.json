@@ -1,0 +1,41 @@
+{
+  "model_api_calls": 0,
+  "probes": [
+    {
+      "url": "https://sources.debian.org/data/main/t/texlive-base/2009-11+squeeze1/texmf-dist/source/latex/natbib/natbib.dtx",
+      "started_at_utc": "2026-10-08T14:55:48.501587+00:00",
+      "http_status": 200,
+      "final_url": "https://sources.debian.org/data/main/t/texlive-base/2009-11+squeeze1/texmf-dist/source/latex/natbib/natbib.dtx",
+      "content_type": null,
+      "status": "FETCHED",
+      "bytes": 248383,
+      "sha256": "d7e80d7d4fd0899383dde263703a3fa12563c74d18e53ea63b5761fb08be57ae",
+      "completed_at_utc": "2026-10-08T14:55:50.425175+00:00",
+      "public_file": "natbib.dtx"
+    },
+    {
+      "url": "https://sources.debian.org/data/main/t/texlive-base/2009-11+squeeze1/texmf-dist/source/latex/natbib/natbib.ins",
+      "started_at_utc": "2026-10-08T14:55:48.502599+00:00",
+      "http_status": 200,
+      "final_url": "https://sources.debian.org/data/main/t/texlive-base/2009-11+squeeze1/texmf-dist/source/latex/natbib/natbib.ins",
+      "content_type": "application/x-internet-signup",
+      "status": "FETCHED",
+      "bytes": 2673,
+      "sha256": "4118fc89ba413ab24efe6d58db5883526ee01707e10aefde8b07f362a74c5cbb",
+      "completed_at_utc": "2026-10-08T14:55:49.581868+00:00",
+      "public_file": "natbib.ins"
+    },
+    {
+      "url": "https://sources.debian.org/data/main/t/texlive-base/2009-11+squeeze1/debian/copyright",
+      "started_at_utc": "2026-10-08T14:55:48.503109+00:00",
+      "http_status": 200,
+      "final_url": "https://sources.debian.org/data/main/t/texlive-base/2009-11+squeeze1/debian/copyright",
+      "content_type": null,
+      "status": "FETCHED",
+      "bytes": 33493,
+      "sha256": "1f6d34aaf837fca56d7e2bb4fc2f83e88d97177ebef9b5ad9cd18f9723913b91",
+      "completed_at_utc": "2026-10-08T14:55:49.810194+00:00",
+      "public_file": "Debian-copyright.txt"
+    }
+  ]
+}

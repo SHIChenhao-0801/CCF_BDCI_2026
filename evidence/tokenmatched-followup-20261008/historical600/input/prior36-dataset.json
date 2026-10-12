@@ -1,0 +1,3009 @@
+[
+  {
+    "difficulty": "easy",
+    "family": "arithmetic",
+    "id": "arithmetic-01",
+    "oracle": {
+      "answer": 541
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":90,\"ops\":[[\"*\",6],[\"-\",4],[\"+\",2],[\"+\",3]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "*",
+          6
+        ],
+        [
+          "-",
+          4
+        ],
+        [
+          "+",
+          2
+        ],
+        [
+          "+",
+          3
+        ]
+      ],
+      "start": 90
+    },
+    "split": "development"
+  },
+  {
+    "difficulty": "hard",
+    "family": "arithmetic",
+    "id": "arithmetic-02",
+    "oracle": {
+      "answer": 321402
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":93,\"ops\":[[\"*\",6],[\"*\",9],[\"*\",8],[\"*\",8],[\"+\",2],[\"+\",7],[\"-\",7],[\"-\",8]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "*",
+          6
+        ],
+        [
+          "*",
+          9
+        ],
+        [
+          "*",
+          8
+        ],
+        [
+          "*",
+          8
+        ],
+        [
+          "+",
+          2
+        ],
+        [
+          "+",
+          7
+        ],
+        [
+          "-",
+          7
+        ],
+        [
+          "-",
+          8
+        ]
+      ],
+      "start": 93
+    },
+    "split": "development"
+  },
+  {
+    "difficulty": "easy",
+    "family": "arithmetic",
+    "id": "arithmetic-03",
+    "oracle": {
+      "answer": 88
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":90,\"ops\":[[\"-\",4],[\"+\",5],[\"+\",6],[\"-\",9]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "-",
+          4
+        ],
+        [
+          "+",
+          5
+        ],
+        [
+          "+",
+          6
+        ],
+        [
+          "-",
+          9
+        ]
+      ],
+      "start": 90
+    },
+    "split": "pilot"
+  },
+  {
+    "difficulty": "hard",
+    "family": "arithmetic",
+    "id": "arithmetic-04",
+    "oracle": {
+      "answer": 11892
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":79,\"ops\":[[\"+\",4],[\"*\",9],[\"*\",4],[\"-\",7],[\"-\",5],[\"-\",3],[\"*\",2],[\"*\",2]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "+",
+          4
+        ],
+        [
+          "*",
+          9
+        ],
+        [
+          "*",
+          4
+        ],
+        [
+          "-",
+          7
+        ],
+        [
+          "-",
+          5
+        ],
+        [
+          "-",
+          3
+        ],
+        [
+          "*",
+          2
+        ],
+        [
+          "*",
+          2
+        ]
+      ],
+      "start": 79
+    },
+    "split": "pilot"
+  },
+  {
+    "difficulty": "easy",
+    "family": "arithmetic",
+    "id": "arithmetic-05",
+    "oracle": {
+      "answer": 9540
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":130,\"ops\":[[\"+\",2],[\"*\",8],[\"+\",4],[\"*\",9]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "+",
+          2
+        ],
+        [
+          "*",
+          8
+        ],
+        [
+          "+",
+          4
+        ],
+        [
+          "*",
+          9
+        ]
+      ],
+      "start": 130
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "arithmetic",
+    "id": "arithmetic-06",
+    "oracle": {
+      "answer": 1616
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":37,\"ops\":[[\"+\",2],[\"*\",6],[\"-\",6],[\"-\",6],[\"+\",2],[\"+\",6],[\"*\",7],[\"+\",6]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "+",
+          2
+        ],
+        [
+          "*",
+          6
+        ],
+        [
+          "-",
+          6
+        ],
+        [
+          "-",
+          6
+        ],
+        [
+          "+",
+          2
+        ],
+        [
+          "+",
+          6
+        ],
+        [
+          "*",
+          7
+        ],
+        [
+          "+",
+          6
+        ]
+      ],
+      "start": 37
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "arithmetic",
+    "id": "arithmetic-07",
+    "oracle": {
+      "answer": 70
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":65,\"ops\":[[\"-\",2],[\"+\",9],[\"+\",5],[\"-\",7]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "-",
+          2
+        ],
+        [
+          "+",
+          9
+        ],
+        [
+          "+",
+          5
+        ],
+        [
+          "-",
+          7
+        ]
+      ],
+      "start": 65
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "arithmetic",
+    "id": "arithmetic-08",
+    "oracle": {
+      "answer": 162963
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":97,\"ops\":[[\"*\",7],[\"*\",2],[\"*\",3],[\"*\",8],[\"+\",6],[\"-\",7],[\"*\",5],[\"+\",8]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "*",
+          7
+        ],
+        [
+          "*",
+          2
+        ],
+        [
+          "*",
+          3
+        ],
+        [
+          "*",
+          8
+        ],
+        [
+          "+",
+          6
+        ],
+        [
+          "-",
+          7
+        ],
+        [
+          "*",
+          5
+        ],
+        [
+          "+",
+          8
+        ]
+      ],
+      "start": 97
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "arithmetic",
+    "id": "arithmetic-09",
+    "oracle": {
+      "answer": 2576
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":143,\"ops\":[[\"*\",2],[\"*\",9],[\"-\",4],[\"+\",6]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "*",
+          2
+        ],
+        [
+          "*",
+          9
+        ],
+        [
+          "-",
+          4
+        ],
+        [
+          "+",
+          6
+        ]
+      ],
+      "start": 143
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "arithmetic",
+    "id": "arithmetic-10",
+    "oracle": {
+      "answer": 1525
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":82,\"ops\":[[\"-\",8],[\"-\",9],[\"-\",7],[\"+\",5],[\"*\",6],[\"*\",4],[\"+\",6],[\"+\",7]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "-",
+          8
+        ],
+        [
+          "-",
+          9
+        ],
+        [
+          "-",
+          7
+        ],
+        [
+          "+",
+          5
+        ],
+        [
+          "*",
+          6
+        ],
+        [
+          "*",
+          4
+        ],
+        [
+          "+",
+          6
+        ],
+        [
+          "+",
+          7
+        ]
+      ],
+      "start": 82
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "arithmetic",
+    "id": "arithmetic-11",
+    "oracle": {
+      "answer": 7686
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":133,\"ops\":[[\"-\",3],[\"-\",8],[\"*\",7],[\"*\",9]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "-",
+          3
+        ],
+        [
+          "-",
+          8
+        ],
+        [
+          "*",
+          7
+        ],
+        [
+          "*",
+          9
+        ]
+      ],
+      "start": 133
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "arithmetic",
+    "id": "arithmetic-12",
+    "oracle": {
+      "answer": 44
+    },
+    "prompt": "Apply ops sequentially to start, using exact integer arithmetic. Return {\"answer\": integer}.\nInput: {\"start\":21,\"ops\":[[\"*\",2],[\"+\",8],[\"+\",7],[\"-\",2],[\"-\",3],[\"+\",7],[\"-\",8],[\"-\",7]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "ops": [
+        [
+          "*",
+          2
+        ],
+        [
+          "+",
+          8
+        ],
+        [
+          "+",
+          7
+        ],
+        [
+          "-",
+          2
+        ],
+        [
+          "-",
+          3
+        ],
+        [
+          "+",
+          7
+        ],
+        [
+          "-",
+          8
+        ],
+        [
+          "-",
+          7
+        ]
+      ],
+      "start": 21
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "sat",
+    "id": "sat-01",
+    "oracle": {
+      "assignment": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[5,4,2],[-1,6,-2],[2,5,4],[1,-3,-5],[3,2,-1],[-6,5,-4],[-2,4,-5],[3,-5,4],[2,1,3],[-1,-6,5],[-6,4,-3],[3,-6,5]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          5,
+          4,
+          2
+        ],
+        [
+          -1,
+          6,
+          -2
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          -3,
+          -5
+        ],
+        [
+          3,
+          2,
+          -1
+        ],
+        [
+          -6,
+          5,
+          -4
+        ],
+        [
+          -2,
+          4,
+          -5
+        ],
+        [
+          3,
+          -5,
+          4
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          -1,
+          -6,
+          5
+        ],
+        [
+          -6,
+          4,
+          -3
+        ],
+        [
+          3,
+          -6,
+          5
+        ]
+      ],
+      "n": 6
+    },
+    "split": "development"
+  },
+  {
+    "difficulty": "hard",
+    "family": "sat",
+    "id": "sat-02",
+    "oracle": {
+      "assignment": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":10,\"clauses\":[[8,9,6],[8,-7,3],[2,-5,-8],[8,-3,-7],[-9,-3,2],[3,10,-8],[9,2,-10],[-4,2,9],[1,-6,-10],[-4,-1,7],[1,6,-3],[-8,-9,-7],[-6,7,10],[-8,-3,-7],[-1,-8,-6],[9,-3,1],[-7,-5,6],[-1,10,-4],[-3,-6,-9],[-6,10,-5],[9,-8,3],[2,5,7],[2,6,-1],[5,1,-9],[9,8,-5],[3,-8,-9],[-9,-4,1],[-8,2,4]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          8,
+          9,
+          6
+        ],
+        [
+          8,
+          -7,
+          3
+        ],
+        [
+          2,
+          -5,
+          -8
+        ],
+        [
+          8,
+          -3,
+          -7
+        ],
+        [
+          -9,
+          -3,
+          2
+        ],
+        [
+          3,
+          10,
+          -8
+        ],
+        [
+          9,
+          2,
+          -10
+        ],
+        [
+          -4,
+          2,
+          9
+        ],
+        [
+          1,
+          -6,
+          -10
+        ],
+        [
+          -4,
+          -1,
+          7
+        ],
+        [
+          1,
+          6,
+          -3
+        ],
+        [
+          -8,
+          -9,
+          -7
+        ],
+        [
+          -6,
+          7,
+          10
+        ],
+        [
+          -8,
+          -3,
+          -7
+        ],
+        [
+          -1,
+          -8,
+          -6
+        ],
+        [
+          9,
+          -3,
+          1
+        ],
+        [
+          -7,
+          -5,
+          6
+        ],
+        [
+          -1,
+          10,
+          -4
+        ],
+        [
+          -3,
+          -6,
+          -9
+        ],
+        [
+          -6,
+          10,
+          -5
+        ],
+        [
+          9,
+          -8,
+          3
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          2,
+          6,
+          -1
+        ],
+        [
+          5,
+          1,
+          -9
+        ],
+        [
+          9,
+          8,
+          -5
+        ],
+        [
+          3,
+          -8,
+          -9
+        ],
+        [
+          -9,
+          -4,
+          1
+        ],
+        [
+          -8,
+          2,
+          4
+        ]
+      ],
+      "n": 10
+    },
+    "split": "development"
+  },
+  {
+    "difficulty": "easy",
+    "family": "sat",
+    "id": "sat-03",
+    "oracle": {
+      "assignment": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[-6,4,-3],[-2,1,-5],[2,-6,5],[2,-3,-6],[-6,4,5],[-6,1,-4],[3,-1,-4],[1,2,5],[-6,3,2],[-1,-4,6],[2,-6,3],[-4,-1,-5]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          -6,
+          4,
+          -3
+        ],
+        [
+          -2,
+          1,
+          -5
+        ],
+        [
+          2,
+          -6,
+          5
+        ],
+        [
+          2,
+          -3,
+          -6
+        ],
+        [
+          -6,
+          4,
+          5
+        ],
+        [
+          -6,
+          1,
+          -4
+        ],
+        [
+          3,
+          -1,
+          -4
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          -6,
+          3,
+          2
+        ],
+        [
+          -1,
+          -4,
+          6
+        ],
+        [
+          2,
+          -6,
+          3
+        ],
+        [
+          -4,
+          -1,
+          -5
+        ]
+      ],
+      "n": 6
+    },
+    "split": "pilot"
+  },
+  {
+    "difficulty": "hard",
+    "family": "sat",
+    "id": "sat-04",
+    "oracle": {
+      "assignment": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":10,\"clauses\":[[-3,-10,-9],[3,-8,-4],[-3,-1,-9],[3,-10,-9],[8,-7,-2],[-10,1,-6],[-8,5,1],[10,7,1],[-7,-10,-8],[-7,-10,-3],[-4,10,8],[-4,-9,-10],[6,-2,-4],[6,1,2],[4,10,6],[6,3,-1],[2,9,-1],[6,10,8],[10,-8,7],[3,4,-9],[10,7,-5],[-6,-5,-3],[-4,-8,3],[2,-4,5],[4,3,-7],[-4,-7,1],[10,-3,9],[1,10,-9]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          -3,
+          -10,
+          -9
+        ],
+        [
+          3,
+          -8,
+          -4
+        ],
+        [
+          -3,
+          -1,
+          -9
+        ],
+        [
+          3,
+          -10,
+          -9
+        ],
+        [
+          8,
+          -7,
+          -2
+        ],
+        [
+          -10,
+          1,
+          -6
+        ],
+        [
+          -8,
+          5,
+          1
+        ],
+        [
+          10,
+          7,
+          1
+        ],
+        [
+          -7,
+          -10,
+          -8
+        ],
+        [
+          -7,
+          -10,
+          -3
+        ],
+        [
+          -4,
+          10,
+          8
+        ],
+        [
+          -4,
+          -9,
+          -10
+        ],
+        [
+          6,
+          -2,
+          -4
+        ],
+        [
+          6,
+          1,
+          2
+        ],
+        [
+          4,
+          10,
+          6
+        ],
+        [
+          6,
+          3,
+          -1
+        ],
+        [
+          2,
+          9,
+          -1
+        ],
+        [
+          6,
+          10,
+          8
+        ],
+        [
+          10,
+          -8,
+          7
+        ],
+        [
+          3,
+          4,
+          -9
+        ],
+        [
+          10,
+          7,
+          -5
+        ],
+        [
+          -6,
+          -5,
+          -3
+        ],
+        [
+          -4,
+          -8,
+          3
+        ],
+        [
+          2,
+          -4,
+          5
+        ],
+        [
+          4,
+          3,
+          -7
+        ],
+        [
+          -4,
+          -7,
+          1
+        ],
+        [
+          10,
+          -3,
+          9
+        ],
+        [
+          1,
+          10,
+          -9
+        ]
+      ],
+      "n": 10
+    },
+    "split": "pilot"
+  },
+  {
+    "difficulty": "easy",
+    "family": "sat",
+    "id": "sat-05",
+    "oracle": {
+      "assignment": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[2,-4,6],[2,1,-5],[6,-2,5],[-3,2,-5],[2,-3,5],[6,-3,-4],[-2,-3,-6],[-6,-3,-4],[-2,1,-6],[5,-3,2],[-1,-6,2],[-4,-3,6]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          2,
+          -4,
+          6
+        ],
+        [
+          2,
+          1,
+          -5
+        ],
+        [
+          6,
+          -2,
+          5
+        ],
+        [
+          -3,
+          2,
+          -5
+        ],
+        [
+          2,
+          -3,
+          5
+        ],
+        [
+          6,
+          -3,
+          -4
+        ],
+        [
+          -2,
+          -3,
+          -6
+        ],
+        [
+          -6,
+          -3,
+          -4
+        ],
+        [
+          -2,
+          1,
+          -6
+        ],
+        [
+          5,
+          -3,
+          2
+        ],
+        [
+          -1,
+          -6,
+          2
+        ],
+        [
+          -4,
+          -3,
+          6
+        ]
+      ],
+      "n": 6
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "sat",
+    "id": "sat-06",
+    "oracle": {
+      "assignment": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":10,\"clauses\":[[-10,-4,-6],[3,8,-2],[-10,8,4],[-9,2,4],[-2,3,-4],[-1,9,6],[8,9,-4],[-10,-1,2],[5,-10,2],[5,-10,-8],[-8,-2,9],[-2,9,10],[-6,3,7],[-10,-3,4],[3,-5,2],[8,-9,2],[-1,-2,-8],[5,-1,-2],[7,10,-2],[-3,-2,10],[6,-2,-3],[-8,-2,-9],[10,9,-5],[-5,-7,-8],[-4,-8,-5],[-10,8,1],[-1,5,6],[-5,2,-6]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          -10,
+          -4,
+          -6
+        ],
+        [
+          3,
+          8,
+          -2
+        ],
+        [
+          -10,
+          8,
+          4
+        ],
+        [
+          -9,
+          2,
+          4
+        ],
+        [
+          -2,
+          3,
+          -4
+        ],
+        [
+          -1,
+          9,
+          6
+        ],
+        [
+          8,
+          9,
+          -4
+        ],
+        [
+          -10,
+          -1,
+          2
+        ],
+        [
+          5,
+          -10,
+          2
+        ],
+        [
+          5,
+          -10,
+          -8
+        ],
+        [
+          -8,
+          -2,
+          9
+        ],
+        [
+          -2,
+          9,
+          10
+        ],
+        [
+          -6,
+          3,
+          7
+        ],
+        [
+          -10,
+          -3,
+          4
+        ],
+        [
+          3,
+          -5,
+          2
+        ],
+        [
+          8,
+          -9,
+          2
+        ],
+        [
+          -1,
+          -2,
+          -8
+        ],
+        [
+          5,
+          -1,
+          -2
+        ],
+        [
+          7,
+          10,
+          -2
+        ],
+        [
+          -3,
+          -2,
+          10
+        ],
+        [
+          6,
+          -2,
+          -3
+        ],
+        [
+          -8,
+          -2,
+          -9
+        ],
+        [
+          10,
+          9,
+          -5
+        ],
+        [
+          -5,
+          -7,
+          -8
+        ],
+        [
+          -4,
+          -8,
+          -5
+        ],
+        [
+          -10,
+          8,
+          1
+        ],
+        [
+          -1,
+          5,
+          6
+        ],
+        [
+          -5,
+          2,
+          -6
+        ]
+      ],
+      "n": 10
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "sat",
+    "id": "sat-07",
+    "oracle": {
+      "assignment": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[-1,-3,5],[1,5,6],[2,5,4],[-2,3,4],[6,-4,-2],[2,-3,5],[3,6,-2],[6,-5,1],[4,5,6],[2,4,6],[-5,-1,3],[3,-6,1]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          -1,
+          -3,
+          5
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          5,
+          4
+        ],
+        [
+          -2,
+          3,
+          4
+        ],
+        [
+          6,
+          -4,
+          -2
+        ],
+        [
+          2,
+          -3,
+          5
+        ],
+        [
+          3,
+          6,
+          -2
+        ],
+        [
+          6,
+          -5,
+          1
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          -5,
+          -1,
+          3
+        ],
+        [
+          3,
+          -6,
+          1
+        ]
+      ],
+      "n": 6
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "sat",
+    "id": "sat-08",
+    "oracle": {
+      "assignment": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":10,\"clauses\":[[4,-7,2],[-3,5,-6],[-9,-6,4],[-5,-4,-1],[-8,10,6],[-4,1,-9],[-8,-3,6],[-7,-8,-3],[-6,-1,5],[-7,3,9],[-2,-10,-8],[1,-10,8],[2,3,-6],[-5,-2,-4],[9,4,1],[-5,-7,-8],[-7,-1,-2],[4,8,2],[-4,2,-10],[-10,-8,2],[-1,4,-8],[-5,3,-2],[4,6,7],[-2,5,-10],[-1,5,-3],[-4,6,-1],[-3,-2,-8],[5,-1,7]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          4,
+          -7,
+          2
+        ],
+        [
+          -3,
+          5,
+          -6
+        ],
+        [
+          -9,
+          -6,
+          4
+        ],
+        [
+          -5,
+          -4,
+          -1
+        ],
+        [
+          -8,
+          10,
+          6
+        ],
+        [
+          -4,
+          1,
+          -9
+        ],
+        [
+          -8,
+          -3,
+          6
+        ],
+        [
+          -7,
+          -8,
+          -3
+        ],
+        [
+          -6,
+          -1,
+          5
+        ],
+        [
+          -7,
+          3,
+          9
+        ],
+        [
+          -2,
+          -10,
+          -8
+        ],
+        [
+          1,
+          -10,
+          8
+        ],
+        [
+          2,
+          3,
+          -6
+        ],
+        [
+          -5,
+          -2,
+          -4
+        ],
+        [
+          9,
+          4,
+          1
+        ],
+        [
+          -5,
+          -7,
+          -8
+        ],
+        [
+          -7,
+          -1,
+          -2
+        ],
+        [
+          4,
+          8,
+          2
+        ],
+        [
+          -4,
+          2,
+          -10
+        ],
+        [
+          -10,
+          -8,
+          2
+        ],
+        [
+          -1,
+          4,
+          -8
+        ],
+        [
+          -5,
+          3,
+          -2
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          -2,
+          5,
+          -10
+        ],
+        [
+          -1,
+          5,
+          -3
+        ],
+        [
+          -4,
+          6,
+          -1
+        ],
+        [
+          -3,
+          -2,
+          -8
+        ],
+        [
+          5,
+          -1,
+          7
+        ]
+      ],
+      "n": 10
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "sat",
+    "id": "sat-09",
+    "oracle": {
+      "assignment": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[1,3,-4],[-4,6,1],[-4,2,-1],[-1,-5,3],[-3,1,-4],[2,6,-4],[-4,-1,5],[2,-5,-3],[-1,5,6],[-2,-1,5],[-3,-5,2],[2,-1,5]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          1,
+          3,
+          -4
+        ],
+        [
+          -4,
+          6,
+          1
+        ],
+        [
+          -4,
+          2,
+          -1
+        ],
+        [
+          -1,
+          -5,
+          3
+        ],
+        [
+          -3,
+          1,
+          -4
+        ],
+        [
+          2,
+          6,
+          -4
+        ],
+        [
+          -4,
+          -1,
+          5
+        ],
+        [
+          2,
+          -5,
+          -3
+        ],
+        [
+          -1,
+          5,
+          6
+        ],
+        [
+          -2,
+          -1,
+          5
+        ],
+        [
+          -3,
+          -5,
+          2
+        ],
+        [
+          2,
+          -1,
+          5
+        ]
+      ],
+      "n": 6
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "sat",
+    "id": "sat-10",
+    "oracle": {
+      "assignment": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":10,\"clauses\":[[8,-6,7],[-4,-5,-1],[9,-3,-2],[-7,4,1],[10,4,-6],[8,-4,9],[3,10,-4],[8,-4,10],[-3,-5,-4],[-7,-1,10],[9,1,-6],[8,4,-5],[5,-4,6],[2,-1,6],[-10,1,-2],[-2,-7,9],[6,-3,-8],[9,8,-1],[10,-9,-3],[4,-6,3],[-4,-3,-6],[-6,-1,-9],[8,-7,-10],[-6,-8,5],[-9,-8,-7],[-2,1,-3],[10,9,-8],[-8,-1,-7]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          8,
+          -6,
+          7
+        ],
+        [
+          -4,
+          -5,
+          -1
+        ],
+        [
+          9,
+          -3,
+          -2
+        ],
+        [
+          -7,
+          4,
+          1
+        ],
+        [
+          10,
+          4,
+          -6
+        ],
+        [
+          8,
+          -4,
+          9
+        ],
+        [
+          3,
+          10,
+          -4
+        ],
+        [
+          8,
+          -4,
+          10
+        ],
+        [
+          -3,
+          -5,
+          -4
+        ],
+        [
+          -7,
+          -1,
+          10
+        ],
+        [
+          9,
+          1,
+          -6
+        ],
+        [
+          8,
+          4,
+          -5
+        ],
+        [
+          5,
+          -4,
+          6
+        ],
+        [
+          2,
+          -1,
+          6
+        ],
+        [
+          -10,
+          1,
+          -2
+        ],
+        [
+          -2,
+          -7,
+          9
+        ],
+        [
+          6,
+          -3,
+          -8
+        ],
+        [
+          9,
+          8,
+          -1
+        ],
+        [
+          10,
+          -9,
+          -3
+        ],
+        [
+          4,
+          -6,
+          3
+        ],
+        [
+          -4,
+          -3,
+          -6
+        ],
+        [
+          -6,
+          -1,
+          -9
+        ],
+        [
+          8,
+          -7,
+          -10
+        ],
+        [
+          -6,
+          -8,
+          5
+        ],
+        [
+          -9,
+          -8,
+          -7
+        ],
+        [
+          -2,
+          1,
+          -3
+        ],
+        [
+          10,
+          9,
+          -8
+        ],
+        [
+          -8,
+          -1,
+          -7
+        ]
+      ],
+      "n": 10
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "sat",
+    "id": "sat-11",
+    "oracle": {
+      "assignment": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[4,-2,3],[4,-3,6],[4,2,6],[5,-4,-3],[-2,-4,1],[-5,-2,-4],[2,5,-1],[6,-2,-3],[-5,6,4],[-6,-2,4],[-6,5,-3],[2,6,5]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          4,
+          -2,
+          3
+        ],
+        [
+          4,
+          -3,
+          6
+        ],
+        [
+          4,
+          2,
+          6
+        ],
+        [
+          5,
+          -4,
+          -3
+        ],
+        [
+          -2,
+          -4,
+          1
+        ],
+        [
+          -5,
+          -2,
+          -4
+        ],
+        [
+          2,
+          5,
+          -1
+        ],
+        [
+          6,
+          -2,
+          -3
+        ],
+        [
+          -5,
+          6,
+          4
+        ],
+        [
+          -6,
+          -2,
+          4
+        ],
+        [
+          -6,
+          5,
+          -3
+        ],
+        [
+          2,
+          6,
+          5
+        ]
+      ],
+      "n": 6
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "sat",
+    "id": "sat-12",
+    "oracle": {
+      "assignment": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":10,\"clauses\":[[5,6,4],[-3,4,-1],[-8,-6,-7],[9,-1,-4],[8,-3,6],[7,-6,-2],[-5,2,3],[5,-7,4],[-1,7,-10],[2,3,8],[3,-10,1],[-9,10,5],[7,-10,-9],[8,-4,-1],[10,4,9],[-7,3,9],[3,-1,-8],[-5,1,9],[-3,-5,1],[-4,6,-2],[7,8,-10],[1,-3,-9],[6,9,-10],[8,6,7],[9,-2,4],[-3,9,5],[-5,1,-3],[8,-6,5]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "clauses": [
+        [
+          5,
+          6,
+          4
+        ],
+        [
+          -3,
+          4,
+          -1
+        ],
+        [
+          -8,
+          -6,
+          -7
+        ],
+        [
+          9,
+          -1,
+          -4
+        ],
+        [
+          8,
+          -3,
+          6
+        ],
+        [
+          7,
+          -6,
+          -2
+        ],
+        [
+          -5,
+          2,
+          3
+        ],
+        [
+          5,
+          -7,
+          4
+        ],
+        [
+          -1,
+          7,
+          -10
+        ],
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          3,
+          -10,
+          1
+        ],
+        [
+          -9,
+          10,
+          5
+        ],
+        [
+          7,
+          -10,
+          -9
+        ],
+        [
+          8,
+          -4,
+          -1
+        ],
+        [
+          10,
+          4,
+          9
+        ],
+        [
+          -7,
+          3,
+          9
+        ],
+        [
+          3,
+          -1,
+          -8
+        ],
+        [
+          -5,
+          1,
+          9
+        ],
+        [
+          -3,
+          -5,
+          1
+        ],
+        [
+          -4,
+          6,
+          -2
+        ],
+        [
+          7,
+          8,
+          -10
+        ],
+        [
+          1,
+          -3,
+          -9
+        ],
+        [
+          6,
+          9,
+          -10
+        ],
+        [
+          8,
+          6,
+          7
+        ],
+        [
+          9,
+          -2,
+          4
+        ],
+        [
+          -3,
+          9,
+          5
+        ],
+        [
+          -5,
+          1,
+          -3
+        ],
+        [
+          8,
+          -6,
+          5
+        ]
+      ],
+      "n": 10
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "graph",
+    "id": "graph-01",
+    "oracle": {
+      "cost": 21,
+      "path": [
+        0,
+        2,
+        4,
+        5
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":6,\"edges\":[[0,1,13],[0,2,1],[1,2,1],[1,3,2],[1,4,12],[2,3,5],[2,4,7],[3,4,6],[4,5,13]],\"source\":0,\"target\":5}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          13
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          4,
+          12
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          4,
+          5,
+          13
+        ]
+      ],
+      "n": 6,
+      "source": 0,
+      "target": 5
+    },
+    "split": "development"
+  },
+  {
+    "difficulty": "hard",
+    "family": "graph",
+    "id": "graph-02",
+    "oracle": {
+      "cost": 6,
+      "path": [
+        0,
+        9
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":10,\"edges\":[[0,1,9],[0,2,3],[0,5,15],[0,9,6],[1,2,14],[1,8,14],[2,3,7],[2,6,15],[3,4,6],[3,7,14],[4,5,15],[5,6,9],[5,8,8],[6,7,2],[6,9,13],[7,8,8],[8,9,9]],\"source\":0,\"target\":9}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          9
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          5,
+          15
+        ],
+        [
+          0,
+          9,
+          6
+        ],
+        [
+          1,
+          2,
+          14
+        ],
+        [
+          1,
+          8,
+          14
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          2,
+          6,
+          15
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          7,
+          14
+        ],
+        [
+          4,
+          5,
+          15
+        ],
+        [
+          5,
+          6,
+          9
+        ],
+        [
+          5,
+          8,
+          8
+        ],
+        [
+          6,
+          7,
+          2
+        ],
+        [
+          6,
+          9,
+          13
+        ],
+        [
+          7,
+          8,
+          8
+        ],
+        [
+          8,
+          9,
+          9
+        ]
+      ],
+      "n": 10,
+      "source": 0,
+      "target": 9
+    },
+    "split": "development"
+  },
+  {
+    "difficulty": "easy",
+    "family": "graph",
+    "id": "graph-03",
+    "oracle": {
+      "cost": 14,
+      "path": [
+        0,
+        2,
+        1,
+        5
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":6,\"edges\":[[0,1,13],[0,2,9],[1,2,3],[1,3,12],[1,4,6],[1,5,2],[2,3,1],[3,4,3],[4,5,5]],\"source\":0,\"target\":5}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          13
+        ],
+        [
+          0,
+          2,
+          9
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          12
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          3
+        ],
+        [
+          4,
+          5,
+          5
+        ]
+      ],
+      "n": 6,
+      "source": 0,
+      "target": 5
+    },
+    "split": "pilot"
+  },
+  {
+    "difficulty": "hard",
+    "family": "graph",
+    "id": "graph-04",
+    "oracle": {
+      "cost": 13,
+      "path": [
+        0,
+        1,
+        3,
+        9
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":10,\"edges\":[[0,1,7],[0,2,5],[1,2,9],[1,3,3],[1,4,7],[1,6,6],[1,7,7],[2,3,9],[2,8,14],[3,4,11],[3,6,11],[3,9,3],[4,5,13],[5,6,5],[6,7,12],[7,8,5],[8,9,9]],\"source\":0,\"target\":9}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          7
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          1,
+          6,
+          6
+        ],
+        [
+          1,
+          7,
+          7
+        ],
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          2,
+          8,
+          14
+        ],
+        [
+          3,
+          4,
+          11
+        ],
+        [
+          3,
+          6,
+          11
+        ],
+        [
+          3,
+          9,
+          3
+        ],
+        [
+          4,
+          5,
+          13
+        ],
+        [
+          5,
+          6,
+          5
+        ],
+        [
+          6,
+          7,
+          12
+        ],
+        [
+          7,
+          8,
+          5
+        ],
+        [
+          8,
+          9,
+          9
+        ]
+      ],
+      "n": 10,
+      "source": 0,
+      "target": 9
+    },
+    "split": "pilot"
+  },
+  {
+    "difficulty": "easy",
+    "family": "graph",
+    "id": "graph-05",
+    "oracle": {
+      "cost": 19,
+      "path": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":6,\"edges\":[[0,1,2],[0,3,12],[1,2,14],[2,3,11],[2,4,10],[2,5,3],[3,4,8],[3,5,15],[4,5,14]],\"source\":0,\"target\":5}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          3,
+          12
+        ],
+        [
+          1,
+          2,
+          14
+        ],
+        [
+          2,
+          3,
+          11
+        ],
+        [
+          2,
+          4,
+          10
+        ],
+        [
+          2,
+          5,
+          3
+        ],
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          5,
+          15
+        ],
+        [
+          4,
+          5,
+          14
+        ]
+      ],
+      "n": 6,
+      "source": 0,
+      "target": 5
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "graph",
+    "id": "graph-06",
+    "oracle": {
+      "cost": 25,
+      "path": [
+        0,
+        1,
+        3,
+        9
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":10,\"edges\":[[0,1,4],[0,7,10],[1,2,8],[1,3,11],[1,5,4],[2,3,15],[2,6,6],[2,7,11],[3,4,4],[3,6,4],[3,8,7],[3,9,10],[4,5,3],[5,6,10],[6,7,10],[7,8,14],[8,9,13]],\"source\":0,\"target\":9}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          7,
+          10
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          1,
+          3,
+          11
+        ],
+        [
+          1,
+          5,
+          4
+        ],
+        [
+          2,
+          3,
+          15
+        ],
+        [
+          2,
+          6,
+          6
+        ],
+        [
+          2,
+          7,
+          11
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          6,
+          4
+        ],
+        [
+          3,
+          8,
+          7
+        ],
+        [
+          3,
+          9,
+          10
+        ],
+        [
+          4,
+          5,
+          3
+        ],
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          6,
+          7,
+          10
+        ],
+        [
+          7,
+          8,
+          14
+        ],
+        [
+          8,
+          9,
+          13
+        ]
+      ],
+      "n": 10,
+      "source": 0,
+      "target": 9
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "graph",
+    "id": "graph-07",
+    "oracle": {
+      "cost": 9,
+      "path": [
+        0,
+        5
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":6,\"edges\":[[0,1,3],[0,4,12],[0,5,9],[1,2,12],[1,5,14],[2,3,6],[2,5,1],[3,4,7],[4,5,3]],\"source\":0,\"target\":5}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          4,
+          12
+        ],
+        [
+          0,
+          5,
+          9
+        ],
+        [
+          1,
+          2,
+          12
+        ],
+        [
+          1,
+          5,
+          14
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          4,
+          5,
+          3
+        ]
+      ],
+      "n": 6,
+      "source": 0,
+      "target": 5
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "graph",
+    "id": "graph-08",
+    "oracle": {
+      "cost": 26,
+      "path": [
+        0,
+        4,
+        6,
+        8,
+        9
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":10,\"edges\":[[0,1,12],[0,4,9],[0,5,9],[0,7,5],[1,2,7],[2,3,4],[2,5,14],[3,4,12],[3,6,13],[3,7,3],[4,5,15],[4,6,2],[5,6,13],[6,7,7],[6,8,4],[7,8,12],[8,9,11]],\"source\":0,\"target\":9}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          12
+        ],
+        [
+          0,
+          4,
+          9
+        ],
+        [
+          0,
+          5,
+          9
+        ],
+        [
+          0,
+          7,
+          5
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          5,
+          14
+        ],
+        [
+          3,
+          4,
+          12
+        ],
+        [
+          3,
+          6,
+          13
+        ],
+        [
+          3,
+          7,
+          3
+        ],
+        [
+          4,
+          5,
+          15
+        ],
+        [
+          4,
+          6,
+          2
+        ],
+        [
+          5,
+          6,
+          13
+        ],
+        [
+          6,
+          7,
+          7
+        ],
+        [
+          6,
+          8,
+          4
+        ],
+        [
+          7,
+          8,
+          12
+        ],
+        [
+          8,
+          9,
+          11
+        ]
+      ],
+      "n": 10,
+      "source": 0,
+      "target": 9
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "graph",
+    "id": "graph-09",
+    "oracle": {
+      "cost": 8,
+      "path": [
+        0,
+        5
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":6,\"edges\":[[0,1,5],[0,4,14],[0,5,8],[1,2,7],[1,3,4],[1,5,10],[2,3,3],[3,4,13],[4,5,4]],\"source\":0,\"target\":5}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          4,
+          14
+        ],
+        [
+          0,
+          5,
+          8
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          3,
+          4,
+          13
+        ],
+        [
+          4,
+          5,
+          4
+        ]
+      ],
+      "n": 6,
+      "source": 0,
+      "target": 5
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "graph",
+    "id": "graph-10",
+    "oracle": {
+      "cost": 18,
+      "path": [
+        0,
+        6,
+        8,
+        9
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":10,\"edges\":[[0,1,10],[0,6,5],[1,2,2],[1,6,4],[2,3,2],[2,7,12],[3,4,15],[3,9,15],[4,5,8],[4,7,15],[4,8,3],[5,6,13],[5,8,4],[6,7,2],[6,8,8],[7,8,11],[8,9,5]],\"source\":0,\"target\":9}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          10
+        ],
+        [
+          0,
+          6,
+          5
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          6,
+          4
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          7,
+          12
+        ],
+        [
+          3,
+          4,
+          15
+        ],
+        [
+          3,
+          9,
+          15
+        ],
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          7,
+          15
+        ],
+        [
+          4,
+          8,
+          3
+        ],
+        [
+          5,
+          6,
+          13
+        ],
+        [
+          5,
+          8,
+          4
+        ],
+        [
+          6,
+          7,
+          2
+        ],
+        [
+          6,
+          8,
+          8
+        ],
+        [
+          7,
+          8,
+          11
+        ],
+        [
+          8,
+          9,
+          5
+        ]
+      ],
+      "n": 10,
+      "source": 0,
+      "target": 9
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "easy",
+    "family": "graph",
+    "id": "graph-11",
+    "oracle": {
+      "cost": 20,
+      "path": [
+        0,
+        3,
+        4,
+        5
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":6,\"edges\":[[0,1,12],[0,2,9],[0,3,3],[0,4,13],[1,2,2],[1,5,11],[2,3,14],[3,4,3],[4,5,14]],\"source\":0,\"target\":5}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          12
+        ],
+        [
+          0,
+          2,
+          9
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          4,
+          13
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          5,
+          11
+        ],
+        [
+          2,
+          3,
+          14
+        ],
+        [
+          3,
+          4,
+          3
+        ],
+        [
+          4,
+          5,
+          14
+        ]
+      ],
+      "n": 6,
+      "source": 0,
+      "target": 5
+    },
+    "split": "eval"
+  },
+  {
+    "difficulty": "hard",
+    "family": "graph",
+    "id": "graph-12",
+    "oracle": {
+      "cost": 13,
+      "path": [
+        0,
+        3,
+        4,
+        9
+      ]
+    },
+    "prompt": "Find a shortest simple path from source to target in this undirected positive-weight graph. Each edge is [a,b,weight]. Return {\"path\": [integer vertices], \"cost\": integer total weight}. Any tied optimum is accepted.\nInput: {\"n\":10,\"edges\":[[0,1,15],[0,3,7],[0,5,14],[0,6,7],[0,8,7],[1,2,14],[1,7,13],[2,3,1],[2,6,10],[3,4,4],[3,5,13],[4,5,14],[4,9,2],[5,6,9],[6,7,8],[7,8,13],[8,9,7]],\"source\":0,\"target\":9}\nOutput only the requested JSON object, without code fences or other keys.",
+    "spec": {
+      "edges": [
+        [
+          0,
+          1,
+          15
+        ],
+        [
+          0,
+          3,
+          7
+        ],
+        [
+          0,
+          5,
+          14
+        ],
+        [
+          0,
+          6,
+          7
+        ],
+        [
+          0,
+          8,
+          7
+        ],
+        [
+          1,
+          2,
+          14
+        ],
+        [
+          1,
+          7,
+          13
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          4,
+          4
+        ],
+        [
+          3,
+          5,
+          13
+        ],
+        [
+          4,
+          5,
+          14
+        ],
+        [
+          4,
+          9,
+          2
+        ],
+        [
+          5,
+          6,
+          9
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          7,
+          8,
+          13
+        ],
+        [
+          8,
+          9,
+          7
+        ]
+      ],
+      "n": 10,
+      "source": 0,
+      "target": 9
+    },
+    "split": "eval"
+  }
+]

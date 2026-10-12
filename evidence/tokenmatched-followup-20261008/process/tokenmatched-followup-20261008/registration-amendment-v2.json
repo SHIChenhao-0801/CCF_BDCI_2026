@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "status": "BEFORE_FIRST_CALL_ZEROAPI_OPERATIONAL_AMENDMENT",
+  "registered_at_utc": "2026-10-08T10:32:02.151589+00:00",
+  "prior_v1_ready_sha256": "c4324005399663e2ede38c72a082efba9f665f4bf35ad80f5efd21e5ed1a8541",
+  "scope": "failure reporting and exact known-usage recovery only",
+  "scientific_v1_files_unchanged": true,
+  "supplier_requests": 0,
+  "model_calls": 0,
+  "shared_ledger_sha256": "7dd13930ff0d203edacc6ede97a5ea4db4b805773a61fe9052c1398e05bbc741",
+  "request_policy_sha256": "c278c274b51baa67decc828e7b1a617eeaacabeda89a97668148f3efd99f0a86",
+  "paused": true,
+  "active_reservations": {},
+  "charged_micro_cny": 187944708,
+  "unmetered_calls": 13,
+  "existing_amendment_preserved": "registration-amendment.json"
+}

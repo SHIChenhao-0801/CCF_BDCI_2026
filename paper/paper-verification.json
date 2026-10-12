@@ -1,0 +1,16 @@
+{
+  "status": "PASS_UNCHANGED_REVIEWED_PDF_AND_OWN_TOKEN",
+  "checked_at_utc": "2026-10-09T12:02:57.244965+00:00",
+  "paper_sha256": "8e8a80d56b9df4ac77f73c5b360959b2aedec01621808f33bbc7e3453e104cbc",
+  "paper_bytes": 141842,
+  "pages": 7,
+  "source_inputs_checked": 14,
+  "token_file_sha256": "73cdfc696d1b2f47dfd64c8ebc0a92fcf248d837822eae9535c2607b1123f6ee",
+  "reviewer_score": 6.3,
+  "venue": "ICLR",
+  "response_sha256": "4b3c69734113a45fcc2b1e6cd6189cc2a86a5664ec523e463af6db9164bb33bd",
+  "historical_manuscript_byte_preservation_verified": true,
+  "visual_review": "Seven-page contact sheet inspected; previously compiled page renders preserved outside submission.",
+  "new_model_calls": 0,
+  "scientific_scope": "Historical immutable manuscript: original 24-item pilot is inconclusive. Later 600/375/240 evidence is separate; its appendix records an earlier 102/240 holdout checkpoint. No substitution of old token onto a revised PDF."
+}

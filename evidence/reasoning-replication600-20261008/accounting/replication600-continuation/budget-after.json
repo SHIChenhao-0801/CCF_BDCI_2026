@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "model": "deepseek-flash",
+    "budget_cny": "176.785881",
+    "input_cny_per_million": "2",
+    "output_cny_per_million": "8",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 32768
+  },
+  "charged_micro_cny": 164090186,
+  "reserved_calls": 3634,
+  "settled_calls": 3633,
+  "unmetered_calls": 7,
+  "active_reservations": {
+    "6f2280517da64d65a81a4ea151269170": 2359296
+  },
+  "updated_at": "2026-10-06T23:33:48.819383+00:00"
+}

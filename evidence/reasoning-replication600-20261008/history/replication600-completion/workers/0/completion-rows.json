@@ -1,0 +1,542 @@
+[
+  {
+    "id": "graph-replication600-easy-80",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-80:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-80:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-80:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-80:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-62",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-62:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-62:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-62:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 352,
+        "content_utf8_bytes": 352
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-62:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-90",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-90:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 14
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-90:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 14
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-90:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 14
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 734,
+        "content_utf8_bytes": 734
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-90:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 14
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-10",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-10:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-10:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-10:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-10:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 563,
+        "content_utf8_bytes": 563
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-24",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-24:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-24:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-24:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-24:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-26",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-26:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-26:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-26:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-26:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-52",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-52:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-52:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-52:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-52:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-easy-41",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-41:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-41:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 566,
+        "content_utf8_bytes": 566
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-41:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-41:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-19",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-19:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-19:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 321,
+        "content_utf8_bytes": 321
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-19:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-19:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-67",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-67:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-67:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-67:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-67:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-44",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-44:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-44:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-44:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 352,
+        "content_utf8_bytes": 352
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-44:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-38",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-38:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-38:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-38:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-38:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-20",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  }
+]

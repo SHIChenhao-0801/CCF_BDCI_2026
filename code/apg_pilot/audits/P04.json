@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "gate": {
+    "name": "artifact-provenance-gate",
+    "version": "0.1.0"
+  },
+  "run": {
+    "task_id": "pilot-p04",
+    "manager_run_id": "pilot-p04-iteration-001",
+    "iteration": 1
+  },
+  "evaluated_at": "2026-09-30T00:00:00Z",
+  "decision": "BLOCKED",
+  "summary": {
+    "passed": 3,
+    "failed": 1,
+    "skipped": 1,
+    "warnings": 0
+  },
+  "coverage": {
+    "final_paper": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "experiments/pilot-p04-iteration-001/paper/main.pdf"
+      ]
+    },
+    "runtime_usage": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "model_calls.jsonl"
+      ]
+    },
+    "citations": {
+      "status": "skipped",
+      "reason": "compiled_aux_not_available",
+      "source": []
+    },
+    "numeric_claims": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    },
+    "experiment_protocol": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    },
+    "negative_results": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    }
+  },
+  "inputs": [
+    {
+      "role": "compiled_aux",
+      "path": "experiments/pilot-p04-iteration-001/paper/main.aux",
+      "present": false
+    },
+    {
+      "role": "final_paper",
+      "path": "experiments/pilot-p04-iteration-001/paper/main.pdf",
+      "present": false
+    },
+    {
+      "role": "manager_state",
+      "path": "experiments/pilot-p04-iteration-001/manager/state.json",
+      "present": true,
+      "sha256": "50f032c06af9bf6f70d8765ef454ba074ab944e9d4063df84a609b8fdcd34174"
+    },
+    {
+      "role": "reporting_artifact",
+      "path": "experiments/pilot-p04-iteration-001/design/report.md",
+      "present": true,
+      "sha256": "495e0d2938920dd4575c900a5578801e5505db623fe31cf54e134b82198877b4"
+    },
+    {
+      "role": "runtime_usage",
+      "path": "model_calls.jsonl",
+      "present": true,
+      "sha256": "e87218918835c0d57cbccc7b05d7ee45793ebd5fd2f0a8534d8653171d94ad37"
+    }
+  ],
+  "checks": [
+    {
+      "id": "APG001",
+      "severity": "blocker",
+      "status": "FAIL",
+      "message": "Final paper PDF is missing or is not a regular file.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-p04-iteration-001/paper/main.pdf"
+        }
+      ],
+      "remediation": "Create the final paper at the required PAPER RSI path."
+    },
+    {
+      "id": "APG002",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Manager state contains a successful terminal Reporting report.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-p04-iteration-001/manager/state.json"
+        },
+        {
+          "key": "successful_reporting_count",
+          "value": 1
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG003",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "All Reporting artifact paths resolve inside the run directory.",
+      "evidence": [
+        {
+          "key": "artifact_count",
+          "value": 1
+        },
+        {
+          "key": "paths",
+          "value": [
+            "experiments/pilot-p04-iteration-001/design/report.md"
+          ]
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG004",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Model-call ledger is complete and token counts are aggregable.",
+      "evidence": [
+        {
+          "key": "duplicate_count",
+          "value": 0
+        },
+        {
+          "key": "input_tokens",
+          "value": 12
+        },
+        {
+          "key": "output_tokens",
+          "value": 7
+        },
+        {
+          "key": "path",
+          "value": "model_calls.jsonl"
+        },
+        {
+          "key": "unique_call_count",
+          "value": 1
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG005",
+      "severity": "blocker",
+      "status": "SKIPPED",
+      "message": "Compiled LaTeX AUX evidence is unavailable.",
+      "evidence": [],
+      "remediation": null
+    }
+  ]
+}

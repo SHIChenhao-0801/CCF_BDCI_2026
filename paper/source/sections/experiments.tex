@@ -1,0 +1,61 @@
+\section{Experiments}
+\subsection{Reasoning results}
+We use the first scientific execution of the tenth engineering run as the primary result because it accompanies the first completed public workflow with this frozen reporting implementation. We did not select it by accuracy. Earlier executions reused the same evaluation set during engineering diagnosis; the tenth run is not a fresh, blinded test or ten independent samples. An independent review recomputes answer validity, paired counts, intervals, usage, and parent/child record correspondence from retained replies. All 24 items remain in each denominator; all 52 returned calls have valid structured answers and finish reason \texttt{stop}.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrl}
+\toprule
+Arm & Correct/24 & Accuracy & Wilson 95\% interval\\
+\midrule
+Shared initial & 10 & 0.4167 & [0.2447, 0.6117]\\
+Generic retry & 11 & 0.4583 & [0.2789, 0.6493]\\
+Diagnostic retry & 12 & 0.5000 & [0.3143, 0.6857]\\
+\bottomrule
+\end{tabular}
+\caption{Marginal accuracy on the same 24 items. Initial correct answers are retained in both retry arms. Intervals do not test the paired contrast.}
+\label{tab:accuracy}
+\end{table}
+
+Diagnostic-minus-generic accuracy is $1/24=0.0417$. Both arms are correct on 11 items and incorrect on 12; exactly one item is diagnostic-only correct and none generic-only correct. Thus $b=1,c=0$ and exact two-sided $p=1.0$. A single discordance cannot provide conventional significance under this test. This is inconclusive evidence, not proof of no effect or equivalence. Relative to the shared initial answer, generic repairs one of 14 failures (graph-11), and diagnostic repairs two (graph-07 and graph-11). Repair counts 1/2 and discordance counts 1/0 describe different comparisons.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Group & $n$ & Initial & Generic & Diagnostic\\
+\midrule
+Arithmetic & 8 & 3 & 3 & 3\\
+SAT & 8 & 4 & 4 & 4\\
+Graph & 8 & 3 & 4 & 5\\
+\midrule
+Easy & 12 & 8 & 9 & 10\\
+Hard & 12 & 2 & 2 & 2\\
+\bottomrule
+\end{tabular}
+\caption{Correct counts, independently recomputed by family and difficulty. These small post-execution descriptions are not separate confirmatory tests.}
+\label{tab:groups}
+\end{table}
+
+Both repairs occur on easy graph items; there is no observed repair in arithmetic, SAT, or hard items (Table~\ref{tab:groups}). Of the 14 generic retries, ten reproduce the initial raw text and 11 reproduce its parsed JSON. One shared repair and three text changes that remain incorrect show why text change cannot stand in for reasoning improvement. The initial first-error categories are five arithmetic mismatches, four unsatisfied clauses, three graph cost mismatches, and two nonoptimal paths. The final diagnostic arm retains 12 errors, not all 14 initial errors.
+
+\subsection{Measured solver resources}
+The 52 actual calls decompose as $24+14+14$, below the maximum $24+2\times24=72$. Input/output tokens total 9,500/888, summed client time is 40.8030 seconds, and experiment elapsed time is 41.3663 seconds. All 52 replies match the parent ledger's corresponding input, output, and cache counts. Cache-hit tokens total 1,536 and are a subset of input, not an additional quantity.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Actual requests & Calls & Input & Output & Client seconds\\
+\midrule
+Shared initial & 24 & 3,644 & 389 & 18.7326\\
+Generic retry & 14 & 2,804 & 252 & 11.6903\\
+Diagnostic retry & 14 & 3,052 & 247 & 10.3802\\
+\bottomrule
+\end{tabular}
+\caption{Solver requests only. Retry arms have equal call opportunities, but diagnostic uses 248 more input and five fewer output tokens. Timing is descriptive, not a controlled speed comparison.}
+\label{tab:resources}
+\end{table}
+
+\subsection{Separate artifact-gate pilot}
+A specification-derived fault-injection set contains four valid controls and 20 annotated blockers, four assigned to each gate rule. The historical full gate yields 20 true positives, four true negatives, and no false positives/negatives on this set. A defined terminal-trusting policy accepts every injected fault; a PDF-only baseline detects four of 20. Thirty evaluations per fixture yield 720 recorded timed evaluations, with median 11.58445 ms and p95 23.923825 ms. These are repeated timings of 24 fixtures, not 720 independent defects; retained aggregates lack the 720 raw samples and bind an earlier gate, not current-runtime speed. For the 20 ledgers valid enough to aggregate, the before/after unique-call token delta is zero. Leave-one-rule decisions posthoc filter the full audit rather than rerun a reduced gate. APG002/APG003 fixtures have coupled failure behavior, so this cannot establish that APG002 is redundant. This controlled coverage does not establish resistance to arbitrary corruption, scientific correctness, or reasoning gains.

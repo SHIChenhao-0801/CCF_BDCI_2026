@@ -1,0 +1,85 @@
+{
+  "stages": [
+    {
+      "stage": "replication600",
+      "original_ready_sha256": "8944f82e1e6b85fd5fe1530e7c5356274cfe36bd5878a877ef753db393e42f03",
+      "registered_before_first_call_utc": "2026-10-06T22:44:00.136696+00:00",
+      "registered_relative_file_sha256": {
+        "legacy_runner.py": "a6aacf772c2701ddc9158b423ff0243e879be87ea1c8dfd68618861eb77ffafb",
+        "legacy-dataset.json": "ef48d878b359bbd50af56a0299072ed82135f21c1c9ffd19e0ee6b2dfa077093",
+        "generator.py": "8da8f838db71ab1388127f3b3c83e14940410db0582520c9eb0928091321180b",
+        "run.py": "1bebc0f06b2835bbc87cfa6b30a73bd887fb9d5ed8b5edf8cd00e7a3c7dcab03",
+        "freeze.py": "edef373998fde35524c804b5578ee429261eb59ac6b59ad4da77736bac90c950",
+        "test_followup.py": "1840a04082353fb145d42445934211df88e92be1954c6b970d3e9b2cb57b9ce1",
+        "PROTOCOL.md": "877e2c6fbc55125493de1abd10f738d7a6100facfd35d5cabf5f33827d0f947f",
+        "prior120-PROTOCOL.md": "c654415da047767831e082bc3b21fc307e5e9789e89e35b8470bb059f11ce718",
+        "prepare.py": "203c49390b1ca8efff2588e2a5e63afe5db177b8d6352655496e176a99dad800",
+        "dataset.json": "0241523b60df12349ad2124b2a3d94a1eb145e29c26e7590609c5a5bd96c56df",
+        "manifest.json": "02bc5f0258131e44018108593cdb9ca20b99585e17e9c5ff6647b2d1b1a17042",
+        "original-inputs-before.json": "3299b2b032a169496d596314e3d9feaf11908501956792e8a3f57d935f48c12e"
+      },
+      "is_original_registration": false,
+      "kind": "DERIVED_PUBLIC_REGISTRATION_PROJECTION",
+      "original_process_result_sha256": "cb745af239029a4399d08f6474f843e44d456bc0aa04a76677cea90e2434a46a",
+      "public_execution_status": "FAILED",
+      "elapsed_seconds": 2034.625,
+      "host_operational_details_omitted": true
+    },
+    {
+      "stage": "replication600-continuation",
+      "original_ready_sha256": "b8a6ca739b2246b266d4766479d0a22c0989e10d55be3efb373229a06e0d5482",
+      "registered_before_first_call_utc": "2026-10-06T23:29:30.004893+00:00",
+      "registered_relative_file_sha256": {
+        "PROTOCOL.md": "d69ce7aaab17170e4eca551905863736c2eb4036fc130a63dceb5703aa79e121",
+        "continuation.py": "0f3eaac23a2cc20b4eb7f357373e199e06176e86a155436819ec03cf69b722b7",
+        "freeze_continuation.py": "fec1ba25603d9322ce477e191062f84be620170fb9dcdb44285b3f68453d5ea2",
+        "continuation-plan.json": "018e9660d07ccce8c7459f798dfbbafaf25cc35ff57969f0754088d240458d12"
+      },
+      "is_original_registration": false,
+      "kind": "DERIVED_PUBLIC_REGISTRATION_PROJECTION",
+      "original_process_result_sha256": "ae42f6692778a6a5173c155ac222406bde431b545c4a0f01efae28161b278d3d",
+      "public_execution_status": "FAILED",
+      "elapsed_seconds": 238.125,
+      "host_operational_details_omitted": true
+    },
+    {
+      "stage": "replication600-completion",
+      "original_ready_sha256": "d6c9b2ae70631d0f2dd68112181edb3076832ae7fa52bc850a19fb818f89b74a",
+      "registered_before_first_call_utc": "2026-10-06T23:46:19.610932+00:00",
+      "registered_relative_file_sha256": {
+        "AMENDMENT.md": "7f8d5efec9d71c28b61e53b8435e0c1fb94f9588cc3f496759f4a93f6d062de6",
+        "completion.py": "a448116560dfbc4bd411b5b689467df3a97494a1f7030fd5d53a2f9ada6b13fe",
+        "freeze_completion.py": "458242ed2c209a441c69495d7beb6674a878c44582548da878d560eab8b3ac29",
+        "completion-plan.json": "c37f75c90bfe1cb29add6d0ab212a1fa39f90177138b8fcab51f47000b09b3f9"
+      },
+      "is_original_registration": false,
+      "kind": "DERIVED_PUBLIC_REGISTRATION_PROJECTION",
+      "original_process_result_sha256": "b1f2d7b1289ff26039a1d0041fb9644a36f31042e78661f552498e433fa6a2b5",
+      "public_execution_status": "OPERATIONAL_PAUSE",
+      "elapsed_seconds": null,
+      "host_operational_details_omitted": true
+    },
+    {
+      "stage": "replication600-resume-20261008",
+      "original_ready_sha256": "403bc0e186803187bbaddc879aa8846dafe3b40c06c048f394c709c4dc1e697d",
+      "registered_before_first_call_utc": "2026-10-08T08:36:39.185895+00:00",
+      "registered_relative_file_sha256": {
+        "AMENDMENT.md": "4f0c0b0cfd1816dd4a3074956a9df5765af6474596091811e24547e3d7b714b6",
+        "resume.py": "b6e005e76d8be242da1c443055a5cccb7aa74bebbdfb3eb12c9c76b91f2492ad",
+        "freeze_resume.py": "37bad46b10ed8fd9535319ad62198ea5105bff9627306ae5def43bd4ccaadb77",
+        "test_resume.py": "4f742d5e1dc5fce431e061ef9b9dc5419de5020497ab91cc174c0c42b97cfd6a",
+        "resume-plan.json": "7eae1ff767a972c6797b12110adeaa80e97d2b145adcdd33e84c69092622b04f"
+      },
+      "is_original_registration": false,
+      "kind": "DERIVED_PUBLIC_REGISTRATION_PROJECTION",
+      "original_process_result_sha256": "15223dce1bd3cfc41ad60ca64d75ff5361bc7d7b30e5cd6243e12420a7bb1cb0",
+      "public_execution_status": "COMPLETED_WITH_DECLARED_MISSING",
+      "elapsed_seconds": 357.5610653000185,
+      "host_operational_details_omitted": true
+    }
+  ],
+  "not_a_new_registration_or_run": true,
+  "planned_items": 600,
+  "complete_items": 592,
+  "declared_missing_items": 8
+}

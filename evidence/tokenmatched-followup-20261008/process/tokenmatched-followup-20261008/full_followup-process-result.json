@@ -1,0 +1,11 @@
+{
+  "scope": "full_followup",
+  "exit_code": 0,
+  "elapsed_seconds": 3114.465533200011,
+  "started_at_utc": "2026-10-08T10:43:01.387574+00:00",
+  "ended_at_utc": "2026-10-08T11:34:55.853460+00:00",
+  "same_shared_ledger": true,
+  "ledger_reset": false,
+  "automatic_restart": false,
+  "request_policy_paused_at_end": true
+}

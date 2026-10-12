@@ -1,0 +1,11 @@
+# Fixed240 three-segment scientific replay
+
+Python 3.12 standard library only. Run `python -B replay.py --output /path/outside/bundle/result.json`. Network connections are disabled before replay. Outputs must be outside this immutable evidence directory.
+
+Three exact raw journals are combined in original order. The replay reuses existing independent audit functions to regenerate the 240 stratified tasks, check arithmetic/SAT/graph oracles, initial and retry request payloads, calibration histories and inert padding, actual provider-reported input-token matching, fixed task/arm ordering, unique request/response identities, and paired statistics. The journal retains three incomplete tasks. Calibration probe answers are excluded from scientific outcomes.
+
+The third administrative segment completed the 135 never-started tasks after prior partial results had been observed. It is an administrative amendment, not a fully preregistered confirmatory execution. The original hypothesis, instances and N=240 remain fixed. The previous 102-pair evidence and metadata are separate historical artifacts and are not overwritten. The reused375 and old600 studies are not pooled here.
+
+The primary retained population is 237 complete items of 240: full104/237, neutral93/237, discordant12/1, exact paired p=.00341796875. Conditional repair covers 150/152 observed initial errors; SAT exploration covers 56/57 with p=.453125. Missing-outcome bounds are not confidence intervals. Registered supplementary bootstrap uses 10,000 task resamples and seed20261008; its interval conditions on retained complete pairs and does not resample model generations.
+
+Raw journals, dataset and oracle are byte copies of actual evidence. The public scientific protocol preserves its scientific paragraphs while omitting internal monetary admission and execution-control paragraphs; its original source digest is retained. Existing independent audit functions are reused; the historical generator export contains only its two original pure functions and no paid runner. `copy-identity.json` records these exact source segment projections. No internal controller, admission, global paid ledger, pause policy, guard snapshot or Agent failure logs are included.

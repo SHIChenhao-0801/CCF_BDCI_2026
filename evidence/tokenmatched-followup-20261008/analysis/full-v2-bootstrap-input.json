@@ -1,0 +1,13 @@
+{
+  "cohort": "reused375",
+  "planned_n": 375,
+  "n": 271,
+  "independent_raw_audit_sha256": "92d56fdbbde8fbf5320798910019d3b2831b5535cfcf2405a2346c2c5ce45f99",
+  "contrasts": [
+    {
+      "name": "full_vs_neutral",
+      "b": 30,
+      "w": 4
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+**/Agentic Reviewer/
+**/AgenticReviewer/
+**/PaperReview-AccessToken.txt
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store

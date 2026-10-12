@@ -1,0 +1,18 @@
+{
+  "captured_at_utc": "2026-10-08T11:48:41.312510+00:00",
+  "source_sha256": "a67aaf7ae68ccf33ae9b564a0ba2e1a707e0fb83d0cf11e0cd424f7920cbec39",
+  "original_client_exit_after_sha256": "dd20788aaa07fbeca44cca78d87995d60ef44974645483cb3f14536b1fa5e6a8",
+  "before_sha256": "267459869a5673cd8fef26b2b4bf3fd9b6302a8a4036930c834586ae6cc400d3",
+  "actual_process_result_sha256": "f72f3f6a42a3cef81a9fedb5f59680315bf2136ac9975c9f432842db29e9ccee",
+  "unknown_calls_before": 13,
+  "unknown_calls_after": 14,
+  "new_unknown": 1,
+  "worst_case_unknown_charge_retained_micro_CNY": 2359296,
+  "client_response_usage_unavailable": true,
+  "late_response_reclassified_as_scientific_success": false,
+  "ledger_or_old_snapshot_modified": false,
+  "model_requests_for_seal": 0,
+  "kind": "DERIVED_PUBLIC_ROOT_SETTLEMENT_RECEIPT",
+  "source_receipt_sha256": "1d106749aa9447efd160f2661b550add763668ce27aded3f700b78f7518572cc",
+  "original_control_files_not_published": true
+}

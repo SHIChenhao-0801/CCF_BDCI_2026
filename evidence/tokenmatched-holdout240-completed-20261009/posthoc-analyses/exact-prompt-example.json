@@ -1,0 +1,280 @@
+{
+  "id": "sat-holdout240-easy-35",
+  "task": {
+    "id": "sat-holdout240-easy-35",
+    "family": "sat",
+    "difficulty": "easy",
+    "split": "independent_holdout",
+    "spec": {
+      "n": 6,
+      "clauses": [
+        [
+          3,
+          1,
+          -5
+        ],
+        [
+          1,
+          5,
+          -4
+        ],
+        [
+          6,
+          4,
+          -1
+        ],
+        [
+          6,
+          5,
+          1
+        ],
+        [
+          4,
+          -1,
+          -6
+        ],
+        [
+          1,
+          6,
+          2
+        ],
+        [
+          -2,
+          -3,
+          4
+        ],
+        [
+          -5,
+          -6,
+          -3
+        ],
+        [
+          -2,
+          6,
+          3
+        ],
+        [
+          -5,
+          -4,
+          -6
+        ],
+        [
+          -4,
+          6,
+          2
+        ],
+        [
+          -1,
+          -3,
+          2
+        ]
+      ]
+    },
+    "oracle": {
+      "assignment": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "prompt": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[3,1,-5],[1,5,-4],[6,4,-1],[6,5,1],[4,-1,-6],[1,6,2],[-2,-3,4],[-5,-6,-3],[-2,6,3],[-5,-4,-6],[-4,6,2],[-1,-3,2]]}\nOutput only the requested JSON object, without code fences or other keys.",
+    "retry_order": [
+      "full",
+      "neutral",
+      "coarse"
+    ],
+    "instance_sha256": "6d0c14a8627c2e075ef1d72a74530d007e620f327957456e52d53dfdf2361991"
+  },
+  "independent_calibration": {
+    "status": "complete_primary_pair",
+    "target_prompt_tokens": 239,
+    "padding_units": {
+      "full": 4,
+      "neutral": 19,
+      "coarse": 10
+    },
+    "coarse_missing_reason": null,
+    "SAT_ablation_status": "complete",
+    "id": "sat-holdout240-easy-35",
+    "checked_keys": [
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:initial",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:probe:full:pad0",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:probe:neutral:pad0",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:probe:full:pad4",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:probe:neutral:pad19",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:probe:coarse:pad0",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:probe:coarse:pad10",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:final:full",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:final:neutral",
+      "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:final:coarse"
+    ],
+    "probe_observations": {
+      "full": [
+        [
+          0,
+          235
+        ],
+        [
+          4,
+          239
+        ]
+      ],
+      "neutral": [
+        [
+          0,
+          220
+        ],
+        [
+          19,
+          239
+        ]
+      ],
+      "coarse": [
+        [
+          0,
+          229
+        ],
+        [
+          10,
+          239
+        ]
+      ]
+    },
+    "initial_observed": true,
+    "initial_correct": false,
+    "initial_feedback": {
+      "error": "clause_unsatisfied",
+      "clause_index": 8
+    },
+    "SAT_eligible": true,
+    "primary_pair": [
+      true,
+      false
+    ],
+    "ablation_pair": [
+      true,
+      false
+    ]
+  },
+  "initial": {
+    "call_key": "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:initial",
+    "request": {
+      "model": "deepseek-flash",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[3,1,-5],[1,5,-4],[6,4,-1],[6,5,1],[4,-1,-6],[1,6,2],[-2,-3,4],[-5,-6,-3],[-2,6,3],[-5,-4,-6],[-4,6,2],[-1,-3,2]]}\nOutput only the requested JSON object, without code fences or other keys."
+        }
+      ],
+      "max_tokens": 2048,
+      "temperature": 0,
+      "stream": false,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "started_at_utc": "2026-10-08T11:54:38.119241+00:00",
+    "status": "ok",
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 21,
+      "total_tokens": 187,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 166
+    },
+    "response_id": "2ef9ff0e-93d7-4286-a5a0-0709cf785308",
+    "response_model": "deepseek-flash",
+    "content": "{\"assignment\": [1, 1, 1, 1, 1, 1]}",
+    "latency_seconds": 1.384495300007984
+  },
+  "full": {
+    "call_key": "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:final:full",
+    "request": {
+      "model": "deepseek-flash",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[3,1,-5],[1,5,-4],[6,4,-1],[6,5,1],[4,-1,-6],[1,6,2],[-2,-3,4],[-5,-6,-3],[-2,6,3],[-5,-4,-6],[-4,6,2],[-1,-3,2]]}\nOutput only the requested JSON object, without code fences or other keys."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"assignment\": [1, 1, 1, 1, 1, 1]}"
+        },
+        {
+          "role": "user",
+          "content": "Reconsider your previous answer and return only the requested final JSON object.\nDeterministic checker feedback: {\"error\":\"clause_unsatisfied\",\"clause_index\":8}\nInert padding; ignore this line: a a a a"
+        }
+      ],
+      "max_tokens": 2048,
+      "temperature": 0,
+      "stream": false,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "started_at_utc": "2026-10-08T11:54:47.491513+00:00",
+    "status": "ok",
+    "usage": {
+      "prompt_tokens": 239,
+      "completion_tokens": 21,
+      "total_tokens": 260,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 239
+    },
+    "response_id": "dee29f96-a706-45bf-9949-9ce2d42e9f4b",
+    "response_model": "deepseek-flash",
+    "content": "{\"assignment\": [1, 1, 1, 1, 1, 0]}",
+    "latency_seconds": 1.9736568000225816
+  },
+  "neutral": {
+    "call_key": "tokenmatched-holdout240-20261008:sat-holdout240-easy-35:final:neutral",
+    "request": {
+      "model": "deepseek-flash",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Find any satisfying assignment for this CNF. Each clause is OR, clauses combine by AND, positive literals mean x_i and negative literals mean NOT x_i. Return {\"assignment\": [0 or 1 for x_1 through x_n]}. All instances are satisfiable.\nInput: {\"n\":6,\"clauses\":[[3,1,-5],[1,5,-4],[6,4,-1],[6,5,1],[4,-1,-6],[1,6,2],[-2,-3,4],[-5,-6,-3],[-2,6,3],[-5,-4,-6],[-4,6,2],[-1,-3,2]]}\nOutput only the requested JSON object, without code fences or other keys."
+        },
+        {
+          "role": "assistant",
+          "content": "{\"assignment\": [1, 1, 1, 1, 1, 1]}"
+        },
+        {
+          "role": "user",
+          "content": "Reconsider your previous answer and return only the requested final JSON object.\nDeterministic checker feedback: {}\nInert padding; ignore this line: a a a a a a a a a a a a a a a a a a a"
+        }
+      ],
+      "max_tokens": 2048,
+      "temperature": 0,
+      "stream": false,
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "started_at_utc": "2026-10-08T11:54:49.485571+00:00",
+    "status": "ok",
+    "usage": {
+      "prompt_tokens": 239,
+      "completion_tokens": 21,
+      "total_tokens": 260,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 239
+    },
+    "response_id": "09f8f76c-5c2e-4768-9733-869e36176c41",
+    "response_model": "deepseek-flash",
+    "content": "{\"assignment\": [1, 1, 1, 1, 1, 1]}",
+    "latency_seconds": 1.6542794000124559
+  }
+}

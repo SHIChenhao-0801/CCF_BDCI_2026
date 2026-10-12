@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "description": "Frozen 24-case controlled fault-injection pilot for Artifact Provenance Gate Edition 1.",
+  "composition": {
+    "valid_controls": 4,
+    "blocking_faults": 20,
+    "faults_per_rule": 4
+  },
+  "cases": [
+    {"id": "C01", "group": "CONTROL", "mutation": "none", "expected_rule": null, "expected_status": null, "expected_decision": "PASS", "should_block": false, "description": "Complete valid run with resolved citations."},
+    {"id": "C02", "group": "CONTROL", "mutation": "remove_aux", "expected_rule": "APG005", "expected_status": "SKIPPED", "expected_decision": "PASS", "should_block": false, "description": "Valid run without reliable compiled AUX evidence."},
+    {"id": "C03", "group": "CONTROL", "mutation": "zero_citations", "expected_rule": "APG005", "expected_status": "PASS", "expected_decision": "PASS", "should_block": false, "description": "Valid compiled AUX with no citation records; warning expected."},
+    {"id": "C04", "group": "CONTROL", "mutation": "duplicate_call_id", "expected_rule": "APG004", "expected_status": "PASS", "expected_decision": "PASS", "should_block": false, "description": "Valid ledger with a duplicate call ID; warning expected."},
+
+    {"id": "P01", "group": "APG001", "mutation": "missing_pdf", "expected_rule": "APG001", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Final PDF file is absent."},
+    {"id": "P02", "group": "APG001", "mutation": "empty_pdf", "expected_rule": "APG001", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Final PDF is an empty regular file."},
+    {"id": "P03", "group": "APG001", "mutation": "pdf_is_directory", "expected_rule": "APG001", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Required PDF path is a directory."},
+    {"id": "P04", "group": "APG001", "mutation": "missing_paper_directory", "expected_rule": "APG001", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Paper output directory is absent."},
+
+    {"id": "M01", "group": "APG002", "mutation": "missing_manager_state", "expected_rule": "APG002", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Manager state is absent."},
+    {"id": "M02", "group": "APG002", "mutation": "malformed_manager_json", "expected_rule": "APG002", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Manager state is malformed JSON."},
+    {"id": "M03", "group": "APG002", "mutation": "reports_not_list", "expected_rule": "APG002", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Manager reports has the wrong JSON type."},
+    {"id": "M04", "group": "APG002", "mutation": "reporting_failed", "expected_rule": "APG002", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Reporting has no successful terminal report."},
+
+    {"id": "A01", "group": "APG003", "mutation": "empty_artifact_paths", "expected_rule": "APG003", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Successful Reporting declares no artifacts."},
+    {"id": "A02", "group": "APG003", "mutation": "absolute_artifact_path", "expected_rule": "APG003", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Reporting declares an absolute Windows path."},
+    {"id": "A03", "group": "APG003", "mutation": "traversal_artifact_path", "expected_rule": "APG003", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Reporting declares a parent-directory traversal path."},
+    {"id": "A04", "group": "APG003", "mutation": "missing_artifact", "expected_rule": "APG003", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Reporting declares an in-root artifact that does not exist."},
+
+    {"id": "U01", "group": "APG004", "mutation": "missing_ledger", "expected_rule": "APG004", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Model-call ledger is absent."},
+    {"id": "U02", "group": "APG004", "mutation": "empty_ledger", "expected_rule": "APG004", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Model-call ledger contains no traceable call."},
+    {"id": "U03", "group": "APG004", "mutation": "malformed_ledger_row", "expected_rule": "APG004", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Model-call ledger contains malformed JSON."},
+    {"id": "U04", "group": "APG004", "mutation": "negative_token_count", "expected_rule": "APG004", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Model-call ledger contains a negative input-token count."},
+
+    {"id": "R01", "group": "APG005", "mutation": "one_unresolved_citation", "expected_rule": "APG005", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "One cited key has no bibcite record."},
+    {"id": "R02", "group": "APG005", "mutation": "multiple_unresolved_citations", "expected_rule": "APG005", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Multiple cited keys are unresolved."},
+    {"id": "R03", "group": "APG005", "mutation": "no_bibcite_records", "expected_rule": "APG005", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Citations exist but no key is resolved."},
+    {"id": "R04", "group": "APG005", "mutation": "invalid_utf8_aux", "expected_rule": "APG005", "expected_status": "FAIL", "expected_decision": "BLOCKED", "should_block": true, "description": "Compiled AUX cannot be decoded as UTF-8."}
+  ]
+}

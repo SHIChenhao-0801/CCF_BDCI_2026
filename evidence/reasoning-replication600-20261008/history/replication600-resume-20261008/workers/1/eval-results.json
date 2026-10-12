@@ -1,0 +1,59 @@
+[
+  {
+    "id": "sat-replication600-hard-07",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 744,
+        "content_utf8_bytes": 744
+      }
+    }
+  }
+]

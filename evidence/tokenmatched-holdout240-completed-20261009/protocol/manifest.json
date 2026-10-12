@@ -1,0 +1,25 @@
+{
+  "N": 240,
+  "cells": {
+    "arithmetic:easy": 40,
+    "arithmetic:hard": 40,
+    "sat:easy": 40,
+    "sat:hard": 40,
+    "graph:easy": 40,
+    "graph:hard": 40
+  },
+  "seeds": [
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030
+  ],
+  "old756_canonical_overlap": 0,
+  "old756_prompt_overlap": 0,
+  "independent_oracle": "operator/exhaustiveSAT/FloydWarshall",
+  "model_calls": 0,
+  "supplier_requests": 0
+}

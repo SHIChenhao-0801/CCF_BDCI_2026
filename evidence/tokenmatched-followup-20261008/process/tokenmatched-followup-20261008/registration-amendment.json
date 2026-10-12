@@ -1,0 +1,7 @@
+{
+  "status": "BEFORE_FIRST_CALL_ZEROAPI_REGISTRATION_AMENDMENT",
+  "change": "runner additionally validates historical scorer/bundle/audit SHA before default or paid path",
+  "previous_ready_preserved": "prior-unfrozen-candidate/first-zeroapi-ready.json",
+  "model_calls": 0,
+  "supplier_requests": 0
+}

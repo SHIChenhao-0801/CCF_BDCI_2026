@@ -1,0 +1,41 @@
+{
+  "status": "STOPPED_PARTIAL",
+  "stop_code": "FOLLOWUP_SETTLED_CONTROL_CAP_REACHED",
+  "failure_type": null,
+  "scope": "full_followup",
+  "selected_cases": 375,
+  "processed_cases": 272,
+  "unattempted_or_interrupted_cases": 103,
+  "elapsed_seconds": 3114.184834600019,
+  "no_correctness_or_significance_used_for_stopping": true,
+  "automatic_restart": false,
+  "science": {
+    "primary_full_vs_neutral": {
+      "planned": 375,
+      "valid": 271,
+      "not_complete": 104,
+      "full_only_correct": 30,
+      "control_only_correct": 4,
+      "difference": 0.0959409594095941,
+      "exact_McNemar_two_sided": 6.16488978266716e-06,
+      "planned_possible_outcome_difference_bounds_not_CI": [
+        -0.208,
+        0.3466666666666667
+      ]
+    },
+    "exploratory_SAT_full_vs_coarse": {
+      "planned": 166,
+      "valid": 62,
+      "not_complete": 104,
+      "full_only_correct": 7,
+      "control_only_correct": 11,
+      "difference": -0.06451612903225806,
+      "exact_McNemar_two_sided": 0.480682373046875,
+      "planned_possible_outcome_difference_bounds_not_CI": [
+        -0.6506024096385542,
+        0.6024096385542169
+      ]
+    },
+    "scope": "conditional followup on reused historical initial-error cases; no pooled or overall592 accuracy"
+  }
+}

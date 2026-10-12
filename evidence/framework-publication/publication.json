@@ -1,0 +1,43 @@
+{
+  "status": "PUBLISHED_SOURCE12",
+  "recorded_at_utc": "2026-10-09T11:24:49.860515+00:00",
+  "published_commit": "dae143d9ac19cb5e05864d459b8cd89de96de908",
+  "published_tree": "e8e39118469a369717871cd8d7544defb39c6045",
+  "parent_commit": "3c1fa5e483060d211b2f2ce0267f995615de03e7",
+  "pr_url": "https://gitcode.com/openJiuwen/jiuwenswarm/pull/7722",
+  "source_files": 4925,
+  "tests_unique": 444,
+  "tests_passed": 442,
+  "tests_skipped": 2,
+  "strict_replay_commands": 24,
+  "head_readback_exact": true,
+  "body_update_present": true,
+  "body_readback_exact": true,
+  "body_note": "Source12 facts and exact head verified present; surrounding bot-controlled body is not asserted identical.",
+  "force_push": false,
+  "merged": false,
+  "CI_success_claimed": false,
+  "TEAM_writes": 0,
+  "model_calls": 0,
+  "patch_sha256": "a41e6df207e952d020c6b8fb999be6d8cf2f926aad447e353e23bfc4ad42be55",
+  "source_manifest_sha256": "78119c00442a45f49c598cc0a55f3871247b4e4bf53fe16296e2c01e5eaab5ca",
+  "changed_paths": [
+    "jiuwenswarm/agents/harness/common/rsi/artifact_adapter.py",
+    "jiuwenswarm/agents/harness/common/rsi/artifact_provenance_gate.py",
+    "jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py",
+    "jiuwenswarm/agents/harness/common/rsi/paper_provider.py",
+    "jiuwenswarm/agents/harness/common/rsi/recovery.py",
+    "scripts/deepseek_budget_proxy.py",
+    "scripts/model_compatibility_smoke.py",
+    "tests/unit_tests/rsi/test_deepseek_budget_proxy.py",
+    "tests/unit_tests/rsi/test_iclr_reporting_guidance.py",
+    "tests/unit_tests/rsi/test_workspace_recovery.py"
+  ],
+  "labels": [
+    "sig/jiuwenswarm",
+    "stat/needs-squash",
+    "openJiuwen-cla/yes",
+    "ci-failed",
+    "AI-Reviewed"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "scientific_scope": "Registered-after-observed120 independent600 replication; not full Agent workflow",
+  "worker_exit_code": 1,
+  "elapsed_seconds": 2034.625,
+  "completed_at": "2026-10-07T07:22:27.287787+08:00",
+  "flight_interruption": false
+}

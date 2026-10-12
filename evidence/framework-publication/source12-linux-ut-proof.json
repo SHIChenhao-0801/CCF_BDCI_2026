@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-09T11:28:52.861916+00:00",
+  "http_status": 200,
+  "last_modified": "Fri, 09 Oct 2026 04:57:06 GMT",
+  "source12_commit": "dae143d9ac19cb5e05864d459b8cd89de96de908",
+  "source12_hash_embedded": false,
+  "sha256": "065be9cfcb8e8ab31c34a863f8cdf3007f42e3b990d630281797769e90d484b0",
+  "newest_bot_at": "2026-10-09T19:18:35+08:00",
+  "upstream_new_source12_success_claimed": false,
+  "scope": "Report fetched after source12 commit. Last-Modified and summary do not alone bind exact source commit.",
+  "historical_success_commit": "3c1fa5e483060d211b2f2ce0267f995615de03e7",
+  "historical_passed": 13550,
+  "historical_skipped": 25,
+  "historical_failures": 0,
+  "historical_errors": 0,
+  "boundary": "Historical SOURCE11 Linux UT success is not SOURCE12 success. SOURCE12 hash was absent from the fetched HTML."
+}

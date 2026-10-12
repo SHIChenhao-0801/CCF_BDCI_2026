@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETED_WITH_DECLARED_MISSING",
+  "worker_exit_code": 0,
+  "started_at_utc": "2026-10-08T08:38:07.006618+00:00",
+  "ended_at_utc": "2026-10-08T08:44:04.567622+00:00",
+  "elapsed_seconds": 357.5610653000185,
+  "administrative_worker_count": 2,
+  "budget_ledger_reset": false
+}

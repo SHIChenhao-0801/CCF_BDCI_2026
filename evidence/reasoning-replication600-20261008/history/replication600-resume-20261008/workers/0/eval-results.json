@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sat-replication600-easy-16",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-16:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-16:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-16:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-16:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  }
+]

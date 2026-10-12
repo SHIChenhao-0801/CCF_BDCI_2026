@@ -1,0 +1,52 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Huang et~al.(2023)Huang, Chen, Mishra, Zheng, Yu, Song, and
+  Zhou]{jie2023fd36c5c8}
+Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu~Steven Zheng, Adams~Wei Yu,
+  Xinying Song, and Denny Zhou.
+\newblock Large language models cannot self-correct reasoning yet.
+\newblock \emph{arXiv}, 2023.
+\newblock \doi{10.48550/arxiv.2310.01798}.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe,
+  Alon, Dziri, Prabhumoye, Yang, Gupta, Majumder, Hermann, Welleck,
+  Yazdanbakhsh, and Clark]{aman2023820a9974}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
+  Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank
+  Gupta, Bodhisattwa~Prasad Majumder, Katherine Hermann, Sean Welleck, Amir
+  Yazdanbakhsh, and Peter Clark.
+\newblock Self-refine: Iterative refinement with self-feedback.
+\newblock \emph{arXiv}, 2023.
+\newblock \doi{10.48550/arxiv.2303.17651}.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Berman, Gopinath, Narasimhan, and
+  Yao]{noah2023b7573199}
+Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik
+  Narasimhan, and Shunyu Yao.
+\newblock Reflexion: Language agents with verbal reinforcement learning.
+\newblock \emph{arXiv}, 2023.
+\newblock \doi{10.48550/arxiv.2303.11366}.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
+  and Zhou]{jason20224a94a8d1}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
+  Ed~Chi, Quoc Le, and Denny Zhou.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock \emph{arXiv}, 2022.
+\newblock \doi{10.48550/arxiv.2201.11903}.
+
+\bibitem[Yao et~al.(2022)Yao, Zhao, Yu, Du, Shafran, Narasimhan, and
+  Cao]{shunyu2022f4fcac2c}
+Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan,
+  and Yuan Cao.
+\newblock React: Synergizing reasoning and acting in language models.
+\newblock \emph{arXiv}, 2022.
+\newblock \doi{10.48550/arxiv.2210.03629}.
+
+\end{thebibliography}

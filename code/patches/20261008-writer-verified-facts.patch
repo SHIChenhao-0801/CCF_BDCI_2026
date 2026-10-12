@@ -1,0 +1,144 @@
+diff --git a/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py b/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
+--- a/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
++++ b/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
+@@ -37,6 +37,32 @@
+ )
+ 
+ 
++def _writer_facts(metrics):
++    # Keep exact nested findings; enumeration stays in the untouched results.json.
++    def compact(value):
++        if isinstance(value, dict):
++            return {key: compact(item) for key, item in value.items()
++                    if key != "enumerated_possible_missing_outcomes"}
++        if isinstance(value, list):
++            return [compact(item) for item in value]
++        return value
++
++    facts = compact({key: value for key, value in metrics.items()
++                     if key not in {"length_match_audit", "diagnostic_minus_matched_prompt_tokens"}})
++    differences = metrics.get("diagnostic_minus_matched_prompt_tokens")
++    if differences:
++        facts["prompt_token_difference_summary"] = {
++            "count": len(differences), "minimum": min(differences), "maximum": max(differences),
++            "mean": sum(differences) / len(differences), "total": sum(differences),
++        }
++    rows = metrics.get("length_match_audit")
++    if rows is not None:
++        facts["decoded_length_match_summary"] = {
++            "count": len(rows), "equal_count": sum(row.get("matched_lengths_equal") is True for row in rows),
++        }
++    return facts
++
++
+ class IclrReportingAgent(ReportingAgent):
+     def __init__(self, config, *, template_dir: str | Path, model=None):
+         super().__init__(config, model=model)
+@@ -62,6 +88,16 @@
+             and not isinstance(variants[0].metrics.get(name), bool) for name in names
+         ):
+             return evidence
++        metrics = variants[0].metrics
++        if isinstance(metrics.get("lengthmatched_accuracy"), (int, float)) and not isinstance(
++            metrics.get("lengthmatched_accuracy"), bool
++        ):
++            names += ("lengthmatched_accuracy",)
++        evidence["verified_facts"] = (
++            "Exact host-computed facts for drafting; raw rows and allocations remain in results.json. "
++            "These facts suffice for numeric claims; draft sections now without rereading raw enumeration.\n"
++            + json.dumps(_writer_facts(metrics), ensure_ascii=False, indent=2)
++        )
+         result = inputs.result.model_copy(deep=True)
+         result.variants[0].metrics = {name: result.variants[0].metrics[name] for name in names}
+         if figure_path is not None:
+diff --git a/tests/unit_tests/rsi/test_iclr_reporting.py b/tests/unit_tests/rsi/test_iclr_reporting.py
+--- a/tests/unit_tests/rsi/test_iclr_reporting.py
++++ b/tests/unit_tests/rsi/test_iclr_reporting.py
+@@ -529,3 +529,87 @@
+     assert _agent_type()._build_evidence_blocks(inputs, {}, None, bib, figure) == baseline
+     assert figure.read_bytes() == b"Existing parent figure"
+     assert inputs.model_dump_json() == original
++
++
++def test_writer_exact_facts_preserve_nested_findings_without_item_enumeration():
++    inputs = _display_reporting_input()
++    metrics = inputs.result.variants[0].metrics
++    metrics.update({
++        "correct_counts": {"initial": 217, "verifiedretry": 271, "lengthmatchedretry": 241},
++        "cell_counts": {"sat:easy": {"verifiedretry": 47}},
++        "cell_denominators": {"sat:easy": 99},
++        "primary_diagnostic_vs_lengthmatched": {"diagnostic_only_correct": 32, "control_only_correct": 2},
++        "missing_pair_worst_case_sensitivity": {"planned_denominator": 600, "comparisons": {
++            "primary": {"paired_difference_full600_range": [0.03666666666666667, 0.06333333333333334],
++                        "enumerated_possible_missing_outcomes": [{"missing_diagnostic_only": 0}] * 45}}},
++        "diagnostic_minus_matched_prompt_tokens": [3, 10, 6],
++        "length_match_audit": [{"id": "retained-raw-id", "matched_lengths_equal": True}] * 375,
++        "historical_usage_all_successful": {"input_tokens": 325449, "cache_hit_tokens": 36480},
++        "prior120_separate_context": {"not_pooled": True, "p": 0.453125},
++        "claim_scope": "One model; decoded length is NOT token equivalent",
++    })
++    original = inputs.model_dump_json()
++    known = lint.known_numbers(inputs.result)
++    evidence = _agent_type()._build_evidence_blocks(inputs, {}, None, Bibliography("", {}, set()), None)
++    facts = json.loads(evidence["verified_facts"].split("\n", 1)[1])
++    assert facts["correct_counts"] == metrics["correct_counts"]
++    assert facts["cell_counts"] == metrics["cell_counts"]
++    assert facts["cell_denominators"] == metrics["cell_denominators"]
++    assert facts["primary_diagnostic_vs_lengthmatched"] == metrics["primary_diagnostic_vs_lengthmatched"]
++    assert facts["missing_pair_worst_case_sensitivity"]["comparisons"]["primary"] == {
++        "paired_difference_full600_range": [0.03666666666666667, 0.06333333333333334]}
++    assert facts["prompt_token_difference_summary"] == {"count": 3, "minimum": 3, "maximum": 10, "mean": 19 / 3, "total": 19}
++    assert facts["decoded_length_match_summary"] == {"count": 375, "equal_count": 375}
++    assert facts["historical_usage_all_successful"] == metrics["historical_usage_all_successful"]
++    assert facts["prior120_separate_context"] == metrics["prior120_separate_context"]
++    assert facts["claim_scope"] == metrics["claim_scope"]
++    assert "enumerated_possible_missing_outcomes" not in evidence["verified_facts"]
++    assert "retained-raw-id" not in evidence["verified_facts"]
++    assert inputs.model_dump_json() == original
++    assert lint.known_numbers(inputs.result) == known
++
++
++def test_primary_lengthmatched_control_reaches_real_figure_and_table(tmp_path, monkeypatch):
++    import matplotlib
++    matplotlib.use("Agg")
++    import matplotlib.pyplot as plt
++    axes = []
++    real_subplots = plt.subplots
++    def capture(*args, **kwargs):
++        fig, ax = real_subplots(*args, **kwargs)
++        axes.append(ax)
++        return fig, ax
++    monkeypatch.setattr(plt, "subplots", capture)
++    inputs = _display_reporting_input()
++    inputs.result.variants[0].metrics["lengthmatched_accuracy"] = 241 / 592
++    original = inputs.model_dump_json()
++    evidence = _agent_type()._build_evidence_blocks(inputs, {}, None, Bibliography("", {}, set()), tmp_path / "results.pdf")
++    assert "lengthmatched_accuracy" in [label.get_text() for label in axes[-1].get_xticklabels()]
++    assert len(axes[-1].patches) == 4
++    assert 241 / 592 in [bar.get_height() for bar in axes[-1].patches]
++    assert r"lengthmatched\_accuracy" in evidence["results"]
++    assert r"\begin{tabular}{lrrrr}" in evidence["results"]
++    assert inputs.model_dump_json() == original
++
++
++def test_sdk_manifest_bibliography_recovers_keys_offline_and_rejects_unknown(tmp_path, monkeypatch):
++    from openjiuwen.rsi.artifact_rsi.paper_opt.auto_research.modules.reporting import bibliography
++    summary = tmp_path / "PROTOCOL.md"
++    summary.write_text("Existing protocol with BibTeX text is not a survey-source record", encoding="utf-8")
++    source = tmp_path / "source.html"
++    source.write_text("<html>Retained local source</html>", encoding="utf-8")
++    assert bibliography.build_bibliography(summary, network_enabled=False).known_keys == set()
++    (tmp_path / "source-manifest.json").write_text(json.dumps({"sources": [{
++        "title": "Verified local source", "url": "https://example.org/retained-source", "local_path": str(source),
++        "citation": {"authors": ["Researcher Example"], "year": "2023", "venue": "Retained venue", "doi": "10.1234/retained"}
++    }]}), encoding="utf-8")
++    def forbid_network(*args, **kwargs):
++        assert kwargs["network_enabled"] is False
++        return None
++    monkeypatch.setattr(bibliography, "try_enrich_from_network", forbid_network)
++    bib = bibliography.build_bibliography(summary, network_enabled=False)
++    assert len(bib.known_keys) == 1
++    key = next(iter(bib.known_keys))
++    assert "Verified local source" in bib.bib_text
++    assert lint.check_citations(r"\cite{" + key + "}", bib.known_keys) == []
++    assert lint.check_citations(r"\cite{unknown}", bib.known_keys)

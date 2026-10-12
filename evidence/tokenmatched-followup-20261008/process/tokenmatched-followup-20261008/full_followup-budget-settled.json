@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "model": "deepseek-flash",
+    "budget_cny": "206.696064",
+    "input_cny_per_million": "2",
+    "output_cny_per_million": "8",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 32768
+  },
+  "charged_micro_cny": 191062568,
+  "reserved_calls": 6214,
+  "settled_calls": 6214,
+  "unmetered_calls": 14,
+  "active_reservations": {},
+  "updated_at": "2026-10-08T11:47:01.451572+00:00",
+  "public_projection": {
+    "kind": "DERIVED_PUBLIC_SEALED_CONTROL_AGGREGATE",
+    "source_sha256": "a67aaf7ae68ccf33ae9b564a0ba2e1a707e0fb83d0cf11e0cd424f7920cbec39",
+    "original_active_count": 0,
+    "original_active_total_micro_CNY": 0,
+    "reservation_owner_IDs_omitted": true,
+    "private_live_ledger_not_copied": true,
+    "not_vendor_invoice": true
+  }
+}

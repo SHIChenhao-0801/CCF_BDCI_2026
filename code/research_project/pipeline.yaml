@@ -1,0 +1,50 @@
+openjiuwen:
+  provider: OpenAI
+  model: deepseek-flash
+  base_url: http://127.0.0.1:19081/v1
+  timeout: 180
+manager:
+  max_iterations: 8
+  max_rounds: 12
+  max_survey_calls: 0
+  max_code_retries: 1
+  max_design_revisions: 1
+  max_execution_retries: 1
+  max_decision_retries: 1
+  max_reporting_retries: 1
+  max_history_chars: 12000
+  max_report_chars: 6000
+  excerpt_chars: 3000
+  modules:
+    topic_survey: false
+    experiment_design: true
+    code_implementation: true
+    experiment_execution: true
+    reflection: true
+    reporting: true
+logging:
+  enabled: true
+  level: INFO
+  console: false
+  content_mode: redacted
+  max_field_chars: 3000
+topic_survey:
+  search_scope: domestic
+experiment_design:
+  max_iterations: 12
+code_implementation:
+  prepared_source_dir: ./prepared-input
+experiment_execution:
+  timeout_seconds: 180
+  max_transient_retries: 0
+reflection:
+  max_iterations: 6
+reporting:
+  template_dir: ./iclr-template
+  max_iterations: 64
+  timeout: 1200
+  latex_preflight: true
+  latex_preflight_timeout: 10
+  bibliography_timeout: 5
+  method_figure:
+    enabled: false

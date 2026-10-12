@@ -1,0 +1,91 @@
+{
+  "status": "RECOMPUTED_FROM_FOUR_USAGE_LEDGERS_AND_SETTLED_BUDGET_DIFFERENCES",
+  "checked_at_utc": "2026-10-09T03:50:56.089174+00:00",
+  "settled_upstream_requests": 1006,
+  "known_usage_requests": 1003,
+  "unknown_usage_requests": 3,
+  "local_rejected_requests_excluded": 5,
+  "known_input_tokens": 8716154,
+  "known_output_tokens": 146858,
+  "known_total_tokens": 8863012,
+  "cache_hit_input_subset": 7693176,
+  "unknown_tokens_not_imputed": true,
+  "conservative_control_micro_cny": 25685060,
+  "known_control_micro_cny": 18607172,
+  "unknown_worst_case_micro_cny": 7077888,
+  "control_is_not_vendor_invoice": true,
+  "vendor_key_checkpoint_cny": "11.17",
+  "checkpoint_date": "2026-10-09 09:25 Asia/Shanghai",
+  "checkpoint_plus_new_control_upper_estimate_cny": "36.855060",
+  "authorized_project_cap_cny": "40",
+  "shared_unknown_requests_before": 17,
+  "shared_unknown_requests_after": 20,
+  "groups": [
+    {
+      "group": "authoring-1",
+      "settled_upstream_requests": 99,
+      "known_usage_requests": 98,
+      "unknown_usage_requests": 1,
+      "local_rejected_requests_excluded": 3,
+      "known_tokens": {
+        "input": 3511450,
+        "output": 40269,
+        "cache_hit": 3196032
+      },
+      "conservative_control_micro_cny": 9704348,
+      "known_control_micro_cny": 7345052,
+      "wall_seconds": 608.2360488999984,
+      "source_usage_ledger_sha256": "e893acdeb80a5872310dfeada51600539ea3d8fc1f6accd7649cc896bbee4ec3"
+    },
+    {
+      "group": "holdout-completion",
+      "settled_upstream_requests": 753,
+      "known_usage_requests": 753,
+      "unknown_usage_requests": 0,
+      "local_rejected_requests_excluded": 0,
+      "known_tokens": {
+        "input": 163706,
+        "output": 6427,
+        "cache_hit": 24440
+      },
+      "conservative_control_micro_cny": 378828,
+      "known_control_micro_cny": 378828,
+      "wall_seconds": 1143.6797752999992,
+      "source_usage_ledger_sha256": "034cb1e3e5d5bf485b3eb002bfa5617b8b6115a9efa1621c286692a1cd614e0d"
+    },
+    {
+      "group": "authoring-2",
+      "settled_upstream_requests": 88,
+      "known_usage_requests": 88,
+      "unknown_usage_requests": 0,
+      "local_rejected_requests_excluded": 0,
+      "known_tokens": {
+        "input": 2320000,
+        "output": 44105,
+        "cache_hit": 1886208
+      },
+      "conservative_control_micro_cny": 4992840,
+      "known_control_micro_cny": 4992840,
+      "wall_seconds": 410.8538008000178,
+      "source_usage_ledger_sha256": "b6b165b98445032762529d5cc9b1d30b26f4362cb4c24b3a37a18db60ea349e7"
+    },
+    {
+      "group": "authoring-3",
+      "settled_upstream_requests": 66,
+      "known_usage_requests": 64,
+      "unknown_usage_requests": 2,
+      "local_rejected_requests_excluded": 2,
+      "known_tokens": {
+        "input": 2720998,
+        "output": 56057,
+        "cache_hit": 2586496
+      },
+      "conservative_control_micro_cny": 10609044,
+      "known_control_micro_cny": 5890452,
+      "wall_seconds": 711.9832655999926,
+      "source_usage_ledger_sha256": "914b9b8ef94af794c41603713d1164132c8e80943adb5a9e668a37f4ea7326f5"
+    }
+  ],
+  "resource_calls_sha256": "a60b1b8fb39826e1e2c3e8efd00ea5cd90b32f0621621193e25e7488a51564ce",
+  "model_calls_for_reporting": 0
+}

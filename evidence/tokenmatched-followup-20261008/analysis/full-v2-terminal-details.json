@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "study_snapshot_only": true,
+  "primary_cells": [
+    {
+      "family": "arithmetic",
+      "difficulty": "easy",
+      "planned": 34,
+      "state_counts": {
+        "complete_primary_pair": 34
+      },
+      "full_correct": 1,
+      "neutral_correct": 0,
+      "valid": 34,
+      "full_only_correct": 1,
+      "control_only_correct": 0,
+      "difference": 0.029411764705882353,
+      "exact_two_sided_McNemar": 1.0,
+      "planned_possible_outcome_bounds_not_CI": [
+        0.029411764705882353,
+        0.029411764705882353
+      ]
+    },
+    {
+      "family": "arithmetic",
+      "difficulty": "hard",
+      "planned": 95,
+      "state_counts": {
+        "complete_primary_pair": 95
+      },
+      "full_correct": 0,
+      "neutral_correct": 0,
+      "valid": 95,
+      "full_only_correct": 0,
+      "control_only_correct": 0,
+      "difference": 0.0,
+      "exact_two_sided_McNemar": 1.0,
+      "planned_possible_outcome_bounds_not_CI": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "graph",
+      "difficulty": "easy",
+      "planned": 39,
+      "state_counts": {
+        "complete_primary_pair": 39
+      },
+      "full_correct": 22,
+      "neutral_correct": 13,
+      "valid": 39,
+      "full_only_correct": 10,
+      "control_only_correct": 1,
+      "difference": 0.23076923076923078,
+      "exact_two_sided_McNemar": 0.01171875,
+      "planned_possible_outcome_bounds_not_CI": [
+        0.23076923076923078,
+        0.23076923076923078
+      ]
+    },
+    {
+      "family": "graph",
+      "difficulty": "hard",
+      "planned": 41,
+      "state_counts": {
+        "complete_primary_pair": 41
+      },
+      "full_correct": 9,
+      "neutral_correct": 5,
+      "valid": 41,
+      "full_only_correct": 4,
+      "control_only_correct": 0,
+      "difference": 0.0975609756097561,
+      "exact_two_sided_McNemar": 0.125,
+      "planned_possible_outcome_bounds_not_CI": [
+        0.0975609756097561,
+        0.0975609756097561
+      ]
+    },
+    {
+      "family": "sat",
+      "difficulty": "easy",
+      "planned": 71,
+      "state_counts": {
+        "complete_primary_pair": 62,
+        "missing": 1,
+        "unattempted_or_interrupted": 8
+      },
+      "full_correct": 16,
+      "neutral_correct": 4,
+      "valid": 62,
+      "full_only_correct": 15,
+      "control_only_correct": 3,
+      "difference": 0.1935483870967742,
+      "exact_two_sided_McNemar": 0.007537841796875,
+      "planned_possible_outcome_bounds_not_CI": [
+        0.04225352112676056,
+        0.29577464788732394
+      ]
+    },
+    {
+      "family": "sat",
+      "difficulty": "hard",
+      "planned": 95,
+      "state_counts": {
+        "unattempted_or_interrupted": 95
+      },
+      "full_correct": 0,
+      "neutral_correct": 0,
+      "valid": 0,
+      "full_only_correct": 0,
+      "control_only_correct": 0,
+      "difference": null,
+      "exact_two_sided_McNemar": null,
+      "planned_possible_outcome_bounds_not_CI": [
+        -1.0,
+        1.0
+      ]
+    }
+  ],
+  "full_usage": {
+    "starts": 1792,
+    "ok": 1791,
+    "error": 1,
+    "input": 335128,
+    "output": 9445,
+    "cache_hit": 1006,
+    "known_control_CNY": "0.745816"
+  },
+  "pilot_usage": {
+    "starts": 28,
+    "ok": 28,
+    "error": 0,
+    "input": 6262,
+    "output": 28,
+    "cache_hit": 768,
+    "known_control_CNY": "0.012748"
+  },
+  "all_usage": {
+    "starts": 1820,
+    "ok": 1819,
+    "error": 1,
+    "input": 341390,
+    "output": 9473,
+    "cache_hit": 1774,
+    "known_control_CNY": "0.758564"
+  },
+  "full_successful_usage_by_phase": {
+    "probe": {
+      "starts": 1188,
+      "ok": 1187,
+      "error": 1,
+      "input": 220223,
+      "output": 1187,
+      "cache_hit": 256,
+      "known_control_CNY": "0.449942"
+    },
+    "final": {
+      "starts": 604,
+      "ok": 604,
+      "error": 0,
+      "input": 114905,
+      "output": 8258,
+      "cache_hit": 750,
+      "known_control_CNY": "0.295874"
+    }
+  },
+  "actual_final_matching": {
+    "primary_pairs": 271,
+    "SAT_triplets": 62,
+    "final_responses": 604,
+    "min_prompt_tokens": 117,
+    "max_prompt_tokens": 266,
+    "every_valid_primary_actual_final_usage_matched": true,
+    "every_valid_SAT_triplet_actual_final_usage_matched": true
+  },
+  "all_scientific_missing_family_distribution": {
+    "sat": 104
+  },
+  "missing_ids": [
+    "sat-replication600-easy-03",
+    "sat-replication600-easy-21",
+    "sat-replication600-easy-32",
+    "sat-replication600-easy-87",
+    "sat-replication600-easy-97",
+    "sat-replication600-easy-70",
+    "sat-replication600-easy-86",
+    "sat-replication600-easy-94",
+    "sat-replication600-easy-100",
+    "sat-replication600-hard-99",
+    "sat-replication600-hard-26",
+    "sat-replication600-hard-11",
+    "sat-replication600-hard-77",
+    "sat-replication600-hard-68",
+    "sat-replication600-hard-51",
+    "sat-replication600-hard-50",
+    "sat-replication600-hard-93",
+    "sat-replication600-hard-12",
+    "sat-replication600-hard-78",
+    "sat-replication600-hard-90",
+    "sat-replication600-hard-80",
+    "sat-replication600-hard-81",
+    "sat-replication600-hard-61",
+    "sat-replication600-hard-58",
+    "sat-replication600-hard-24",
+    "sat-replication600-hard-45",
+    "sat-replication600-hard-09",
+    "sat-replication600-hard-21",
+    "sat-replication600-hard-05",
+    "sat-replication600-hard-07",
+    "sat-replication600-hard-74",
+    "sat-replication600-hard-47",
+    "sat-replication600-hard-37",
+    "sat-replication600-hard-76",
+    "sat-replication600-hard-66",
+    "sat-replication600-hard-15",
+    "sat-replication600-hard-85",
+    "sat-replication600-hard-32",
+    "sat-replication600-hard-34",
+    "sat-replication600-hard-63",
+    "sat-replication600-hard-72",
+    "sat-replication600-hard-04",
+    "sat-replication600-hard-84",
+    "sat-replication600-hard-10",
+    "sat-replication600-hard-71",
+    "sat-replication600-hard-33",
+    "sat-replication600-hard-55",
+    "sat-replication600-hard-03",
+    "sat-replication600-hard-22",
+    "sat-replication600-hard-59",
+    "sat-replication600-hard-95",
+    "sat-replication600-hard-82",
+    "sat-replication600-hard-79",
+    "sat-replication600-hard-57",
+    "sat-replication600-hard-06",
+    "sat-replication600-hard-42",
+    "sat-replication600-hard-62",
+    "sat-replication600-hard-43",
+    "sat-replication600-hard-38",
+    "sat-replication600-hard-14",
+    "sat-replication600-hard-87",
+    "sat-replication600-hard-44",
+    "sat-replication600-hard-100",
+    "sat-replication600-hard-01",
+    "sat-replication600-hard-36",
+    "sat-replication600-hard-98",
+    "sat-replication600-hard-08",
+    "sat-replication600-hard-46",
+    "sat-replication600-hard-69",
+    "sat-replication600-hard-53",
+    "sat-replication600-hard-30",
+    "sat-replication600-hard-31",
+    "sat-replication600-hard-20",
+    "sat-replication600-hard-02",
+    "sat-replication600-hard-49",
+    "sat-replication600-hard-54",
+    "sat-replication600-hard-91",
+    "sat-replication600-hard-39",
+    "sat-replication600-hard-40",
+    "sat-replication600-hard-64",
+    "sat-replication600-hard-35",
+    "sat-replication600-hard-13",
+    "sat-replication600-hard-86",
+    "sat-replication600-hard-25",
+    "sat-replication600-hard-83",
+    "sat-replication600-hard-65",
+    "sat-replication600-hard-18",
+    "sat-replication600-hard-56",
+    "sat-replication600-hard-97",
+    "sat-replication600-hard-60",
+    "sat-replication600-hard-67",
+    "sat-replication600-hard-27",
+    "sat-replication600-hard-23",
+    "sat-replication600-hard-89",
+    "sat-replication600-hard-70",
+    "sat-replication600-hard-73",
+    "sat-replication600-hard-16",
+    "sat-replication600-hard-29",
+    "sat-replication600-hard-19",
+    "sat-replication600-hard-17",
+    "sat-replication600-hard-28",
+    "sat-replication600-hard-48",
+    "sat-replication600-hard-75",
+    "sat-replication600-hard-92"
+  ],
+  "raw_timeout_ids": [
+    "sat-replication600-easy-03"
+  ],
+  "all_phase_calls_control_CNY": "3.117860",
+  "terminal_audit_sha256": "92d56fdbbde8fbf5320798910019d3b2831b5535cfcf2405a2346c2c5ce45f99",
+  "interpretation": "Conditional recycled-initial-error followup; incomplete budget stop; complete-pair result is not an independent N375 validation or whole375 superiority."
+}

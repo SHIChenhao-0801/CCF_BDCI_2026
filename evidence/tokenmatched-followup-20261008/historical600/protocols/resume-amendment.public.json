@@ -1,0 +1,17 @@
+{
+  "kind": "DERIVED_PUBLIC_AMENDMENT_PROJECTION",
+  "original_sha256": "4f0c0b0cfd1816dd4a3074956a9df5765af6474596091811e24547e3d7b714b6",
+  "operational_details_omitted": true,
+  "scientific_constraints": {
+    "same_registered_dataset": true,
+    "no_scoring_or_prompt_change": true,
+    "never_reissue_prior_started_error_or_observed_keys": true,
+    "historically_attempted_items": 420,
+    "historically_declared_missing_items": 8,
+    "only_previously_unattempted_items_resumed": 180,
+    "administrative_workers": 2,
+    "analysis_complete_case_denominator": 592,
+    "original_registered600_remains_failed": true,
+    "missing_at_random_not_assumed": true
+  }
+}

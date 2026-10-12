@@ -1,0 +1,14 @@
+{
+  "status": "PASS_FULL_RSI_REGRESSION_SOURCE12",
+  "unique_tests": 444,
+  "passed": 442,
+  "skipped": 2,
+  "failed": 0,
+  "errors": 0,
+  "exit_code": 0,
+  "source_files": 4925,
+  "paid_API_calls": 0,
+  "duration_seconds": 55.5150000000001,
+  "original_verification_sha256": "63e5b97e45511826b7787fbe7f97e41d586d4edbfed1ad88f766eadbe6f48ded",
+  "scope": "Local SOURCE12 tests; Windows symbolic-link tests skipped. No new paid Agent workflow claimed."
+}

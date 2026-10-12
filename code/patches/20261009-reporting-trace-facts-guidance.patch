@@ -1,0 +1,38 @@
+diff --git a/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py b/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
+--- a/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
++++ b/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
+@@ -28,0 +29,5 @@
++    "Configured enabled modules do not prove actual execution; describe configured architecture separately from supplied actual run reports. "
++    "Without a supplied actual Reflection report, do not claim this run executed Reflection; identify it only as an optional architecture stage. "
++    "Use verified_facts to identify completed input-token matching; do not describe completed controls as future work, and distinguish them from output-length or compute matching. "
++    "Shared initial-correct responses contribute zero to a paired arm contrast; do not attribute a full-versus-control advantage to an initial policy shared by both arms. "
++    "Identical McNemar p-values may result from identical discordant counts; do not infer inheritance or absent recomputation from p-value equality, and rely on actual Execution evidence. "
+diff --git a/tests/unit_tests/rsi/test_iclr_reporting_guidance.py b/tests/unit_tests/rsi/test_iclr_reporting_guidance.py
+--- a/tests/unit_tests/rsi/test_iclr_reporting_guidance.py
++++ b/tests/unit_tests/rsi/test_iclr_reporting_guidance.py
+@@ -50,0 +51,25 @@
++
++
++@pytest.mark.asyncio
++async def test_actual_writer_prompts_bind_execution_and_completed_control_facts(tmp_path, monkeypatch):
++    from openjiuwen.core.foundation.llm import Model
++    from openjiuwen.core.foundation.llm.schema.config import ModelClientConfig, ModelRequestConfig
++    from openjiuwen.rsi.artifact_rsi.paper_opt.auto_research.common import workspace
++
++    monkeypatch.setattr(workspace, '_PROJECT_ROOT', tmp_path / 'run')
++    model = Model(model_client_config=ModelClientConfig(client_provider='OpenAI', api_key='unused-test', api_base='http://127.0.0.1:1/v1', max_retries=0), model_config=ModelRequestConfig(model='offline-test'))
++    reporter = _agent_type()({'reporting': {'method_figure': {'enabled': False}}}, template_dir=_source(tmp_path), model=model)
++    monkeypatch.setattr(reporter, '_write_latex_runtime_config', lambda paper: None)
++    reporter._latex_runtime = object()
++    agent = reporter._build_paper_agent(run_id='trace-facts-guidance')
++    with patch.object(ReportingAgent, '_run_paper_agent', new_callable=AsyncMock, return_value='') as run:
++        await reporter._run_paper_agent(run_id='trace-facts-guidance', query='Current reports: Execution and Reporting only; verified_facts include completed input-token-matched controls.')
++    prompts = (agent.deep_config.system_prompt, agent.system_prompt_builder.build(),
++        agent._react_agent.config.prompt_template[0]['content'], run.call_args.kwargs['query'])
++    for prompt in prompts:
++        assert 'Configured enabled modules do not prove actual execution' in prompt
++        assert 'Without a supplied actual Reflection report, do not claim this run executed Reflection' in prompt
++        assert 'Use verified_facts to identify completed input-token matching' in prompt
++        assert 'output-length or compute matching' in prompt
++        assert 'Shared initial-correct responses contribute zero to a paired arm contrast' in prompt
++        assert 'Identical McNemar p-values may result from identical discordant counts' in prompt

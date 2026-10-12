@@ -1,0 +1,343 @@
+{
+  "status": "RAW240_INDEPENDENT_EXTRACTION_PASS",
+  "overall": {
+    "planned": 240,
+    "valid": 237,
+    "missing": 3,
+    "full_correct": 104,
+    "neutral_correct": 93,
+    "b": 12,
+    "c": 1,
+    "p_exact_two_sided": 0.00341796875,
+    "difference": 0.046413502109704644
+  },
+  "six_cells": [
+    {
+      "family": "arithmetic",
+      "difficulty": "easy",
+      "planned": 40,
+      "valid": 39,
+      "missing": 1,
+      "full_correct": 22,
+      "neutral_correct": 21,
+      "b": 1,
+      "c": 0,
+      "p_exact_two_sided": 1,
+      "difference": 0.02564102564102564
+    },
+    {
+      "family": "arithmetic",
+      "difficulty": "hard",
+      "planned": 40,
+      "valid": 40,
+      "missing": 0,
+      "full_correct": 0,
+      "neutral_correct": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0,
+      "difference": 0.0
+    },
+    {
+      "family": "graph",
+      "difficulty": "easy",
+      "planned": 40,
+      "valid": 40,
+      "missing": 0,
+      "full_correct": 31,
+      "neutral_correct": 29,
+      "b": 2,
+      "c": 0,
+      "p_exact_two_sided": 0.5,
+      "difference": 0.05
+    },
+    {
+      "family": "graph",
+      "difficulty": "hard",
+      "planned": 40,
+      "valid": 39,
+      "missing": 1,
+      "full_correct": 20,
+      "neutral_correct": 19,
+      "b": 1,
+      "c": 0,
+      "p_exact_two_sided": 1,
+      "difference": 0.02564102564102564
+    },
+    {
+      "family": "sat",
+      "difficulty": "easy",
+      "planned": 40,
+      "valid": 39,
+      "missing": 1,
+      "full_correct": 27,
+      "neutral_correct": 21,
+      "b": 7,
+      "c": 1,
+      "p_exact_two_sided": 0.0703125,
+      "difference": 0.15384615384615385
+    },
+    {
+      "family": "sat",
+      "difficulty": "hard",
+      "planned": 40,
+      "valid": 40,
+      "missing": 0,
+      "full_correct": 4,
+      "neutral_correct": 3,
+      "b": 1,
+      "c": 0,
+      "p_exact_two_sided": 1,
+      "difference": 0.025
+    }
+  ],
+  "phase_success_usage": {
+    "initial": {
+      "successful_calls": 239,
+      "input": 36179,
+      "output": 3855,
+      "cache_hit": 0
+    },
+    "probe": {
+      "successful_calls": 718,
+      "input": 167287,
+      "output": 718,
+      "cache_hit": 28416
+    },
+    "final": {
+      "successful_calls": 357,
+      "input": 84917,
+      "output": 6865,
+      "cache_hit": 14704
+    }
+  },
+  "raw_started_calls": 1317,
+  "raw_successful_calls": 1314,
+  "paired_retry_output_tokens": {
+    "pairs": 150,
+    "full_output_sum": 2608,
+    "neutral_output_sum": 2616,
+    "full_output_mean": 17.386666666666667,
+    "neutral_output_mean": 17.44,
+    "paired_output_difference_mean": -0.05333333333333334,
+    "paired_output_difference_median": 0.0,
+    "output_difference_range": [
+      -4,
+      4
+    ],
+    "total_input_each_arm": 33512,
+    "by_cell": [
+      {
+        "family": "arithmetic",
+        "difficulty": "easy",
+        "pairs": 18,
+        "full_output_sum": 106,
+        "neutral_output_sum": 106,
+        "full_output_mean": 5.888888888888889,
+        "neutral_output_mean": 5.888888888888889,
+        "paired_output_difference_mean": 0,
+        "paired_output_difference_median": 0.0,
+        "output_difference_range": [
+          0,
+          0
+        ],
+        "total_input_each_arm": 2122
+      },
+      {
+        "family": "arithmetic",
+        "difficulty": "hard",
+        "pairs": 40,
+        "full_output_sum": 272,
+        "neutral_output_sum": 272,
+        "full_output_mean": 6.8,
+        "neutral_output_mean": 6.8,
+        "paired_output_difference_mean": 0,
+        "paired_output_difference_median": 0.0,
+        "output_difference_range": [
+          0,
+          0
+        ],
+        "total_input_each_arm": 5552
+      },
+      {
+        "family": "graph",
+        "difficulty": "easy",
+        "pairs": 16,
+        "full_output_sum": 240,
+        "neutral_output_sum": 244,
+        "full_output_mean": 15,
+        "neutral_output_mean": 15.25,
+        "paired_output_difference_mean": -0.25,
+        "paired_output_difference_median": 0.0,
+        "output_difference_range": [
+          -4,
+          4
+        ],
+        "total_input_each_arm": 3184
+      },
+      {
+        "family": "graph",
+        "difficulty": "hard",
+        "pairs": 20,
+        "full_output_sum": 370,
+        "neutral_output_sum": 374,
+        "full_output_mean": 18.5,
+        "neutral_output_mean": 18.7,
+        "paired_output_difference_mean": -0.2,
+        "paired_output_difference_median": 0.0,
+        "output_difference_range": [
+          -4,
+          2
+        ],
+        "total_input_each_arm": 5000
+      },
+      {
+        "family": "sat",
+        "difficulty": "easy",
+        "pairs": 19,
+        "full_output_sum": 399,
+        "neutral_output_sum": 399,
+        "full_output_mean": 21,
+        "neutral_output_mean": 21,
+        "paired_output_difference_mean": 0,
+        "paired_output_difference_median": 0,
+        "output_difference_range": [
+          0,
+          0
+        ],
+        "total_input_each_arm": 4553
+      },
+      {
+        "family": "sat",
+        "difficulty": "hard",
+        "pairs": 37,
+        "full_output_sum": 1221,
+        "neutral_output_sum": 1221,
+        "full_output_mean": 33,
+        "neutral_output_mean": 33,
+        "paired_output_difference_mean": 0,
+        "paired_output_difference_median": 0,
+        "output_difference_range": [
+          0,
+          0
+        ],
+        "total_input_each_arm": 13101
+      }
+    ],
+    "post_hoc_equal_output_subset": {
+      "pairs": 142,
+      "b": 9,
+      "c": 1,
+      "scope": "Post-hoc conditioning on an outcome-related variable; descriptive sensitivity only, not a controlled causal estimate."
+    }
+  },
+  "missing_cases": [
+    {
+      "id": "sat-holdout240-easy-40",
+      "status": "missing",
+      "details": {
+        "status": "missing",
+        "reason": "failed_or_unknown:tokenmatched-holdout240-20261008:sat-holdout240-easy-40:final:neutral",
+        "target_prompt_tokens": 239,
+        "padding_units": {
+          "neutral": 19,
+          "full": 4,
+          "coarse": 10
+        },
+        "coarse_missing_reason": null,
+        "id": "sat-holdout240-easy-40",
+        "checked_keys": [
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:initial",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:probe:neutral:pad0",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:probe:full:pad0",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:probe:neutral:pad19",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:probe:full:pad4",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:probe:coarse:pad0",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:probe:coarse:pad10",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:final:coarse",
+          "tokenmatched-holdout240-20261008:sat-holdout240-easy-40:final:neutral"
+        ],
+        "probe_observations": {
+          "neutral": [
+            [
+              0,
+              220
+            ],
+            [
+              19,
+              239
+            ]
+          ],
+          "full": [
+            [
+              0,
+              235
+            ],
+            [
+              4,
+              239
+            ]
+          ],
+          "coarse": [
+            [
+              0,
+              229
+            ],
+            [
+              10,
+              239
+            ]
+          ]
+        },
+        "initial_observed": true,
+        "initial_correct": false,
+        "initial_feedback": {
+          "error": "clause_unsatisfied",
+          "clause_index": 4
+        },
+        "SAT_eligible": true
+      }
+    },
+    {
+      "id": "graph-holdout240-hard-32",
+      "status": "error",
+      "details": {
+        "id": "graph-holdout240-hard-32",
+        "status": "error",
+        "checked_keys": [
+          "tokenmatched-holdout240-20261008:graph-holdout240-hard-32:initial"
+        ],
+        "initial_observed": false
+      }
+    },
+    {
+      "id": "arithmetic-holdout240-easy-21",
+      "status": "missing",
+      "details": {
+        "status": "missing",
+        "reason": "failed_or_unknown:tokenmatched-holdout240-20261008:arithmetic-holdout240-easy-21:probe:full:pad0",
+        "target_prompt_tokens": null,
+        "padding_units": {},
+        "coarse_missing_reason": null,
+        "id": "arithmetic-holdout240-easy-21",
+        "checked_keys": [
+          "tokenmatched-holdout240-20261008:arithmetic-holdout240-easy-21:initial",
+          "tokenmatched-holdout240-20261008:arithmetic-holdout240-easy-21:probe:full:pad0"
+        ],
+        "probe_observations": {},
+        "initial_observed": true,
+        "initial_correct": false,
+        "initial_feedback": {
+          "error": "sequential_arithmetic_mismatch"
+        },
+        "SAT_eligible": false
+      }
+    }
+  ],
+  "source_sha256": {
+    "tokenmatched-holdout240-completion-20261009\\combined-three-segments.jsonl": "ef15014dd30603771918bc4b96fde73186574ecee6764e151f0481247b971dce",
+    "tokenmatched-holdout240-completion-20261009\\dataset.json": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+    "tokenmatched-holdout240-completion-independent-audit-20261009\\per-task-independent.json": "b4c98992ca175783396c2c3efb5fdd2d859ee4900c62671b41581d883d828842",
+    "tokenmatched-holdout240-completion-20261009\\study.py": "328a6df68a478e24218f6b919608bdb65e04aedef20b9c9f258ce69f14e5b161"
+  }
+}

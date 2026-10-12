@@ -1,0 +1,22 @@
+{
+  "status": "MATCHING_ORIGINAL_NATBIB_SOURCE_INCLUDED_STYLE_UNCHANGED",
+  "generated_full_bytes_equal": true,
+  "generation_exit_code": 0,
+  "line_ending_or_header_exclusions": false,
+  "original_generation_proof_sha256": "c41a76c386ef62e08b9f2b19a9896068d368c67ec40575fbdf5fb2861621ed80",
+  "style_sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d",
+  "files": {
+    "natbib.dtx": {
+      "sha256": "d7e80d7d4fd0899383dde263703a3fa12563c74d18e53ea63b5761fb08be57ae",
+      "bytes": 248383
+    },
+    "natbib.ins": {
+      "sha256": "4118fc89ba413ab24efe6d58db5883526ee01707e10aefde8b07f362a74c5cbb",
+      "bytes": 2673
+    },
+    "Debian-copyright.txt": {
+      "sha256": "1f6d34aaf837fca56d7e2bb4fc2f83e88d97177ebef9b5ad9cd18f9723913b91",
+      "bytes": 33493
+    }
+  }
+}

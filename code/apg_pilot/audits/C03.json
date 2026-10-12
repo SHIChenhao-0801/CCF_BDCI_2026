@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "gate": {
+    "name": "artifact-provenance-gate",
+    "version": "0.1.0"
+  },
+  "run": {
+    "task_id": "pilot-c03",
+    "manager_run_id": "pilot-c03-iteration-001",
+    "iteration": 1
+  },
+  "evaluated_at": "2026-09-30T00:00:00Z",
+  "decision": "PASS",
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 1
+  },
+  "coverage": {
+    "final_paper": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "experiments/pilot-c03-iteration-001/paper/main.pdf"
+      ]
+    },
+    "runtime_usage": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "model_calls.jsonl"
+      ]
+    },
+    "citations": {
+      "status": "checked",
+      "reason": null,
+      "source": [
+        "experiments/pilot-c03-iteration-001/paper/main.aux"
+      ]
+    },
+    "numeric_claims": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    },
+    "experiment_protocol": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    },
+    "negative_results": {
+      "status": "skipped",
+      "reason": "no_reliable_contract",
+      "source": []
+    }
+  },
+  "inputs": [
+    {
+      "role": "compiled_aux",
+      "path": "experiments/pilot-c03-iteration-001/paper/main.aux",
+      "present": true,
+      "sha256": "8aedb210a6c94506247dc06bbe1b0049e284f1ddcfaacafa9523a52aea57f601"
+    },
+    {
+      "role": "final_paper",
+      "path": "experiments/pilot-c03-iteration-001/paper/main.pdf",
+      "present": true,
+      "sha256": "acab696eafeae6d2a3acd168518a891ac7756efd502c0eb1c6c5f418ade13725"
+    },
+    {
+      "role": "manager_state",
+      "path": "experiments/pilot-c03-iteration-001/manager/state.json",
+      "present": true,
+      "sha256": "43d9cdf27b2476cd7c8cd068e83948b03ad69313283d3fdc32987c90e4fcec81"
+    },
+    {
+      "role": "reporting_artifact",
+      "path": "experiments/pilot-c03-iteration-001/design/report.md",
+      "present": true,
+      "sha256": "495e0d2938920dd4575c900a5578801e5505db623fe31cf54e134b82198877b4"
+    },
+    {
+      "role": "runtime_usage",
+      "path": "model_calls.jsonl",
+      "present": true,
+      "sha256": "e87218918835c0d57cbccc7b05d7ee45793ebd5fd2f0a8534d8653171d94ad37"
+    }
+  ],
+  "checks": [
+    {
+      "id": "APG001",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Final paper PDF is a nonempty regular file.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-c03-iteration-001/paper/main.pdf"
+        },
+        {
+          "key": "size_bytes",
+          "value": 32
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG002",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Manager state contains a successful terminal Reporting report.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-c03-iteration-001/manager/state.json"
+        },
+        {
+          "key": "successful_reporting_count",
+          "value": 1
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG003",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "All Reporting artifact paths resolve inside the run directory.",
+      "evidence": [
+        {
+          "key": "artifact_count",
+          "value": 1
+        },
+        {
+          "key": "paths",
+          "value": [
+            "experiments/pilot-c03-iteration-001/design/report.md"
+          ]
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG004",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "Model-call ledger is complete and token counts are aggregable.",
+      "evidence": [
+        {
+          "key": "duplicate_count",
+          "value": 0
+        },
+        {
+          "key": "input_tokens",
+          "value": 12
+        },
+        {
+          "key": "output_tokens",
+          "value": 7
+        },
+        {
+          "key": "path",
+          "value": "model_calls.jsonl"
+        },
+        {
+          "key": "unique_call_count",
+          "value": 1
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG005",
+      "severity": "blocker",
+      "status": "PASS",
+      "message": "All compiled citation keys are resolved.",
+      "evidence": [
+        {
+          "key": "cited_key_count",
+          "value": 0
+        },
+        {
+          "key": "path",
+          "value": "experiments/pilot-c03-iteration-001/paper/main.aux"
+        },
+        {
+          "key": "resolved_key_count",
+          "value": 0
+        }
+      ],
+      "remediation": null
+    },
+    {
+      "id": "APG005_NO_CITATIONS",
+      "severity": "warning",
+      "status": "PASS",
+      "message": "Compiled AUX contains no citation records.",
+      "evidence": [
+        {
+          "key": "path",
+          "value": "experiments/pilot-c03-iteration-001/paper/main.aux"
+        }
+      ],
+      "remediation": "Confirm that a citation-free paper is intentional."
+    }
+  ]
+}

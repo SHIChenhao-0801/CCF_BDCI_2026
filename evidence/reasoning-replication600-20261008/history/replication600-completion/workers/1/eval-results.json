@@ -1,0 +1,32 @@
+[
+  {
+    "id": "graph-replication600-hard-62",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  }
+]

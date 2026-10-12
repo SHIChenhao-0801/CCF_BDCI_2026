@@ -1,0 +1,95 @@
+{
+  "status": "OFFLINE_SELECTION_VERIFIED",
+  "prepared_at_utc": "2026-10-08T09:53:50.922772+00:00",
+  "planned_cases": 375,
+  "model_calls": 0,
+  "network_requests": 0,
+  "strata": {
+    "arithmetic:easy": {
+      "N": 34,
+      "retry_order_counts": {
+        "full,neutral": 17,
+        "neutral,full": 17
+      }
+    },
+    "arithmetic:hard": {
+      "N": 95,
+      "retry_order_counts": {
+        "full,neutral": 48,
+        "neutral,full": 47
+      }
+    },
+    "graph:easy": {
+      "N": 39,
+      "retry_order_counts": {
+        "neutral,full": 20,
+        "full,neutral": 19
+      }
+    },
+    "graph:hard": {
+      "N": 41,
+      "retry_order_counts": {
+        "full,neutral": 21,
+        "neutral,full": 20
+      }
+    },
+    "sat:easy": {
+      "N": 71,
+      "retry_order_counts": {
+        "full,neutral,coarse": 12,
+        "full,coarse,neutral": 12,
+        "neutral,full,coarse": 12,
+        "neutral,coarse,full": 12,
+        "coarse,full,neutral": 12,
+        "coarse,neutral,full": 11
+      }
+    },
+    "sat:hard": {
+      "N": 95,
+      "retry_order_counts": {
+        "coarse,neutral,full": 16,
+        "full,neutral,coarse": 16,
+        "full,coarse,neutral": 16,
+        "neutral,full,coarse": 16,
+        "neutral,coarse,full": 16,
+        "coarse,full,neutral": 15
+      }
+    }
+  },
+  "retry_order_counts": {
+    "full,neutral": 105,
+    "neutral,full": 104,
+    "full,neutral,coarse": 28,
+    "full,coarse,neutral": 28,
+    "neutral,full,coarse": 28,
+    "neutral,coarse,full": 28,
+    "coarse,full,neutral": 27,
+    "coarse,neutral,full": 27
+  },
+  "historical_retry_usage_planning_reference": {
+    "initial": {
+      "call_count": 592,
+      "input_tokens": 90061,
+      "output_tokens": 9535,
+      "client_call_seconds": 1005.2668376001639
+    },
+    "blindretry": {
+      "call_count": 375,
+      "input_tokens": 74404,
+      "output_tokens": 6804,
+      "client_call_seconds": 645.9535609000086
+    },
+    "verifiedretry": {
+      "call_count": 375,
+      "input_tokens": 81449,
+      "output_tokens": 6776,
+      "client_call_seconds": 631.3202291000052
+    },
+    "lengthmatchedretry": {
+      "call_count": 375,
+      "input_tokens": 78868,
+      "output_tokens": 8389,
+      "client_call_seconds": 656.0674950000903
+    }
+  }
+}

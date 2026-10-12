@@ -1,0 +1,31 @@
+{
+  "kind": "PORTABLE_THREE_SEGMENT240_SCIENTIFIC_EVIDENCE",
+  "files": {
+    "bootstrap/paired_bootstrap.py": "f1a275387611eb40ebc755521d301b949a358e740f691637b7f759c2bfdfac5c",
+    "bootstrap/PLAN.md": "ff2282d52bdf58d633d3ba6f0df3636f540753b3bbacc867c7c93d8552cef762",
+    "bootstrap/registration.json": "d57c2e6826bcb27abd3c3041367d9701044eca75bfc8451e9909a39a9cb7039b",
+    "bootstrap/SCOPE_CLARIFICATION.md": "16a70f18458ff3765391b09fdf1585623a9663cbc15670108dd50f1e15b485de",
+    "copy-identity.json": "24e876d4fedb39c2f38f8a8a3d495449f580e5cebb6a0606394e7932c663c3a1",
+    "expected-summary.json": "ea05e23eb0fde2009e6b5c9b889a619b158c1cd201c0ea4b25f2553c352ed61e",
+    "process/replication600/legacy_runner.py": "74f7b45bb5b4ac657823f588407e6624f7066a98a3bf53cce1c4de24fe2df3ff",
+    "process/run14-input/run.py": "74baa23e0bd3b893b884278a39482e47eba091284ea02e78fc09f3c24bc63c42",
+    "process/tokenmatched-followup-20261008-independent-audit/audit.py": "6941ab5f344ed3fa62cb6a30920967d91899137f7dd905e8679e4d8a02f914db",
+    "process/tokenmatched-holdout240-20261008-independent-audit/audit.py": "aa9fc91aa7bd8a4fb4c9d193bc6cff33ff631002c049e392681db635be24c777",
+    "protocol/analysis.py": "4262b0515f9822c4ef567b42eeb0a98f755a96e794a7cf432f506c5c66056ced",
+    "protocol/dataset.json": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+    "protocol/eligible-ids.json": "f00fc5f0ddd412c88b030248ac97c13d3eec6d7d56eebe32c245981fa2e489b6",
+    "protocol/excluded756.json": "5560d7f57790db61e5b39e4138914eb64362d025ec81d5b9fbecec8ebff13190",
+    "protocol/holdout.py": "8cb94dffb80766b44226bf714532c6e63356b856b8a9e4235e751dbb201999eb",
+    "protocol/manifest.json": "3807e32345777e4ec1103221511d9eb1d80aa4240860860fdcdd848e438a4158",
+    "protocol/PROTOCOL.md": "f33a102c3b0cd2a0ba7b29dd83f172faac5add68a56bee0a849406b7a04ecaec",
+    "protocol/selection.py": "7adf9dcf3f0e24c3c13dd98a57e020df8c3a0b4fea99e551b638d19d2d766390",
+    "protocol/source-reuse.json": "06c52e8e8d92c2e74c12583a542d09cdab6c988ce1360cdd425d8b78fe76d555",
+    "protocol/study.py": "328a6df68a478e24218f6b919608bdb65e04aedef20b9c9f258ce69f14e5b161",
+    "raw/combined-three-segments.jsonl": "ef15014dd30603771918bc4b96fde73186574ecee6764e151f0481247b971dce",
+    "raw/segment1-calls.jsonl": "ef2e9d64033a205f487316e15818932a50c63b9142f4625b826b4f19cd670cdf",
+    "raw/segment2-calls.jsonl": "79bc1a396c43ff23470464d4e38721c63cbfb79f8a24f3d01f42b0f9b2db912f",
+    "raw/segment3-calls.jsonl": "0a5c6e6611a406c4786044374400a5d07860bdc1c8ef624bb8c49cb6b7f50b0a",
+    "README.md": "f783a35da2417f7e5f3517b0e1ea8cb0fc0e56ac99e283ed6fe641c97a528f95",
+    "replay.py": "1a3ecd97ce2f048747f0d32b3fb161c95c4137c29150e15e23de71491ef8eaeb"
+  }
+}

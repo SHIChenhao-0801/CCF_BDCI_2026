@@ -1,0 +1,110 @@
+{
+  "registered_N": 240,
+  "seeds": [
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030
+  ],
+  "primary_correct_counts": {
+    "full_correct": 104,
+    "neutral_correct": 93
+  },
+  "primary_overall240": {
+    "planned": 240,
+    "valid": 237,
+    "full_only_correct": 12,
+    "control_only_correct": 1,
+    "difference": 0.046413502109704644,
+    "exact_two_sided_McNemar": 0.00341796875,
+    "planned_possible_outcome_bounds_not_CI": [
+      0.03333333333333333,
+      0.058333333333333334
+    ],
+    "not_complete": 3
+  },
+  "conditional_repair": {
+    "planned": 152,
+    "valid": 150,
+    "full_only_correct": 12,
+    "control_only_correct": 1,
+    "difference": 0.07333333333333333,
+    "exact_two_sided_McNemar": 0.00341796875,
+    "planned_possible_outcome_bounds_not_CI": [
+      0.05921052631578947,
+      0.08552631578947369
+    ],
+    "not_complete": 2
+  },
+  "exploratory_SAT_ablation": {
+    "planned": 57,
+    "valid": 56,
+    "full_only_correct": 5,
+    "control_only_correct": 2,
+    "difference": 0.05357142857142857,
+    "exact_two_sided_McNemar": 0.453125,
+    "planned_possible_outcome_bounds_not_CI": [
+      0.03508771929824561,
+      0.07017543859649122
+    ],
+    "not_complete": 1
+  },
+  "SAT_eligibility_unresolved_initials": 0,
+  "SAT_possible_eligibility_denominator_range": [
+    57,
+    57
+  ],
+  "conditional_initial_error_eligibility_unresolved": 1,
+  "initial": {
+    "planned": 240,
+    "observed": 239,
+    "correct": 87,
+    "not_observed": 1,
+    "possible_full240_accuracy_bounds_not_CI": [
+      0.3625,
+      0.36666666666666664
+    ]
+  },
+  "scope": "independent holdout240; reused375/old600/old120 never pooled; missing bounds are not CIs and assume no MCAR",
+  "supplementary_primary_paired_bootstrap": {
+    "diagnostic_only": 12,
+    "comparator_only": 1,
+    "complete_pairs": 237,
+    "planned_items": 240,
+    "missing_items": 3,
+    "paired_difference": 0.046413502109704644,
+    "ci95": [
+      0.016877637130801686,
+      0.0759493670886076
+    ],
+    "method": "supplementary paired percentile bootstrap with linear quantiles",
+    "replicates": 10000,
+    "seed": 20261008,
+    "confidence_level": 0.95,
+    "complete_case_conditional": true,
+    "uncertainty_scope": "empirical complete-task distribution; no resampling of model generations",
+    "full_planned_missing_difference_bounds": [
+      0.03333333333333333,
+      0.058333333333333334
+    ],
+    "missing_bounds_are_confidence_intervals": false,
+    "missing_mechanism_assumption": "none; not MCAR or MAR",
+    "primary_exact_mcnemar_replaced": false
+  },
+  "administrative_amendment_after_observed_prior_results": true,
+  "original_hypothesis_protocol_N_unchanged": true,
+  "phase_state_counts": {
+    "complete_primary_pair": 150,
+    "initial_correct": 87,
+    "missing": 2,
+    "error": 1
+  },
+  "combined_starts": 1317,
+  "combined_successful_responses": 1314,
+  "new135_actual_starts": 753,
+  "new135_successful_responses": 753,
+  "source_independent_audit_sha256": "1eac647e4175ab32a398da8799cedb472b031156d158822c00c2459d900c2f72"
+}

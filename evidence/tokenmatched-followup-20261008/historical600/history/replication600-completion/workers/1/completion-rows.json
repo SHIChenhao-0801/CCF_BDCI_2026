@@ -1,0 +1,612 @@
+[
+  {
+    "id": "sat-replication600-hard-26",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-26:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-26:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-26:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 736,
+        "content_utf8_bytes": 736
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-26:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-59",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-59:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-59:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-59:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-59:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-10",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-10:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-10:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-10:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-10:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-99",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-99:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-99:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-99:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-99:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-87",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-87:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-87:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-87:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-87:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-easy-47",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-47:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-47:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-47:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-47:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-76",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-76:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-76:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-76:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-76:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-34",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-34:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-34:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 654,
+        "content_utf8_bytes": 654
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-34:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 591,
+        "content_utf8_bytes": 591
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-34:lengthmatchedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 654,
+        "content_utf8_bytes": 654
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-82",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-82:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-82:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-82:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-82:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-36",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-36:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-36:lengthmatchedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-36:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 594,
+        "content_utf8_bytes": 594
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-36:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-12",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-12:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-12:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-12:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-12:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-35",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-35:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-35:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-35:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 519,
+        "content_utf8_bytes": 519
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-35:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-40",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-40:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-40:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-40:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-40:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-41",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-41:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-41:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-41:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-41:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 355,
+        "content_utf8_bytes": 355
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-55",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-55:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-55:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 658,
+        "content_utf8_bytes": 658
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-55:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 658,
+        "content_utf8_bytes": 658
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-55:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 595,
+        "content_utf8_bytes": 595
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-62",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-62:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  }
+]

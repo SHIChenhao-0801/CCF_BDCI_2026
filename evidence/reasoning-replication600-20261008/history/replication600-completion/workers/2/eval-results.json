@@ -1,0 +1,53 @@
+[
+  {
+    "id": "graph-replication600-hard-72",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-72:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-72:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-72:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 594,
+        "content_utf8_bytes": 594
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-72:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      }
+    }
+  }
+]

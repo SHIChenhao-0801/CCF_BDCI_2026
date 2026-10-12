@@ -1,0 +1,4122 @@
+[
+  {
+    "id": "arithmetic-replication600-easy-28",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-28:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-28:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 398,
+        "content_utf8_bytes": 398
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-28:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 398,
+        "content_utf8_bytes": 398
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-28:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 323,
+        "content_utf8_bytes": 323
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-60",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-60:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-60:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 563,
+        "content_utf8_bytes": 563
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-60:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-60:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-83",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-83:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-83:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-83:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-83:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-10",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-10:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-10:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-10:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-10:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-75",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-75:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-75:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 519,
+        "content_utf8_bytes": 519
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-75:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-75:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-87",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-87:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-87:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-87:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-87:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 738,
+        "content_utf8_bytes": 738
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-14",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-14:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-14:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-14:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 743,
+        "content_utf8_bytes": 743
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-14:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-89",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-89:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-89:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 580,
+        "content_utf8_bytes": 580
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-89:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 518,
+        "content_utf8_bytes": 518
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-89:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 580,
+        "content_utf8_bytes": 580
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-51",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-51:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-51:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-51:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 321,
+        "content_utf8_bytes": 321
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-51:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-48",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-48:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-48:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-48:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-48:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-66",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-66:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-66:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 353,
+        "content_utf8_bytes": 353
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-66:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-66:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-62",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-62:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-62:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 825,
+        "content_utf8_bytes": 825
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-62:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 745,
+        "content_utf8_bytes": 745
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-62:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 825,
+        "content_utf8_bytes": 825
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-75",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-75:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 9
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-75:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 9
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-75:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 9
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 566,
+        "content_utf8_bytes": 566
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-75:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 9
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-66",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-66:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-66:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-66:lengthmatchedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-66:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 519,
+        "content_utf8_bytes": 519
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-69",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-69:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-69:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-69:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-69:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-hard-23",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-23:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 17
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-23:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 17
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 731,
+        "content_utf8_bytes": 731
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-23:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 17
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-23:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 17
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-53",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-53:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-53:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-53:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-53:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-81",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-81:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-81:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 522,
+        "content_utf8_bytes": 522
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-81:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 585,
+        "content_utf8_bytes": 585
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-81:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 585,
+        "content_utf8_bytes": 585
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-92",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-92:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-92:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-92:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-92:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-89",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-89:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-89:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-89:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-89:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-hard-45",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-45:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 21
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-45:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 21
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-45:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 15
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-45:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 21
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 734,
+        "content_utf8_bytes": 734
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-90",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-90:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-90:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-90:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-90:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 520,
+        "content_utf8_bytes": 520
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-88",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-88:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-88:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 521,
+        "content_utf8_bytes": 521
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-88:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-88:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-46",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-46:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-46:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-46:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-46:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-hard-63",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-63:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-63:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-63:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 28
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-63:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 741,
+        "content_utf8_bytes": 741
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-49",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-49:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-49:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 355,
+        "content_utf8_bytes": 355
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-49:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-49:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-17",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-17:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-17:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-17:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-17:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-easy-19",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-19:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-19:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-19:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 563,
+        "content_utf8_bytes": 563
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-19:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-66",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-66:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-66:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-66:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-66:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-32",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-32:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-32:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-32:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-32:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-42",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-42:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-42:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-42:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-42:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-39",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-39:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-39:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-39:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-39:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-59",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-59:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-59:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-59:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 522,
+        "content_utf8_bytes": 522
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-59:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-36",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-36:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-36:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-36:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 738,
+        "content_utf8_bytes": 738
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-36:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-26",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-26:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-26:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-26:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 355,
+        "content_utf8_bytes": 355
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-26:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-57",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-57:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-57:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-57:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-57:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 354,
+        "content_utf8_bytes": 354
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-08",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-08:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-08:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-08:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-08:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-easy-20",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-20:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-20:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-20:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-20:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 560,
+        "content_utf8_bytes": 560
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-60",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-60:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-60:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-60:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-60:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 322,
+        "content_utf8_bytes": 322
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-09",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-09:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-09:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-09:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 560,
+        "content_utf8_bytes": 560
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-09:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 6
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-44",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-44:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 23
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-44:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 23
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-44:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 23
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 734,
+        "content_utf8_bytes": 734
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-44:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-38",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-38:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 12
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-38:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-38:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 12
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-38:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 12
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 563,
+        "content_utf8_bytes": 563
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-85",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-85:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-85:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 322,
+        "content_utf8_bytes": 322
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-85:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-85:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-33",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-33:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-33:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-33:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-33:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-82",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-82:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-82:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-82:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-82:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-93",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-93:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-93:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-93:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 321,
+        "content_utf8_bytes": 321
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-93:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-82",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-82:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 7
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-82:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 7
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 737,
+        "content_utf8_bytes": 737
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-82:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 7
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-82:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 7
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-48",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-48:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-48:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 354,
+        "content_utf8_bytes": 354
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-48:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-48:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-14",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-14:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-14:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-14:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-14:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-hard-78",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-78:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-78:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 813,
+        "content_utf8_bytes": 813
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-78:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 733,
+        "content_utf8_bytes": 733
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-78:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 813,
+        "content_utf8_bytes": 813
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-100",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-100:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-100:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 647,
+        "content_utf8_bytes": 647
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-100:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 647,
+        "content_utf8_bytes": 647
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-100:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 567,
+        "content_utf8_bytes": 567
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-57",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-57:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-57:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-57:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-57:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-57",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-57:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-57:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 521,
+        "content_utf8_bytes": 521
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-57:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-57:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-86",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-86:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-86:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-86:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 737,
+        "content_utf8_bytes": 737
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-86:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-01",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-01:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 21
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-01:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 9
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 822,
+        "content_utf8_bytes": 822
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-01:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 21
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 822,
+        "content_utf8_bytes": 822
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-01:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 21
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 741,
+        "content_utf8_bytes": 741
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-33",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-33:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-33:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 596,
+        "content_utf8_bytes": 596
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-33:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 659,
+        "content_utf8_bytes": 659
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-33:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 659,
+        "content_utf8_bytes": 659
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-10",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-10:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-10:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 521,
+        "content_utf8_bytes": 521
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-10:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-10:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-01",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-01:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-01:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-01:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 520,
+        "content_utf8_bytes": 520
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-01:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-66",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-66:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-66:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-66:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 734,
+        "content_utf8_bytes": 734
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-66:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-11",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-11:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-11:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-11:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-11:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-easy-05",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-05:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-05:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-05:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-05:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-52",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-52:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-52:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-52:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 353,
+        "content_utf8_bytes": 353
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-52:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-20",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-20:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-20:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-20:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 357,
+        "content_utf8_bytes": 357
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-20:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-65",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-65:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-65:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-65:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-65:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 357,
+        "content_utf8_bytes": 357
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-24",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-24:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-24:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-24:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-24:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-75",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-75:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-75:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-75:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-75:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-37",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-37:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-37:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-37:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-37:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-55",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-55:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-55:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-55:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-55:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-76",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-76:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-76:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-76:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-76:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "sat-replication600-hard-73",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-73:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-73:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-73:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-73:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 3
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 739,
+        "content_utf8_bytes": 739
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-30",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-30:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-30:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-30:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 594,
+        "content_utf8_bytes": 594
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-30:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-16",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-16:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-16:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 738,
+        "content_utf8_bytes": 738
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-16:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 10
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-16:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 4
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-28",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-28:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-28:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-28:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-28:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-77",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-77:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-77:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-77:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-77:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 352,
+        "content_utf8_bytes": 352
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-70",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-70:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-70:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-70:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-70:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-13",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-13:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-13:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 356,
+        "content_utf8_bytes": 356
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-13:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-13:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-41",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-41:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-41:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-41:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-41:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-easy-79",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-79:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-79:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-79:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-79:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-16",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-16:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-16:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-16:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 356,
+        "content_utf8_bytes": 356
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-16:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-easy-86",
+    "family": "sat",
+    "difficulty": "easy",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-86:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-86:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 9
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 641,
+        "content_utf8_bytes": 641
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-86:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 641,
+        "content_utf8_bytes": 641
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-easy-86:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 561,
+        "content_utf8_bytes": 561
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-easy-02",
+    "family": "arithmetic",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-02:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-02:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-02:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-easy-02:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-99",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "lengthmatchedretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-99:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-99:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 587,
+        "content_utf8_bytes": 587
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-99:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 650,
+        "content_utf8_bytes": 650
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-99:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 650,
+        "content_utf8_bytes": 650
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-hard-28",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "blindretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-28:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-28:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-28:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-28:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  },
+  {
+    "id": "graph-replication600-hard-44",
+    "family": "graph",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-44:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_cost_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-44:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 597,
+        "content_utf8_bytes": 597
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-44:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 660,
+        "content_utf8_bytes": 660
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-hard-44:lengthmatchedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 660,
+        "content_utf8_bytes": 660
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-22",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-22:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-22:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-22:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 354,
+        "content_utf8_bytes": 354
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-22:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-06",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-06:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-06:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 355,
+        "content_utf8_bytes": 355
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-06:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-06:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-70",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-70:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-70:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 736,
+        "content_utf8_bytes": 736
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-70:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-70:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      }
+    }
+  },
+  {
+    "id": "arithmetic-replication600-hard-04",
+    "family": "arithmetic",
+    "difficulty": "hard",
+    "retry_order": [
+      "lengthmatchedretry",
+      "blindretry",
+      "verifiedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-04:initial",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-04:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-04:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 354,
+        "content_utf8_bytes": 354
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:arithmetic-replication600-hard-04:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "sequential_arithmetic_mismatch"
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      }
+    }
+  },
+  {
+    "id": "graph-replication600-easy-21",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "blindretry",
+      "verifiedretry",
+      "lengthmatchedretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-21:initial",
+      "correct": false,
+      "feedback": {
+        "error": "path_not_shortest"
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-21:blindretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 519,
+        "content_utf8_bytes": 519
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-21:verifiedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-21:lengthmatchedretry",
+      "correct": true,
+      "feedback": null,
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      }
+    }
+  },
+  {
+    "id": "sat-replication600-hard-07",
+    "family": "sat",
+    "difficulty": "hard",
+    "retry_order": [
+      "verifiedretry",
+      "lengthmatchedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:initial",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      }
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:verifiedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 2
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      }
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:lengthmatchedretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      }
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:sat-replication600-hard-07:blindretry",
+      "correct": false,
+      "feedback": {
+        "error": "clause_unsatisfied",
+        "clause_index": 1
+      },
+      "reused_initial": false,
+      "request_lengths": {
+        "content_characters": 744,
+        "content_utf8_bytes": 744
+      }
+    }
+  }
+]

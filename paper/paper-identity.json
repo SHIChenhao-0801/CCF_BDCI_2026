@@ -1,0 +1,16 @@
+{
+  "paper_sha256": "8e8a80d56b9df4ac77f73c5b360959b2aedec01621808f33bbc7e3453e104cbc",
+  "paper_pages": 7,
+  "title": "Artifact Gates and Bounded Verifier Feedback in a Traceable Research Agent",
+  "venue": "ICLR",
+  "compile_input_files": 14,
+  "source_bundle_sha256": "fbadaa88ec892c24997e8a1e26aa0ea4e566d9fc96a1ff22b21ac22ab82ab938",
+  "token_relative": "Agentic Reviewer/PaperReview-AccessToken.txt",
+  "token_file_sha256": "73cdfc696d1b2f47dfd64c8ebc0a92fcf248d837822eae9535c2607b1123f6ee",
+  "reviewer_status": "AVAILABLE",
+  "reviewer_score": 6.3,
+  "reviewer_confirmation_at_utc": "2026-10-08T16:58:07.727427+00:00",
+  "ready_to_submit": true,
+  "manuscript_unchanged_since_review_submission": true,
+  "scientific_version_scope": "The unchanged reviewed manuscript reports the 24-item pilot and an earlier 102/240 holdout checkpoint. The complete 237/240 holdout and SOURCE12 validation are separately labelled supplementary evidence, not retroactively inserted into this PDF."
+}

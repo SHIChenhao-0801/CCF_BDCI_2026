@@ -1,0 +1,52 @@
+{
+  "registered_at_utc": "2026-10-08T10:54:53.764898+00:00",
+  "protocol_sha256": "3c58c6e8a0fbea7869ca9e4cb25c58b14bd3fdc251d215b6d74855c51bc06b50",
+  "source_reuse": {
+    "study.py": {
+      "source_path": "process\\tokenmatched-followup-20261008\\study.py",
+      "source_sha256": "c55a1225e354ea920efc64d555067e5c8f69a1928e7cc5db0b727a60b6003027",
+      "adapted_sha256": "328a6df68a478e24218f6b919608bdb65e04aedef20b9c9f258ce69f14e5b161",
+      "only_change": "study identity prefix replacement"
+    },
+    "transport.py": {
+      "source_path": "process\\tokenmatched-followup-20261008\\transport.py",
+      "source_sha256": "2bbb73001e92941f80b2252d8fbb27f24624b7a26a336c346484d03db874f377",
+      "adapted_sha256": "aa1e3bcf9995b22fbe6a11a304d2945590bc798ba5beb809b1ea0891d435614a",
+      "only_change": "study identity prefix replacement"
+    },
+    "analysis.py": {
+      "source_path": "process\\tokenmatched-followup-20261008\\analysis.py",
+      "source_sha256": "4262b0515f9822c4ef567b42eeb0a98f755a96e794a7cf432f506c5c66056ced",
+      "adapted_sha256": "4262b0515f9822c4ef567b42eeb0a98f755a96e794a7cf432f506c5c66056ced",
+      "only_change": "byte-identical"
+    },
+    "legacy_runner.py": {
+      "source_path": "process\\replication600\\legacy_runner.py",
+      "source_sha256": "a6aacf772c2701ddc9158b423ff0243e879be87ea1c8dfd68618861eb77ffafb",
+      "adapted_sha256": "a6aacf772c2701ddc9158b423ff0243e879be87ea1c8dfd68618861eb77ffafb",
+      "only_change": "byte-identical archival reference"
+    },
+    "generator_reference.py": {
+      "source_path": "process\\replication600\\generator.py",
+      "source_sha256": "8da8f838db71ab1388127f3b3c83e14940410db0582520c9eb0928091321180b",
+      "adapted_sha256": "8da8f838db71ab1388127f3b3c83e14940410db0582520c9eb0928091321180b",
+      "only_change": "byte-identical archival reference"
+    },
+    "oracle.py": {
+      "source_path": "process\\run14-input\\run.py",
+      "source_sha256": "74baa23e0bd3b893b884278a39482e47eba091284ea02e78fc09f3c24bc63c42",
+      "adapted_sha256": "74baa23e0bd3b893b884278a39482e47eba091284ea02e78fc09f3c24bc63c42",
+      "only_change": "byte-identical archival reference"
+    },
+    "runner_v2_reference.py": {
+      "source_path": "process\\tokenmatched-followup-20261008\\runner.py",
+      "source_sha256": "47c1eb12c3686f175f86260f7cc6786ac1d9d66b29d6d10210e03b32f7b635e6",
+      "adapted_sha256": "47c1eb12c3686f175f86260f7cc6786ac1d9d66b29d6d10210e03b32f7b635e6",
+      "only_change": "byte-identical archival reference"
+    }
+  },
+  "excluded_tasks": 756,
+  "holdout_model_calls": 0,
+  "supplier_requests": 0,
+  "prior_exposure": "old600 results and Reviewer feedback known; six-case pilot known; current375 full accuracy not read for this decision"
+}

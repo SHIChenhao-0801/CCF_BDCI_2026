@@ -1,0 +1,107 @@
+{
+  "status": "PASS_PORTABLE_POSTHOC_ALL_NUMBERS_AND_EXACT_PROMPTS",
+  "model_calls": 0,
+  "network_requests": 0,
+  "pairs": 150,
+  "full_output_sum": 2608,
+  "neutral_output_sum": 2616,
+  "input_each_arm": 33512,
+  "started_calls": 1317,
+  "successful_calls": 1314,
+  "six_cells": [
+    {
+      "family": "arithmetic",
+      "difficulty": "easy",
+      "planned": 40,
+      "valid": 39,
+      "missing": 1,
+      "full_correct": 22,
+      "neutral_correct": 21,
+      "b": 1,
+      "c": 0,
+      "p_exact_two_sided": 1,
+      "difference": 0.02564102564102564
+    },
+    {
+      "family": "arithmetic",
+      "difficulty": "hard",
+      "planned": 40,
+      "valid": 40,
+      "missing": 0,
+      "full_correct": 0,
+      "neutral_correct": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0,
+      "difference": 0.0
+    },
+    {
+      "family": "graph",
+      "difficulty": "easy",
+      "planned": 40,
+      "valid": 40,
+      "missing": 0,
+      "full_correct": 31,
+      "neutral_correct": 29,
+      "b": 2,
+      "c": 0,
+      "p_exact_two_sided": 0.5,
+      "difference": 0.05
+    },
+    {
+      "family": "graph",
+      "difficulty": "hard",
+      "planned": 40,
+      "valid": 39,
+      "missing": 1,
+      "full_correct": 20,
+      "neutral_correct": 19,
+      "b": 1,
+      "c": 0,
+      "p_exact_two_sided": 1,
+      "difference": 0.02564102564102564
+    },
+    {
+      "family": "sat",
+      "difficulty": "easy",
+      "planned": 40,
+      "valid": 39,
+      "missing": 1,
+      "full_correct": 27,
+      "neutral_correct": 21,
+      "b": 7,
+      "c": 1,
+      "p_exact_two_sided": 0.0703125,
+      "difference": 0.15384615384615385
+    },
+    {
+      "family": "sat",
+      "difficulty": "hard",
+      "planned": 40,
+      "valid": 40,
+      "missing": 0,
+      "full_correct": 4,
+      "neutral_correct": 3,
+      "b": 1,
+      "c": 0,
+      "p_exact_two_sided": 1,
+      "difference": 0.025
+    }
+  ],
+  "example_id": "sat-holdout240-easy-35",
+  "source_sha256": {
+    "raw/combined-three-segments.jsonl": "ef15014dd30603771918bc4b96fde73186574ecee6764e151f0481247b971dce",
+    "protocol/dataset.json": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+    "protocol/study.py": "328a6df68a478e24218f6b919608bdb65e04aedef20b9c9f258ce69f14e5b161",
+    "replay.py": "1a3ecd97ce2f048747f0d32b3fb161c95c4137c29150e15e23de71491ef8eaeb",
+    "process/tokenmatched-holdout240-20261008-independent-audit/audit.py": "aa9fc91aa7bd8a4fb4c9d193bc6cff33ff631002c049e392681db635be24c777"
+  },
+  "existing_public_replay_status": "PASS_PORTABLE_THREE_SEGMENT240_RAW_ORACLE_INPUT_TOKEN_MATCHING_AND_ORDER",
+  "saved_export_sha256": {
+    "evidence.json": "24093710a9706c4c38e1257e0a35d0dce312d011f7b070e46283cb6638c3e64a",
+    "exact-prompt-example.json": "2ac437e52c56fa7bbc20cd8b8fb2dadf7963bdd2bb22562db2340da6aa809918",
+    "paired-output-tokens.json": "f280d23227f63da0a4ca20d9e414af088418cfb1612dfbca79193c4dcf34073f",
+    "six-cells.tex": "be728f81e8b653049193dd8f3355205cf0a5a2a3890f3886af9d87b8e60bcc27",
+    "evidence-notes.md": "0b236fd6f0a5b3a2d4857f95779e7aa3df372cf5bed69716865cc1949766dba1"
+  }
+}

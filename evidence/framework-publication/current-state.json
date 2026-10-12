@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-09T11:25:58.229202+00:00",
+  "head": "dae143d9ac19cb5e05864d459b8cd89de96de908",
+  "state": "open",
+  "merged": false,
+  "PR": "https://gitcode.com/openJiuwen/jiuwenswarm/pull/7722",
+  "overall_CI": "NOT_ALL_PASS",
+  "labels": [
+    "sig/jiuwenswarm",
+    "stat/needs-squash",
+    "openJiuwen-cla/yes",
+    "ci-failed",
+    "AI-Reviewed"
+  ],
+  "source12_exact_head_linux_UT_success_confirmed": false,
+  "boundary": "SOURCE12 local regression: 442 PASS / 2 permission SKIP. Prior SOURCE11 Linux UT success does not establish SOURCE12 CI success; see source12-ci-status.json and source12-linux-ut-proof.json."
+}

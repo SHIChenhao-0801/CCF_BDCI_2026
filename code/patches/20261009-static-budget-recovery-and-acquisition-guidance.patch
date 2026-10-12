@@ -1,0 +1,633 @@
+diff --git a/jiuwenswarm/agents/harness/common/rsi/artifact_adapter.py b/jiuwenswarm/agents/harness/common/rsi/artifact_adapter.py
+index 8ad63f5..ee8e1f9 100644
+--- a/jiuwenswarm/agents/harness/common/rsi/artifact_adapter.py
++++ b/jiuwenswarm/agents/harness/common/rsi/artifact_adapter.py
+@@ -476,12 +476,8 @@ class ArtifactEngineAdapter:
+             raise RuntimeError("PAPER final artifact is outside the task run directory") from exc
+         package_name = artifact_relative.as_posix()
+         prefix = "paper-optimization-"
+-        if (
+-            len(artifact_relative.parts) != 1
+-            or not artifact_path.is_dir()
+-            or not package_name.startswith(prefix)
+-            or not package_name[len(prefix) :].isdigit()
+-        ):
++        valid_package_name = package_name.startswith(prefix) and package_name[len(prefix):].isdigit()
++        if len(artifact_relative.parts) != 1 or not artifact_path.is_dir() or not valid_package_name:
+             raise RuntimeError("PAPER final artifact is not an iteration package")
+ 
+         tree = _plain(self.get_tree(task_id))
+@@ -505,7 +501,7 @@ class ArtifactEngineAdapter:
+         if not manager_dir.is_dir():
+             raise RuntimeError("PAPER Manager run directory is unavailable")
+ 
+-        iteration = int(package_name[len(prefix) :])
++        iteration = int(package_name[len(prefix):])
+ 
+         context = GateContext(
+             task_id=task_id,
+diff --git a/jiuwenswarm/agents/harness/common/rsi/artifact_provenance_gate.py b/jiuwenswarm/agents/harness/common/rsi/artifact_provenance_gate.py
+index 0d13d03..70edd4a 100644
+--- a/jiuwenswarm/agents/harness/common/rsi/artifact_provenance_gate.py
++++ b/jiuwenswarm/agents/harness/common/rsi/artifact_provenance_gate.py
+@@ -138,13 +138,12 @@ class ArtifactProvenanceGate:
+         checks.append(manager_check)
+         inputs.append(_input_for(run_dir, "manager_state", state_path))
+ 
+-        reporting_reports = [
+-            report
+-            for report in manager_reports
+-            if report.get("module") == "reporting"
+-            and report.get("mode") == "run"
+-            and report.get("outcome") == "succeeded"
+-        ]
++        reporting_reports = []
++        for report in manager_reports:
++            if (report.get("module"), report.get("mode"), report.get("outcome")) == (
++                "reporting", "run", "succeeded"
++            ):
++                reporting_reports.append(report)
+         artifact_check, artifact_inputs = self._check_reporting_artifacts(
+             run_dir, reporting_reports
+         )
+@@ -254,13 +253,12 @@ class ArtifactProvenanceGate:
+                 (("path", relative),),
+             )
+         manager_reports = [report for report in reports if isinstance(report, dict)]
+-        reporting_reports = [
+-            report
+-            for report in manager_reports
+-            if report.get("module") == "reporting"
+-            and report.get("mode") == "run"
+-            and report.get("outcome") == "succeeded"
+-        ]
++        reporting_reports = []
++        for report in manager_reports:
++            if (report.get("module"), report.get("mode"), report.get("outcome")) == (
++                "reporting", "run", "succeeded"
++            ):
++                reporting_reports.append(report)
+         if not reporting_reports:
+             return manager_reports, _failure(
+                 "APG002",
+@@ -428,12 +426,8 @@ class ArtifactProvenanceGate:
+             tokens = model_call.get("tokens") if isinstance(model_call, dict) else None
+             input_tokens = tokens.get("input") if isinstance(tokens, dict) else None
+             output_tokens = tokens.get("output") if isinstance(tokens, dict) else None
+-            if (
+-                not isinstance(call_id, str)
+-                or not call_id.strip()
+-                or not _valid_token_count(input_tokens)
+-                or not _valid_token_count(output_tokens)
+-            ):
++            valid_call_id = isinstance(call_id, str) and bool(call_id.strip())
++            if not valid_call_id or not _valid_token_count(input_tokens) or not _valid_token_count(output_tokens):
+                 invalid_lines.append(line_number)
+                 continue
+             if call_id in unique:
+@@ -509,12 +503,12 @@ class ArtifactProvenanceGate:
+                 ),
+                 None,
+             )
+-        cited = {
+-            key.strip()
+-            for group in _CITATION_RE.findall(content)
+-            for key in group.split(",")
+-            if key.strip() and key.strip() != "*"
+-        }
++        cited = set()
++        for group in _CITATION_RE.findall(content):
++            for raw_key in group.split(","):
++                key = raw_key.strip()
++                if key and key != "*":
++                    cited.add(key)
+         resolved = {key.strip() for key in _BIBCITE_RE.findall(content) if key.strip()}
+         missing = sorted(cited - resolved)
+         if missing:
+diff --git a/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py b/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
+index df942d7..3cd2b0e 100644
+--- a/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
++++ b/jiuwenswarm/agents/harness/common/rsi/iclr_reporting.py
+@@ -24,20 +24,29 @@ _SHORT_PAPER_POLICY = (
+     "missing sections, unknown citation keys, session errors and compiler errors remain blocking. "
+     "On retry, inventory the existing sections once and write missing sections before rechecking existing ones. "
+     "Use supplied exact host facts once; do not repeatedly reconstruct supplied verified_facts from results.json "
+-    "or run shell Python queries to rederive already provided statistics. Preserve genuine numeric discrepancies for review. "
++    'or run shell Python queries to rederive already provided statistics. Preserve genuine numeric '
++    'discrepancies for review. '
+     "If grep reports a sandbox access denial, switch to glob/read_file without widening sandbox roots. "
+-    "Configured enabled modules do not prove actual execution; describe configured architecture separately from supplied actual run reports. "
+-    "Without a supplied actual Reflection report, do not claim this run executed Reflection; identify it only as an optional architecture stage. "
+-    "Use verified_facts to identify completed input-token matching; do not describe completed controls as future work, and distinguish them from output-length or compute matching. "
+-    "Shared initial-correct responses contribute zero to a paired arm contrast; do not attribute a full-versus-control advantage to an initial policy shared by both arms. "
+-    "Identical McNemar p-values may result from identical discordant counts; do not infer inheritance or absent recomputation from p-value equality, and rely on actual Execution evidence. "
+-    "Read each enabled SKILL.md and supplied evidence once, then immediately write title.txt, contributions.txt, keywords.txt and all sections. "
++    'Configured enabled modules do not prove actual execution; describe configured architecture '
++    'separately from supplied actual run reports. '
++    'Without a supplied actual Reflection report, do not claim this run executed Reflection; identify it '
++    'only as an optional architecture stage. '
++    'Use verified_facts to identify completed input-token matching; do not describe completed controls as'
++    ' future work, and distinguish them from output-length or compute matching. '
++    'Shared initial-correct responses contribute zero to a paired arm contrast; do not attribute a full-'
++    'versus-control advantage to an initial policy shared by both arms. '
++    'Identical McNemar p-values may result from identical discordant counts; do not infer inheritance or '
++    'absent recomputation from p-value equality, and rely on actual Execution evidence. '
++    'Read each enabled SKILL.md and supplied evidence once, then immediately write title.txt, '
++    'contributions.txt, keywords.txt and all sections. '
+     "Treat supplied skill CLIs as black boxes: do not read their Python implementations or inspect SDK/site-packages "
+-    "with inspect.getsource or inspect.getsourcefile. Invoke documented CLIs and diagnose only their actual JSON/compiler errors. "
++    'with inspect.getsource or inspect.getsourcefile. Invoke documented CLIs and diagnose only their '
++    'actual JSON/compiler errors. '
+     "Finish all seven drafts, including abstract, before any lint; write abstract after the other six drafts. "
+     "Run the supplied real ts-latex compile before optional review. "
+     "ts-review remains bounded: at most three repair attempts per section, then move on. "
+-    "For each three-lens review pass, dispatch reviewer calls sequentially, with at most one reviewer task_tool call per assistant response; "
++    'For each three-lens review pass, dispatch reviewer calls sequentially, with at most one reviewer '
++    'task_tool call per assistant response; '
+     "wait for its result before issuing the next. Keep the draft unchanged between these three isolated reviews "
+     "and never include earlier reviewer outputs in a later prompt. "
+     "Retain word-count and layout notes instead of padding to full-paper minima. "
+@@ -45,6 +54,9 @@ _SHORT_PAPER_POLICY = (
+     "inventing replacements or repeatedly querying known_numbers. "
+     "All unknown citation keys and actual compiler errors must be resolved before claiming success. "
+     "If review changes source, recompile before finishing."
++    " Zero-call replay logs describe reproduction, not original model acquisition; "
++    "distinguish original model experiments from offline reproducibility, and "
++    "do not claim fresh evaluations from retained evidence."
+ )
+ 
+ 
+@@ -121,7 +133,7 @@ class IclrReportingAgent(ReportingAgent):
+         _, visible_start, visible_tail = visible["results"].partition(r"\begin{tabular}")
+         _, end, suffix = tail.partition(r"\end{tabular}")
+         display, visible_end, _ = visible_tail.partition(r"\end{tabular}")
+-        if start and visible_start and end and visible_end:
++        if all((start, visible_start, end, visible_end)):
+             evidence["results"] = prefix + start + display + end + suffix
+         else:
+             evidence["results"] += "\n\n" + visible["results"]
+@@ -167,7 +179,10 @@ class IclrReportingAgent(ReportingAgent):
+                                  ("900-1400", "350-500"), ("200-280", "130-180"), ("150-220", "150-200")):
+                     text = text.replace(old, new)
+             else:
+-                text = text.replace("only after every section passes Step 1", "after bounded Step 1, with unresolved soft notes retained")
++                text = text.replace(
++                    "only after every section passes Step 1",
++                    "after bounded Step 1, with unresolved soft notes retained",
++                )
+             skill.write_text(text, encoding="utf-8")
+         return root
+ 
+@@ -216,7 +231,8 @@ class IclrReportingAgent(ReportingAgent):
+         if not script.is_file():
+             return session_error or "host compile script is missing"
+         if not all(path.is_file() and path.stat().st_size > 0 for path in required):
+-            return "; ".join(note for note in (session_error, "host compile requires nonempty title, refs and all seven sections") if note)
++            notes = (session_error, "host compile requires nonempty title, refs and all seven sections")
++            return "; ".join(note for note in notes if note)
+ 
+         logs = workspace / "logs"
+         logs.mkdir(exist_ok=True)
+@@ -245,7 +261,8 @@ class IclrReportingAgent(ReportingAgent):
+             "command": command, "returncode": returncode, "timed_out": timed_out,
+             "duration_seconds": time.monotonic() - started,
+         }, indent=2), encoding="utf-8")
+-        if timed_out or returncode != 0 or not compiled or not pdf.is_file() or pdf.stat().st_size == 0:
++        compile_failed = timed_out or returncode != 0 or not compiled
++        if compile_failed or not pdf.is_file() or pdf.stat().st_size == 0:
+             pdf.unlink(missing_ok=True)
+             failure = ("host compile timed out after 330s; see logs/host_compile.*" if timed_out else
+                        "host compile did not produce a nonempty PDF; see logs/host_compile.*")
+diff --git a/jiuwenswarm/agents/harness/common/rsi/paper_provider.py b/jiuwenswarm/agents/harness/common/rsi/paper_provider.py
+index cbf7ee2..aa9c299 100644
+--- a/jiuwenswarm/agents/harness/common/rsi/paper_provider.py
++++ b/jiuwenswarm/agents/harness/common/rsi/paper_provider.py
+@@ -1056,13 +1056,14 @@ class PaperProvider:
+         if source_root.is_dir():
+             excluded = []
+             relocated = []
+-            declared = {
+-                os.path.normcase(os.path.abspath(run_dir / raw))
+-                for report in _read_json_file(source_root / "manager" / "state.json").get("reports", [])
+-                if isinstance(report, dict)
+-                for raw in report.get("artifact_paths", []) or []
+-                if isinstance(raw, str)
+-            }
++            declared = set()
++            reports = _read_json_file(source_root / "manager" / "state.json").get("reports", [])
++            for report in reports:
++                if not isinstance(report, dict):
++                    continue
++                for raw in report.get("artifact_paths", []) or []:
++                    if isinstance(raw, str):
++                        declared.add(os.path.normcase(os.path.abspath(run_dir / raw)))
+ 
+             def ignore_nul_tool_outputs(directory: str, names: list[str]) -> list[str]:
+                 ignored = []
+@@ -1072,7 +1073,7 @@ class PaperProvider:
+                     path = Path(directory) / name
+                     if os.path.normcase(os.path.abspath(path)) in declared:
+                         continue
+-                    physical = Path("\\\\?\\" + str(path.absolute()))
++                    physical = Path("\\\\?\\{}".format(path.absolute()))
+                     try:
+                         size = physical.stat().st_size if physical.is_file() else None
+                     except OSError:
+@@ -1097,7 +1098,9 @@ class PaperProvider:
+                             "size": len(content), "sha256": hashlib.sha256(content).hexdigest(),
+                         })
+                         ignored.append(name)
+-                        logger.warning("[RSI] preserved nonempty Windows NUL tool output as package bytes: %s", relative)
++                        logger.warning(
++                            "[RSI] preserved nonempty Windows NUL tool output as package bytes: %s", relative
++                        )
+                 return ignored
+ 
+             shutil.copytree(source_root, destination, dirs_exist_ok=True, ignore=ignore_nul_tool_outputs)
+diff --git a/jiuwenswarm/agents/harness/common/rsi/recovery.py b/jiuwenswarm/agents/harness/common/rsi/recovery.py
+index 893887d..83a45da 100644
+--- a/jiuwenswarm/agents/harness/common/rsi/recovery.py
++++ b/jiuwenswarm/agents/harness/common/rsi/recovery.py
+@@ -5,7 +5,7 @@ from __future__ import annotations
+ import logging
+ from typing import Any
+ 
+-from jiuwenswarm.agents.harness.common.rsi.errors import failure_reason
++from jiuwenswarm.agents.harness.common.rsi.errors import RsiTaskStateConflict, failure_reason
+ from jiuwenswarm.agents.harness.common.rsi.models import TaskStatus
+ 
+ logger = logging.getLogger(__name__)
+@@ -54,13 +54,18 @@ class RsiWorkspaceRecovery:
+                             task.task_id, [task.status], target, results, cause=cause
+                         )
+                     except Exception:  # noqa: BLE001 - never publish incomplete terminal evidence
++                        if self.store.get(task.task_id).status != task.status:
++                            continue
+                         target = TaskStatus.FAILED.value
+-                        self.store.update_status(
+-                            task.task_id,
+-                            [task.status],
+-                            target,
+-                            cause="worker.terminal_evidence_persist_failed",
+-                        )
++                        try:
++                            self.store.update_status(
++                                task.task_id,
++                                [task.status],
++                                target,
++                                cause="worker.terminal_evidence_persist_failed",
++                            )
++                        except RsiTaskStateConflict:
++                            continue
+             except Exception as exc:  # noqa: BLE001 - isolate one corrupt task at startup
+                 logger.exception("[RSI] workspace recovery failed: task=%s", task.task_id)
+                 summary["errors"].append({"task_id": task.task_id, "error": str(exc)})
+@@ -94,11 +99,11 @@ class RsiWorkspaceRecovery:
+         if provider_status == "COMPLETED" and callable(finalize_terminal):
+             try:
+                 provider_state = finalize_terminal(task.task_id, provider_state)
+-                results = {
+-                    key: str(value)
+-                    for key in ("best_artifact_path", "final_node_id", "error_code", "error_message")
+-                    if (value := getattr(provider_state, key, None)) is not None
+-                }
++                results = {}
++                for key in ("best_artifact_path", "final_node_id", "error_code", "error_message"):
++                    value = getattr(provider_state, key, None)
++                    if value is not None:
++                        results[key] = str(value)
+             except Exception as exc:  # noqa: BLE001 - match the worker's fail-closed terminal boundary
+                 reason = failure_reason(exc, fallback="PAPER terminal finalization failed")
+                 return TaskStatus.FAILED.value, reason, {"error_message": reason}
+diff --git a/scripts/deepseek_budget_proxy.py b/scripts/deepseek_budget_proxy.py
+index 66ed957..9a28478 100644
+--- a/scripts/deepseek_budget_proxy.py
++++ b/scripts/deepseek_budget_proxy.py
+@@ -27,6 +27,10 @@ class BudgetExceeded(RuntimeError):
+     """Raised before forwarding when the worst-case reservation cannot fit."""
+ 
+ 
++class BudgetContractViolation(ValueError):
++    """Reported cost exceeds admission bounds; retain charge and require recovery."""
++
++
+ class LedgerLocked(RuntimeError):
+     """Raised when another proxy process already owns the budget ledger."""
+ 
+@@ -127,6 +131,8 @@ class BudgetLedger:
+         async with self._settled:
+             if self._persistence_failed:
+                 raise LedgerPersistenceError("budget settlement requires local recovery")
++            if self._state.get("contract_violations"):
++                raise BudgetContractViolation("model contract violation requires local recovery")
+             worst = self.policy.worst_call_micro_cny
+             charged = int(self._state["charged_micro_cny"])
+             while charged + worst > self.policy.budget_micro_cny:
+@@ -136,6 +142,8 @@ class BudgetLedger:
+                 await self._settled.wait()
+                 if self._persistence_failed:
+                     raise LedgerPersistenceError("budget settlement requires local recovery")
++                if self._state.get("contract_violations"):
++                    raise BudgetContractViolation("model contract violation requires local recovery")
+                 charged = int(self._state["charged_micro_cny"])
+             before = self.snapshot()
+             reservation = Reservation(uuid.uuid4().hex, worst)
+@@ -159,9 +167,19 @@ class BudgetLedger:
+                 raise ValueError("reservation is not active")
+             if int(persisted_worst) != reservation.worst_micro_cny:
+                 raise ValueError("reservation does not match persisted state")
++            if reservation.reservation_id in self._state.get("contract_violations", {}):
++                raise BudgetContractViolation("model contract violation requires local recovery")
+             actual = None if usage is None else self.policy.cost_micro_cny(usage)
+             if actual is not None and actual > reservation.worst_micro_cny:
+-                raise ValueError("reported usage exceeds the reserved model contract")
++                self._state.setdefault("contract_violations", {})[reservation.reservation_id] = actual
++                try:
++                    self._persist()
++                except LedgerPersistenceError:
++                    self._persistence_failed = True
++                    raise
++                finally:
++                    self._settled.notify_all()
++                raise BudgetContractViolation("reported usage exceeds the reserved model contract")
+             before = self.snapshot()
+             owned = reservation.reservation_id in self._owned_reservations
+             active.pop(reservation.reservation_id)
+@@ -169,7 +187,8 @@ class BudgetLedger:
+             if usage is None:
+                 self._state["unmetered_calls"] = int(self._state["unmetered_calls"]) + 1
+             else:
+-                assert actual is not None
++                if actual is None:
++                    raise ValueError("metered settlement requires an actual cost")
+                 refund = reservation.worst_micro_cny - actual
+                 self._state["charged_micro_cny"] = int(self._state["charged_micro_cny"]) - refund
+             self._state["settled_calls"] = int(self._state["settled_calls"]) + 1
+@@ -211,6 +230,10 @@ class BudgetLedger:
+     def snapshot(self) -> dict[str, Any]:
+         return json.loads(json.dumps(self._state))
+ 
++    @property
++    def degraded(self) -> bool:
++        return self._persistence_failed or bool(self._state.get("contract_violations"))
++
+     def public_snapshot(self) -> dict[str, Any]:
+         state = self.snapshot()
+         charged = int(state["charged_micro_cny"])
+@@ -269,6 +292,12 @@ class BudgetLedger:
+         charged = state["charged_micro_cny"]
+         if charged > self.policy.budget_micro_cny or charged < sum(reservations.values()):
+             raise ValueError("persisted budget ledger violates its budget invariant")
++        violations = state.get("contract_violations", {})
++        if not isinstance(violations, dict) or any(
++            key not in reservations or not isinstance(value, int) or isinstance(value, bool)
++            or value <= reservations[key] for key, value in violations.items()
++        ):
++            raise ValueError("persisted budget ledger has invalid contract violations")
+         return state
+ 
+     def _persist(self) -> None:
+@@ -393,12 +422,23 @@ def create_app(
+     async def persistence_failure(request: Request, exc: LedgerPersistenceError) -> JSONResponse:
+         return JSONResponse(
+             status_code=503,
+-            content={"detail": {"code": "RSI_LEDGER_PERSIST_FAILED", "message": "local budget storage requires recovery"}},
++            content={"detail": {
++                "code": "RSI_LEDGER_PERSIST_FAILED", "message": "local budget storage requires recovery",
++            }},
++        )
++
++    @app.exception_handler(BudgetContractViolation)
++    async def contract_violation(_request: Request, _exc: BudgetContractViolation) -> JSONResponse:
++        return JSONResponse(
++            status_code=502,
++            content={"detail": {
++                "code": "RSI_MODEL_CONTRACT_VIOLATION", "message": "model usage contract requires local recovery",
++            }},
+         )
+ 
+     @app.get("/health")
+     async def health() -> dict[str, Any]:
+-        return {"status": "degraded" if ledger._persistence_failed else "ok", **ledger.public_snapshot()}
++        return {"status": "degraded" if ledger.degraded else "ok", **ledger.public_snapshot()}
+ 
+     async def forward_models() -> Response:
+         return await _forward_unmetered(settings, "/models", upstream_transport, request_policy)
+@@ -412,7 +452,7 @@ def create_app(
+             if not isinstance(raw_body, dict):
+                 raise ValueError("request body must be an object")
+             body = bounded_chat_body(raw_body, ledger.policy)
+-        except (json.JSONDecodeError, ValueError) as exc:
++        except ValueError as exc:
+             raise HTTPException(status_code=400, detail=str(exc)) from exc
+         _check_request_policy(request_policy)
+         try:
+@@ -539,7 +579,7 @@ def _check_request_policy(path: str | Path | None) -> None:
+             deadline = datetime.fromisoformat(policy["stop_at_utc"])
+             if deadline.tzinfo is None or deadline.utcoffset() != UTC.utcoffset(deadline):
+                 raise ValueError("stop_at_utc must have a UTC timezone")
+-    except (OSError, UnicodeError, ValueError) as exc:
++    except (OSError, ValueError) as exc:
+         raise HTTPException(
+             status_code=503,
+             detail={"code": "RSI_REQUEST_POLICY_INVALID", "message": "local request policy is invalid or unreadable"},
+diff --git a/scripts/model_compatibility_smoke.py b/scripts/model_compatibility_smoke.py
+index ea44157..75adf44 100644
+--- a/scripts/model_compatibility_smoke.py
++++ b/scripts/model_compatibility_smoke.py
+@@ -4,6 +4,7 @@ from __future__ import annotations
+ 
+ import argparse
+ import json
++import logging
+ import time
+ from dataclasses import dataclass, field
+ from datetime import UTC, datetime
+@@ -175,7 +176,8 @@ def main() -> int:
+     report["evaluated_at"] = datetime.now(UTC).isoformat()
+     output.parent.mkdir(parents=True, exist_ok=True)
+     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+-    print(f"{args.provider}: {report['status']} ({output})")
++    logging.basicConfig(level=logging.INFO, format="%(message)s")
++    logging.getLogger(__name__).info("%s: %s (%s)", args.provider, report["status"], output)
+     return 0 if report["status"] == "PASS" else 1
+ 
+ 
+diff --git a/tests/unit_tests/rsi/test_deepseek_budget_proxy.py b/tests/unit_tests/rsi/test_deepseek_budget_proxy.py
+index eb714a8..8aec8f6 100644
+--- a/tests/unit_tests/rsi/test_deepseek_budget_proxy.py
++++ b/tests/unit_tests/rsi/test_deepseek_budget_proxy.py
+@@ -436,3 +436,76 @@ async def test_stream_protocol_done_can_settle_usage_before_transport_eof(tmp_pa
+     assert ledger.snapshot()["active_reservations"] == {}
+     assert client.closed is True
+     ledger.close()
++
++
++@pytest.mark.asyncio
++async def test_contract_violation_keeps_charge_and_unblocks_waiters_fail_closed(tmp_path):
++    policy = _policy(budget="2.30")
++    path = tmp_path / "contract-budget.json"
++    ledger = BudgetLedger(path, policy)
++    reservation = await ledger.reserve()
++    queued = asyncio.create_task(ledger.reserve())
++    try:
++        await asyncio.sleep(0)
++        usage = Usage(policy.max_input_tokens + 1, policy.max_output_tokens)
++        actual = policy.cost_micro_cny(usage)
++        with pytest.raises(ValueError, match="reserved model contract"):
++            await ledger.settle(reservation, usage)
++        snapshot = ledger.snapshot()
++        assert snapshot["charged_micro_cny"] == reservation.worst_micro_cny
++        assert snapshot["active_reservations"] == {reservation.reservation_id: reservation.worst_micro_cny}
++        assert snapshot["settled_calls"] == snapshot["unmetered_calls"] == 0
++        assert snapshot["contract_violations"] == {reservation.reservation_id: actual}
++        with pytest.raises(ValueError, match="recovery"):
++            await ledger.settle(reservation, None)
++        assert ledger.snapshot() == snapshot
++        with pytest.raises(ValueError, match="recovery"):
++            await asyncio.wait_for(asyncio.shield(queued), timeout=1)
++        ledger.close()
++        reloaded = BudgetLedger(path, policy)
++        try:
++            with pytest.raises(ValueError, match="recovery"):
++                await reloaded.reserve()
++            assert reloaded.snapshot()["contract_violations"] == snapshot["contract_violations"]
++        finally:
++            reloaded.close()
++    finally:
++        queued.cancel()
++        await asyncio.gather(queued, return_exceptions=True)
++        ledger.close()
++
++
++@pytest.mark.asyncio
++async def test_upstream_over_contract_returns_explicit_failure_and_stops_new_calls(tmp_path):
++    policy = _policy()
++    ledger = BudgetLedger(tmp_path / "contract-http.json", policy)
++    calls = []
++    def upstream(request):
++        calls.append(request.method)
++        return httpx.Response(200, json={"usage": {
++            "prompt_tokens": policy.max_input_tokens + 1,
++            "completion_tokens": policy.max_output_tokens,
++        }})
++    app = create_app(ProxySettings("https://offline.invalid", "offline"), ledger,
++                     upstream_transport=httpx.MockTransport(upstream))
++    try:
++        async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app, raise_app_exceptions=False),
++                                     base_url="http://offline") as client:
++            first = await client.post("/chat/completions", json={"model": policy.model, "messages": []})
++            assert first.status_code == 502
++            assert first.json()["detail"]["code"] == "RSI_MODEL_CONTRACT_VIOLATION"
++            health = await client.get("/health")
++            assert health.json()["status"] == "degraded"
++            second = await client.post("/chat/completions", json={"model": policy.model, "messages": []})
++            assert second.status_code == 502
++        assert calls == ["POST"]
++        assert ledger.snapshot()["reserved_calls"] == 1
++    finally:
++        ledger.close()
++
++
++def test_bounded_usage_rounding_is_monotone():
++    policy = _policy()
++    for input_tokens in [0, 1, policy.max_input_tokens]:
++        for output_tokens in [0, 1, policy.max_output_tokens]:
++            assert policy.cost_micro_cny(Usage(input_tokens, output_tokens)) <= policy.worst_call_micro_cny
+diff --git a/tests/unit_tests/rsi/test_iclr_reporting_guidance.py b/tests/unit_tests/rsi/test_iclr_reporting_guidance.py
+index f59963f..f989a8b 100644
+--- a/tests/unit_tests/rsi/test_iclr_reporting_guidance.py
++++ b/tests/unit_tests/rsi/test_iclr_reporting_guidance.py
+@@ -73,3 +73,5 @@ async def test_actual_writer_prompts_bind_execution_and_completed_control_facts(
+         assert 'output-length or compute matching' in prompt
+         assert 'Shared initial-correct responses contribute zero to a paired arm contrast' in prompt
+         assert 'Identical McNemar p-values may result from identical discordant counts' in prompt
++        assert 'Zero-call replay logs describe reproduction, not original model acquisition' in prompt
++        assert 'do not claim fresh evaluations from retained evidence' in prompt
+diff --git a/tests/unit_tests/rsi/test_workspace_recovery.py b/tests/unit_tests/rsi/test_workspace_recovery.py
+index 3d69e28..69cfdcf 100644
+--- a/tests/unit_tests/rsi/test_workspace_recovery.py
++++ b/tests/unit_tests/rsi/test_workspace_recovery.py
+@@ -8,8 +8,11 @@ from pathlib import Path
+ from types import SimpleNamespace
+ from typing import Any
+ 
++import pytest
++
+ from jiuwenswarm.agents.harness.common.rsi import build_rsi_service_context
+ from jiuwenswarm.agents.harness.common.rsi.models import RsiTask, TaskStatus, utcnow_iso
++from jiuwenswarm.agents.harness.common.rsi.recovery import RsiWorkspaceRecovery
+ from jiuwenswarm.common.schema.message import ReqMethod
+ from jiuwenswarm.server.rsi import RsiAgentServerHandlers
+ 
+@@ -276,3 +279,70 @@ def test_queued_task_becomes_paused_once_without_being_requeued(tmp_path: Path)
+     assert recovered.status_history == history_after_first_recovery
+     assert recovered.status_history[-1]["cause"] == "agentserver_restart.queue_lost"
+     assert restarted.worker._queue.qsize() == 0  # noqa: SLF001 - explicit resume is required
++
++
++@pytest.mark.parametrize("competing_status", ["TERMINATED", "PAUSED", "QUEUED", "COMPLETED"])
++def test_recovery_preserves_concurrent_state_without_failed_fallback(
++    tmp_path: Path, monkeypatch, competing_status: str
++) -> None:
++    context, task_id = _create_task(tmp_path / "tasks", TaskStatus.RUNNING)
++    store = context.store
++    original_write = store.update_status_with_results
++    original_transition = store.update_status
++    adapter = SnapshotAdapter(status="completed")
++    adapter.finalize_terminal = lambda *args: SimpleNamespace(
++        status="COMPLETED", best_artifact_path="paper.pdf"
++    )
++
++    def competing_write(task_id, from_states, to_state, results, cause=""):
++        if competing_status == "COMPLETED":
++            original_write(task_id, from_states, to_state, results, cause)
++            raise RuntimeError("callback failed after durable commit")
++        if competing_status == "QUEUED":
++            original_transition(task_id, ["RUNNING"], "PAUSED", "concurrent pause")
++            original_transition(task_id, ["PAUSED"], "QUEUED", "explicit resume")
++        else:
++            original_transition(task_id, ["RUNNING"], competing_status, "concurrent change")
++        return original_write(task_id, from_states, to_state, results, cause)
++
++    monkeypatch.setattr(store, "update_status_with_results", competing_write)
++    fallback_attempts = []
++
++    def track_fallback(*args, **kwargs):
++        fallback_attempts.append((args, kwargs))
++        return original_transition(*args, **kwargs)
++
++    monkeypatch.setattr(store, "update_status", track_fallback)
++    summary = RsiWorkspaceRecovery(store, context.projector, lambda *args: adapter).recover()
++
++    task = store.get(task_id)
++    assert task.status == competing_status
++    assert not fallback_attempts
++    assert summary["errors"] == []
++    assert summary["recovered"] == 0
++    if competing_status == "COMPLETED":
++        assert task.config["results"]["best_artifact_path"] == "paper.pdf"
++
++
++def test_recovery_preserves_state_changed_during_failed_fallback(tmp_path: Path, monkeypatch) -> None:
++    context, task_id = _create_task(tmp_path / "tasks", TaskStatus.RUNNING)
++    store = context.store
++    adapter = SnapshotAdapter(status="completed")
++    adapter.finalize_terminal = lambda *args: SimpleNamespace(status="COMPLETED")
++
++    def fail_write(*args, **kwargs):
++        raise OSError("evidence write failed")
++
++    monkeypatch.setattr(store, "update_status_with_results", fail_write)
++    original_transition = store.update_status
++
++    def competing_fallback(*args, **kwargs):
++        original_transition(task_id, ["RUNNING"], "TERMINATED", "concurrent termination")
++        return original_transition(*args, **kwargs)
++
++    monkeypatch.setattr(store, "update_status", competing_fallback)
++    summary = RsiWorkspaceRecovery(store, context.projector, lambda *args: adapter).recover()
++
++    assert store.get(task_id).status == "TERMINATED"
++    assert summary["errors"] == []
++    assert summary["recovered"] == 0

@@ -1,0 +1,32 @@
+{
+  "status": "LIVE_RULES_AND_CURRENT_REFERENCE_SAMPLE_MATCH",
+  "checked_at_utc": "2026-10-09T03:38:21.916371+00:00",
+  "receipts": [
+    {
+      "url": "https://www.xir.cn/competitionApi/api/competitions/1167",
+      "http_status": 200,
+      "bytes": 35295,
+      "sha256": "548c07755648af89d565ef94409f0a84bb3dffd48aed76e39a52a1e044d475cc"
+    },
+    {
+      "url": "https://www.xir.cn/competitionApi/api/competitions/1167?part=datasets",
+      "http_status": 200,
+      "bytes": 35606,
+      "sha256": "26750c2d1e0663a051523de11a03ab2a6b3fab0dea4bbb1f6538b9a5c5a3efe5"
+    }
+  ],
+  "sample_id": 1879,
+  "sample_md5": "6f767bd5a873dd81ec249de47ab0ccbe",
+  "sample_bytes": 1841861,
+  "sample_updated_at": "2026-08-14T07:32:16.000Z",
+  "reviewer_directory": "Agentic Reviewer",
+  "schedules": [
+    {
+      "title": "初赛",
+      "endTime": "2026-10-09T23:59:59+08:00",
+      "maxSubmitCount": 3
+    }
+  ],
+  "official_page": "https://www.xir.cn/competition/1167/dataware",
+  "model_calls": 0
+}

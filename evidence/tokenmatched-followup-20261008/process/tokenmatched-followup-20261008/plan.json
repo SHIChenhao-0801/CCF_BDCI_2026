@@ -1,0 +1,22 @@
+{
+  "study_id": "tokenmatched-followup-20261008-v1",
+  "status": "OFFLINE_PREPARED_LIVE_FEASIBILITY_UNPROVEN",
+  "planned_primary_cases": 375,
+  "planned_SAT_localization_ablation_cases": 166,
+  "new_independent_samples": 0,
+  "primary": "full_vs_neutral_exact_paired_McNemar_on_usage_matched_final_pairs",
+  "exploratory": "full_vs_coarse_with_error_preserved_and_only_clause_index_removed_on_SAT166",
+  "full_feedback_original_checker_dict_unchanged": true,
+  "neutral_feedback": {},
+  "no_added_ok_field": true,
+  "model_settings": {"model": "deepseek-flash", "temperature": 0, "thinking": "disabled", "stream": false, "final_max_tokens": 2048, "probe_max_tokens": 1},
+  "calibration": {"padding_unit": " a", "primary_target": "max_zero_padding_full_neutral_counts_plus4", "max_padding_units": 64, "max_probes_per_arm": 5, "max_all_probe_calls": 4580, "max_all_final_calls": 916, "probe_outputs_scored": false, "final_equal_usage_assertion_required": true},
+  "maximum_final_output_control_CNY_without_input": "15.007744",
+  "additional_settled_control_cap_CNY_proposed": "5",
+  "total_user_authorization_CNY": "40",
+  "workers_prepared": 1,
+  "paid_authorization": false,
+  "live_feasibility_validated": false,
+  "request_policy_currently_paused": true,
+  "old_unknowns_must_not_be_refunded": true
+}

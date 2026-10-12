@@ -1,0 +1,32 @@
+[
+  {
+    "id": "graph-replication600-easy-20",
+    "family": "graph",
+    "difficulty": "easy",
+    "retry_order": [
+      "lengthmatchedretry",
+      "verifiedretry",
+      "blindretry"
+    ],
+    "initial": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "feedback": null
+    },
+    "lengthmatchedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "verifiedretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "reused_initial": true
+    },
+    "blindretry": {
+      "call_key": "7adae0c2cfac:graph-replication600-easy-20:initial",
+      "correct": true,
+      "reused_initial": true
+    }
+  }
+]

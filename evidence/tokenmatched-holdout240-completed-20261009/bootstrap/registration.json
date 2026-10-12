@@ -1,0 +1,51 @@
+{
+  "kind": "SUPPLEMENTARY_PAIRED_BOOTSTRAP_PLAN_BEFORE_HOLDOUT_INITIAL",
+  "observed_at_utc": "2026-10-08T11:22:04.241530+00:00",
+  "sealed_at_utc": "2026-10-08T11:22:04.245533+00:00",
+  "plan_sha256": "ff2282d52bdf58d633d3ba6f0df3636f540753b3bbacc867c7c93d8552cef762",
+  "replicates": 10000,
+  "seed": 20261008,
+  "confidence_level": 0.95,
+  "quantile": "linear h=(B-1)*p; lower=.025 upper=.975",
+  "resample": "n task difference indices per replicate using independent Random(seed).randrange(n)",
+  "canonical_difference_order": "[1]*b+[-1]*w+[0]*(n-b-w)",
+  "seed_reset": "fresh identical seed for each separate cohort and contrast",
+  "holdout_relative": "process/tokenmatched-holdout240-20261008",
+  "holdout_files": {
+    "dataset.json": {
+      "sha256": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+      "bytes": 417676
+    },
+    "ready.json": {
+      "sha256": "80762b8f4f835a35474704c91dd018221a3359be851cf3e79179a830221e62c3",
+      "bytes": 3598
+    },
+    "manifest.json": {
+      "sha256": "3807e32345777e4ec1103221511d9eb1d80aa4240860860fdcdd848e438a4158",
+      "bytes": 483
+    },
+    "PROTOCOL.md": {
+      "sha256": "3c58c6e8a0fbea7869ca9e4cb25c58b14bd3fdc251d215b6d74855c51bc06b50",
+      "bytes": 5610
+    }
+  },
+  "actual_call_journals_observed": [],
+  "actual_call_events": 0,
+  "holdout_started_record_present": false,
+  "ready_model_calls": 0,
+  "ready_supplier_requests": 0,
+  "new240_status": "supplement_plan_fixed_before_first_initial_call",
+  "old600_status": "posthoc_supplementary",
+  "reused375_status": "posthoc_supplementary",
+  "full375_outcomes_or_final_accuracy_read": false,
+  "execution": "DEFERRED_UNTIL_RAW_TERMINAL_AUDITS",
+  "model_calls_by_this_helper": 0,
+  "limitations": [
+    "complete-case conditional CI when missing",
+    "full-planned missing bounds required",
+    "no MCAR/MAR claim",
+    "no model-generality claim",
+    "no cohort pooling",
+    "primary exact McNemar unchanged"
+  ]
+}

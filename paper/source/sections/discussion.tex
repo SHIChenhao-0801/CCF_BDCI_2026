@@ -1,0 +1,34 @@
+\section{Discussion}
+\subsection{Interpretation and limitations}
+The paired control isolates an additional diagnostic from an additional answer attempt at a matched call count. The observed advantage is one easy graph item. A missing generic-only success in this run is an observation, not a guarantee that diagnostic context cannot harm a retry. We make no population-level improvement claim. Non-significance does not establish a null effect, and overlapping marginal intervals are not a substitute for paired testing. No formal prospective power analysis was performed; the small number of observed discordances limits inference without proving that significance was impossible before execution.
+
+The study is restricted to one model identifier, one configuration, one retry, and three synthetic verification families. The graph checker can accept alternate shortest paths and the SAT checker alternate satisfying assignments, but this does not make the dataset representative of natural-language or real research problems. Difficulty labels are generator labels, not calibrated psychometric measurements. Repeated engineering exposure and vendor variability further constrain interpretation; temperature zero does not ensure identical replies or requests across executions. The diagnostic provides external assistance, not intrinsic self-correction or weight learning \citep{jie2023fd36c5c8,aman2023820a9974}.
+
+\subsection{Engineering disclosure and manuscript provenance}
+Ten paid engineering executions of the same 24 items are retained in chronological order (Table~\ref{tab:runs}). Their 526 solver calls, 95,985 input and 8,963 output tokens are cumulative resources, not 240 independent observations or a pooled accuracy estimate. Runs 1--9 publicly failed, including cases where Reporting produced a PDF but accounting or Manager termination blocked completion. Run 9 performed Reflection after both Reporting failures; an incorrect statement in that raw Reflection about all 14 failures remaining unrepaired is preserved as an error, not copied into our analysis.
+
+\begin{table}[t]
+\centering
+\begin{tabular}{rlrrrl}
+\toprule
+Run & Initial/Generic/Diagnostic & Calls & Input & Output & Public state\\
+\midrule
+1 & 10/11/12 & 52 & 9,504 & 892 & Failed\\
+2 & 9/11/12 & 54 & 9,865 & 919 & Failed\\
+3 & 10/11/12 & 52 & 9,504 & 888 & Failed\\
+4 & 10/11/12 & 52 & 9,504 & 891 & Failed\\
+5 & 10/11/12 & 52 & 9,504 & 890 & Failed\\
+6 & 10/11/12 & 52 & 9,496 & 879 & Failed\\
+7 & 9/10/12 & 54 & 9,739 & 904 & Failed\\
+8 & 9/11/12 & 54 & 9,865 & 920 & Failed\\
+9 & 10/11/12 & 52 & 9,504 & 892 & Failed\\
+10 & 10/11/12 & 52 & 9,500 & 888 & Completed\\
+\bottomrule
+\end{tabular}
+\caption{Engineering repetitions on the same 24 evaluation items. Correct counts and solver-only resources remain separate from full-workflow status. Full failure records are retained.}
+\label{tab:runs}
+\end{table}
+
+The tenth full workflow took 924.82 seconds, with successful Reporting lasting 812.046 seconds. Its original production audit passes all five rules without skips. Its 145 known-usage ledger entries aggregate 4,586,970 input and 67,067 output tokens; 4,421,760 cache-hit tokens are included in input. These full-workflow quantities differ from solver resources. The inner writer nevertheless reached its 64-step limit; the actual compiler and upstream output verification produced a valid artifact and successful outer Reporting. This is artifact completion with a disclosed inner-session limitation, not clean autonomous writer termination.
+
+The historical run10 framework had 384 distinct offline regression checks (366 RSI, 11 solver, two legacy repair, five reconciliation), normal exits, and an independently applicable 20-file patch. These checks do not validate semantic claims or the later implementation. This manuscript updates the operator-amended copy of the completed Agent manuscript: wide generated tables were replaced with compact measured tables, duplicate bibliography authors corrected, and overstatements removed. Source/PDF hashes and each changed file are retained; original outputs are unchanged. Fresh held-out items, more model/configuration replications, and a length-matched retry control were identified as necessary before drawing a stronger conclusion. Appendix~\ref{app:current} separately identifies later evidence without changing this pilot's results.

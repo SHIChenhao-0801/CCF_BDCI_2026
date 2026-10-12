@@ -1,0 +1,70 @@
+{
+  "recorded_at_utc": "2026-10-09T11:25:58.229202+00:00",
+  "http_status": 200,
+  "published_head": "dae143d9ac19cb5e05864d459b8cd89de96de908",
+  "merged": false,
+  "labels": [
+    "sig/jiuwenswarm",
+    "stat/needs-squash",
+    "openJiuwen-cla/yes",
+    "ci-failed",
+    "AI-Reviewed"
+  ],
+  "latest_bot_at": "2026-10-09T19:18:35+08:00",
+  "comment_commit_id": null,
+  "tasks": [
+    {
+      "task": "静态检查",
+      "status": "FAILED",
+      "url": "https://www.openlibing.com/apps/entryCheckDashCode/MR_5ee122d5fe284edbbe15527ec708734b/8c9a709ece188da8039870c7161f1e9e?projectId=300075&codeHostingPlatformFlag=gitcode"
+    },
+    {
+      "task": "禁用词扫描",
+      "status": "SUCCESS",
+      "url": "https://gitcode.com/openJiuwen/community/blob/main/security/blacklist.md"
+    },
+    {
+      "task": "防投毒检查",
+      "status": "SUCCESS",
+      "url": "https://www.openlibing.com/apps/entryCheckNew/poisoningresult/eaa3ff94-9638-48ad-bf58-9ff99a4e3cf3/openJiuwen/jiuwenswarm?projectName=openJiuwen&codeHostingPlatformFlag=gitcode"
+    },
+    {
+      "task": "开源合规检查",
+      "status": "FAILED",
+      "url": "https://www.openlibing.com/apps/personalScandTaskInfor/person/9b3a504f-eb74-4426-a2eb-6aeb214c8644?projectId=300075&codeHostingPlatformFlag=gitcode"
+    },
+    {
+      "task": "UT测试",
+      "status": "SUCCESS",
+      "url": "https://openjiuwen-ci.obs.cn-north-4.myhuaweicloud.com/jiuwenswarm/ut/7722/unit_test_report.html"
+    },
+    {
+      "task": "ST测试",
+      "status": "N/A",
+      "url": null
+    },
+    {
+      "task": "build 编译包",
+      "status": "SUCCESS",
+      "url": "https://openjiuwen-ci.obs.cn-north-4.myhuaweicloud.com/jiuwenswarm/package/dist/7722/jiuwenswarm-0.0.1.dev7722-py3-none-any.whl"
+    },
+    {
+      "task": "ruff codecheck",
+      "status": "SUCCESS",
+      "url": "None"
+    },
+    {
+      "task": "issue关联检查",
+      "status": "SUCCESS",
+      "url": null
+    },
+    {
+      "task": "pr size检查",
+      "status": "FAILED",
+      "url": null
+    }
+  ],
+  "overall_CI": "NOT_ALL_PASS",
+  "source12_exact_head_success_confirmed": false,
+  "boundary": "Bot summary has no commit SHA and reuses older static/compliance task links. A successful UT row alone does not bind its report to SOURCE12."
+}

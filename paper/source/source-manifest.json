@@ -1,0 +1,77 @@
+{
+  "kind": "FROZEN_AUTHORING_INPUTS",
+  "canonical_rule": "sorted relative entries; compact JSON UTF8 sort_keys",
+  "source_bundle_sha256": "fbadaa88ec892c24997e8a1e26aa0ea4e566d9fc96a1ff22b21ac22ab82ab938",
+  "files": [
+    {
+      "path": "fancyhdr.sty",
+      "bytes": 20521,
+      "sha256": "b56ec4434b9f4607529a4b23dc68ad8d4b94f1f631c8cddaf7da78140d53a5ea"
+    },
+    {
+      "path": "iclr2026_conference.bst",
+      "bytes": 26973,
+      "sha256": "2d67552db7ed38ccfccb5957b52f95656e25c249724761d3cf5f7922ad1844c5"
+    },
+    {
+      "path": "iclr2026_conference.sty",
+      "bytes": 9025,
+      "sha256": "a4852f68e080d6c5245057ca2039100b409e31727898aa93c03d78ddb84374a3"
+    },
+    {
+      "path": "main.tex",
+      "bytes": 747,
+      "sha256": "79496574219ed454aa62603322452b74de68ce70adf1a834bc70b517d76fd464"
+    },
+    {
+      "path": "natbib.sty",
+      "bytes": 45154,
+      "sha256": "88bc70c0e48461934cab5b2accef06b74a8b3ac45ad03ccd3f2a6b7e0d6d530d"
+    },
+    {
+      "path": "refs.bib",
+      "bytes": 2072,
+      "sha256": "a32303123187cc0e75ac35af506392d876a7e97733aec9afa7338ccdf5b4e66b"
+    },
+    {
+      "path": "sections/abstract.tex",
+      "bytes": 1347,
+      "sha256": "a309fe18574a124370880f179d531c94797c8fd4ce5d5494076145d92157a29b"
+    },
+    {
+      "path": "sections/conclusion.tex",
+      "bytes": 808,
+      "sha256": "adbd8f08d07ce1a233dacb06c9f7305cd94f887a7794d6664c9b1e767ba2738a"
+    },
+    {
+      "path": "sections/current_evidence.tex",
+      "bytes": 3488,
+      "sha256": "90a2088edfdff81a9ee8e70ea8416a163ca2e560fd3b71fdcd2fc5c56b9fd521"
+    },
+    {
+      "path": "sections/discussion.tex",
+      "bytes": 4414,
+      "sha256": "b29201da7fc00152058735aff8e4f3fe63f87baccc5e260838ee1906fcd92283"
+    },
+    {
+      "path": "sections/experiments.tex",
+      "bytes": 4907,
+      "sha256": "fc597b503b75b7fcd3b9be323fc4bbb8b4ff9703389ea5c184311ec8c67fccb1"
+    },
+    {
+      "path": "sections/introduction.tex",
+      "bytes": 2487,
+      "sha256": "b8b9a467a89ec55c3fe15483330a947195e5e1f246e4ffbfeb896f989e607bf1"
+    },
+    {
+      "path": "sections/method.tex",
+      "bytes": 4845,
+      "sha256": "db33cc80cad0109aa2af1faa2b47b28b50fbf239c20d45154f62ba9580114cdc"
+    },
+    {
+      "path": "sections/related_work.tex",
+      "bytes": 2175,
+      "sha256": "763ad7fbdb6f893d42b2676af28ebde25d344eec2d4e1c975659ea902118cd24"
+    }
+  ]
+}

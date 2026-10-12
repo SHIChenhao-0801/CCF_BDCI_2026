@@ -1,0 +1,158 @@
+{
+  "files": [
+    {
+      "public_relative": "raw/segment1-calls.jsonl",
+      "source_sha256": "ef2e9d64033a205f487316e15818932a50c63b9142f4625b826b4f19cd670cdf",
+      "public_sha256": "ef2e9d64033a205f487316e15818932a50c63b9142f4625b826b4f19cd670cdf",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "raw/segment2-calls.jsonl",
+      "source_sha256": "79bc1a396c43ff23470464d4e38721c63cbfb79f8a24f3d01f42b0f9b2db912f",
+      "public_sha256": "79bc1a396c43ff23470464d4e38721c63cbfb79f8a24f3d01f42b0f9b2db912f",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "raw/segment3-calls.jsonl",
+      "source_sha256": "0a5c6e6611a406c4786044374400a5d07860bdc1c8ef624bb8c49cb6b7f50b0a",
+      "public_sha256": "0a5c6e6611a406c4786044374400a5d07860bdc1c8ef624bb8c49cb6b7f50b0a",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "raw/combined-three-segments.jsonl",
+      "source_sha256": "ef15014dd30603771918bc4b96fde73186574ecee6764e151f0481247b971dce",
+      "public_sha256": "ef15014dd30603771918bc4b96fde73186574ecee6764e151f0481247b971dce",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/dataset.json",
+      "source_sha256": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+      "public_sha256": "132259a48a4980c613540ec319f6b0fbaa0f1d89e1d35f665a597bf43a5031a0",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/eligible-ids.json",
+      "source_sha256": "f00fc5f0ddd412c88b030248ac97c13d3eec6d7d56eebe32c245981fa2e489b6",
+      "public_sha256": "f00fc5f0ddd412c88b030248ac97c13d3eec6d7d56eebe32c245981fa2e489b6",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/holdout.py",
+      "source_sha256": "8cb94dffb80766b44226bf714532c6e63356b856b8a9e4235e751dbb201999eb",
+      "public_sha256": "8cb94dffb80766b44226bf714532c6e63356b856b8a9e4235e751dbb201999eb",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/study.py",
+      "source_sha256": "328a6df68a478e24218f6b919608bdb65e04aedef20b9c9f258ce69f14e5b161",
+      "public_sha256": "328a6df68a478e24218f6b919608bdb65e04aedef20b9c9f258ce69f14e5b161",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/analysis.py",
+      "source_sha256": "4262b0515f9822c4ef567b42eeb0a98f755a96e794a7cf432f506c5c66056ced",
+      "public_sha256": "4262b0515f9822c4ef567b42eeb0a98f755a96e794a7cf432f506c5c66056ced",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/selection.py",
+      "source_sha256": "7adf9dcf3f0e24c3c13dd98a57e020df8c3a0b4fea99e551b638d19d2d766390",
+      "public_sha256": "7adf9dcf3f0e24c3c13dd98a57e020df8c3a0b4fea99e551b638d19d2d766390",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/PROTOCOL.md",
+      "source_sha256": "3c58c6e8a0fbea7869ca9e4cb25c58b14bd3fdc251d215b6d74855c51bc06b50",
+      "public_sha256": "f33a102c3b0cd2a0ba7b29dd83f172faac5add68a56bee0a849406b7a04ecaec",
+      "copy_mode": "PUBLIC_SCIENTIFIC_PROTOCOL_PROJECTION_EXCLUDING_INTERNAL_ADMISSION_PARAGRAPHS"
+    },
+    {
+      "public_relative": "protocol/excluded756.json",
+      "source_sha256": "5560d7f57790db61e5b39e4138914eb64362d025ec81d5b9fbecec8ebff13190",
+      "public_sha256": "5560d7f57790db61e5b39e4138914eb64362d025ec81d5b9fbecec8ebff13190",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/manifest.json",
+      "source_sha256": "3807e32345777e4ec1103221511d9eb1d80aa4240860860fdcdd848e438a4158",
+      "public_sha256": "3807e32345777e4ec1103221511d9eb1d80aa4240860860fdcdd848e438a4158",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "protocol/source-reuse.json",
+      "source_sha256": "06c52e8e8d92c2e74c12583a542d09cdab6c988ce1360cdd425d8b78fe76d555",
+      "public_sha256": "06c52e8e8d92c2e74c12583a542d09cdab6c988ce1360cdd425d8b78fe76d555",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "process/run14-input/run.py",
+      "source_sha256": "74baa23e0bd3b893b884278a39482e47eba091284ea02e78fc09f3c24bc63c42",
+      "public_sha256": "74baa23e0bd3b893b884278a39482e47eba091284ea02e78fc09f3c24bc63c42",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "process/tokenmatched-holdout240-20261008-independent-audit/audit.py",
+      "source_sha256": "2689d34863478dc89b9717132b650f4548ec22c5ea5da331dd3be8c46a9c9163",
+      "public_sha256": "aa9fc91aa7bd8a4fb4c9d193bc6cff33ff631002c049e392681db635be24c777",
+      "copy_mode": "AST_EXACT_SOURCE_SEGMENTS_PURE_FIXED240_AUDIT_FUNCTIONS_ONLY",
+      "selected_functions": [
+        "digest",
+        "estimands",
+        "historical_auditor",
+        "initial_payload",
+        "inspect_item",
+        "load",
+        "paired",
+        "regenerated"
+      ]
+    },
+    {
+      "public_relative": "process/tokenmatched-followup-20261008-independent-audit/audit.py",
+      "source_sha256": "71f332affca37e0f76234dace91c2e43b201583c81e48c1d3203b53b6c1b8563",
+      "public_sha256": "6941ab5f344ed3fa62cb6a30920967d91899137f7dd905e8679e4d8a02f914db",
+      "copy_mode": "AST_EXACT_SOURCE_SEGMENTS_PURE_AUDIT_FUNCTIONS_ONLY",
+      "selected_functions": [
+        "ReplayHalt",
+        "digest",
+        "expected_payload",
+        "inspect_case",
+        "load",
+        "paired",
+        "parse_journal",
+        "scorer_module"
+      ]
+    },
+    {
+      "public_relative": "process/replication600/legacy_runner.py",
+      "source_sha256": "a6aacf772c2701ddc9158b423ff0243e879be87ea1c8dfd68618861eb77ffafb",
+      "public_sha256": "74f7b45bb5b4ac657823f588407e6624f7066a98a3bf53cce1c4de24fe2df3ff",
+      "copy_mode": "AST_EXACT_SOURCE_SEGMENTS_SHORTEST_AND_MAKE_DATASET_ONLY"
+    },
+    {
+      "public_relative": "bootstrap/paired_bootstrap.py",
+      "source_sha256": "f1a275387611eb40ebc755521d301b949a358e740f691637b7f759c2bfdfac5c",
+      "public_sha256": "f1a275387611eb40ebc755521d301b949a358e740f691637b7f759c2bfdfac5c",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "bootstrap/registration.json",
+      "source_sha256": "d57c2e6826bcb27abd3c3041367d9701044eca75bfc8451e9909a39a9cb7039b",
+      "public_sha256": "d57c2e6826bcb27abd3c3041367d9701044eca75bfc8451e9909a39a9cb7039b",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "bootstrap/PLAN.md",
+      "source_sha256": "ff2282d52bdf58d633d3ba6f0df3636f540753b3bbacc867c7c93d8552cef762",
+      "public_sha256": "ff2282d52bdf58d633d3ba6f0df3636f540753b3bbacc867c7c93d8552cef762",
+      "copy_mode": "EXACT_BYTES"
+    },
+    {
+      "public_relative": "bootstrap/SCOPE_CLARIFICATION.md",
+      "source_sha256": "16a70f18458ff3765391b09fdf1585623a9663cbc15670108dd50f1e15b485de",
+      "public_sha256": "16a70f18458ff3765391b09fdf1585623a9663cbc15670108dd50f1e15b485de",
+      "copy_mode": "EXACT_BYTES"
+    }
+  ],
+  "scientific_raw_files_exact": true,
+  "excluded_internal_paid_workflows": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "scientific_scope": "Amended continuation after HTTP502, planned600 complete-case599 and one missing; original strict run FAILED; not full Agent workflow",
+  "worker_exit_code": 1,
+  "elapsed_seconds": 238.125,
+  "completed_at": "2026-10-07T07:36:49.343890+08:00",
+  "flight_interruption": false
+}

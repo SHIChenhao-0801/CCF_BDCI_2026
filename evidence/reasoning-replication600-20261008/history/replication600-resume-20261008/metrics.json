@@ -1,0 +1,4314 @@
+{
+  "method": "paired_study",
+  "protocol": "replication600-operational-resume-20261008",
+  "status": "COMPLETED_WITH_DECLARED_MISSING",
+  "valid_eval_count": 592,
+  "correct_counts": {
+    "initial": 217,
+    "blindretry": 240,
+    "verifiedretry": 271,
+    "lengthmatchedretry": 241
+  },
+  "accuracies": {
+    "initial": 0.36655405405405406,
+    "blindretry": 0.40540540540540543,
+    "verifiedretry": 0.4577702702702703,
+    "lengthmatchedretry": 0.40709459459459457
+  },
+  "accuracy_wilson_95": {
+    "initial": [
+      0.3287141366945517,
+      0.40611465431855104
+    ],
+    "blindretry": [
+      0.36658861200841547,
+      0.44544192339327754
+    ],
+    "verifiedretry": [
+      0.41803808565923084,
+      0.49804697478795346
+    ],
+    "lengthmatchedretry": [
+      0.36824119059318433,
+      0.4471459423906213
+    ]
+  },
+  "cell_counts": {
+    "arithmetic:easy": {
+      "initial": 64,
+      "blindretry": 65,
+      "verifiedretry": 65,
+      "lengthmatchedretry": 64
+    },
+    "arithmetic:hard": {
+      "initial": 4,
+      "blindretry": 4,
+      "verifiedretry": 5,
+      "lengthmatchedretry": 4
+    },
+    "sat:easy": {
+      "initial": 28,
+      "blindretry": 31,
+      "verifiedretry": 47,
+      "lengthmatchedretry": 32
+    },
+    "sat:hard": {
+      "initial": 5,
+      "blindretry": 5,
+      "verifiedretry": 7,
+      "lengthmatchedretry": 5
+    },
+    "graph:easy": {
+      "initial": 58,
+      "blindretry": 73,
+      "verifiedretry": 79,
+      "lengthmatchedretry": 73
+    },
+    "graph:hard": {
+      "initial": 58,
+      "blindretry": 62,
+      "verifiedretry": 68,
+      "lengthmatchedretry": 63
+    }
+  },
+  "primary_diagnostic_vs_lengthmatched": {
+    "diagnostic_only_correct": 32,
+    "control_only_correct": 2,
+    "difference": 0.05067567567567568,
+    "exact_mcnemar_p_two_sided": 6.938353180885315e-08
+  },
+  "secondary_diagnostic_vs_generic": {
+    "diagnostic_only_correct": 34,
+    "control_only_correct": 3,
+    "difference": 0.052364864864864864,
+    "exact_mcnemar_p_two_sided": 1.233129296451807e-07
+  },
+  "initial_errors_repaired": {
+    "blindretry": 23,
+    "verifiedretry": 54,
+    "lengthmatchedretry": 24
+  },
+  "error_class_counts": {
+    "initial": {
+      "clause_unsatisfied": 166,
+      "sequential_arithmetic_mismatch": 129,
+      "path_not_shortest": 43,
+      "path_endpoints_or_repetition": 1,
+      "path_cost_mismatch": 34,
+      "nonexistent_edge": 2
+    },
+    "blindretry": {
+      "clause_unsatisfied": 163,
+      "sequential_arithmetic_mismatch": 128,
+      "path_not_shortest": 34,
+      "path_endpoints_or_repetition": 1,
+      "path_cost_mismatch": 25,
+      "nonexistent_edge": 1
+    },
+    "verifiedretry": {
+      "clause_unsatisfied": 145,
+      "sequential_arithmetic_mismatch": 127,
+      "path_not_shortest": 22,
+      "path_endpoints_or_repetition": 2,
+      "path_cost_mismatch": 23,
+      "nonexistent_edge": 2
+    },
+    "lengthmatchedretry": {
+      "clause_unsatisfied": 161,
+      "sequential_arithmetic_mismatch": 122,
+      "invalid_json_or_schema": 8,
+      "path_not_shortest": 32,
+      "path_endpoints_or_repetition": 1,
+      "path_cost_mismatch": 26,
+      "nonexistent_edge": 1
+    }
+  },
+  "actual_retry_orders": {
+    "lengthmatchedretry,verifiedretry,blindretry": 59,
+    "lengthmatchedretry,blindretry,verifiedretry": 64,
+    "verifiedretry,lengthmatchedretry,blindretry": 67,
+    "blindretry,lengthmatchedretry,verifiedretry": 63,
+    "verifiedretry,blindretry,lengthmatchedretry": 64,
+    "blindretry,verifiedretry,lengthmatchedretry": 58
+  },
+  "input_tokens": 324782,
+  "output_tokens": 31504,
+  "cache_hit_tokens": 36480,
+  "model_call_count": 1717,
+  "client_call_seconds": 2938.608122600268,
+  "arm_usage_excludes_shared_initial": {
+    "initial": {
+      "call_count": 592,
+      "input_tokens": 90061,
+      "output_tokens": 9535,
+      "client_call_seconds": 1005.2668376001639
+    },
+    "blindretry": {
+      "call_count": 375,
+      "input_tokens": 74404,
+      "output_tokens": 6804,
+      "client_call_seconds": 645.9535609000086
+    },
+    "verifiedretry": {
+      "call_count": 375,
+      "input_tokens": 81449,
+      "output_tokens": 6776,
+      "client_call_seconds": 631.3202291000052
+    },
+    "lengthmatchedretry": {
+      "call_count": 375,
+      "input_tokens": 78868,
+      "output_tokens": 8389,
+      "client_call_seconds": 656.0674950000903
+    }
+  },
+  "diagnostic_minus_matched_prompt_tokens": [
+    10,
+    5,
+    10,
+    5,
+    5,
+    4,
+    5,
+    10,
+    5,
+    5,
+    10,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4,
+    10,
+    5,
+    4,
+    10,
+    9,
+    5,
+    4,
+    4,
+    10,
+    4,
+    10,
+    10,
+    4,
+    10,
+    5,
+    9,
+    5,
+    9,
+    4,
+    4,
+    4,
+    5,
+    4,
+    5,
+    10,
+    10,
+    9,
+    10,
+    10,
+    10,
+    10,
+    5,
+    9,
+    5,
+    5,
+    5,
+    4,
+    9,
+    5,
+    10,
+    5,
+    10,
+    5,
+    10,
+    9,
+    10,
+    9,
+    10,
+    5,
+    9,
+    10,
+    5,
+    10,
+    9,
+    5,
+    4,
+    10,
+    5,
+    5,
+    10,
+    10,
+    4,
+    9,
+    4,
+    5,
+    9,
+    9,
+    9,
+    10,
+    10,
+    10,
+    9,
+    10,
+    9,
+    5,
+    5,
+    10,
+    10,
+    5,
+    5,
+    10,
+    5,
+    5,
+    10,
+    9,
+    5,
+    10,
+    10,
+    10,
+    10,
+    5,
+    4,
+    10,
+    5,
+    10,
+    4,
+    9,
+    5,
+    10,
+    10,
+    3,
+    10,
+    5,
+    10,
+    9,
+    4,
+    10,
+    10,
+    5,
+    5,
+    5,
+    10,
+    5,
+    10,
+    10,
+    10,
+    10,
+    10,
+    9,
+    5,
+    10,
+    4,
+    5,
+    9,
+    10,
+    5,
+    10,
+    5,
+    4,
+    4,
+    5,
+    4,
+    5,
+    5,
+    10,
+    4,
+    10,
+    4,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    10,
+    5,
+    5,
+    10,
+    5,
+    4,
+    5,
+    4,
+    10,
+    5,
+    5,
+    9,
+    5,
+    5,
+    10,
+    5,
+    10,
+    10,
+    5,
+    4,
+    9,
+    5,
+    4,
+    5,
+    4,
+    5,
+    4,
+    9,
+    5,
+    5,
+    10,
+    10,
+    5,
+    10,
+    4,
+    4,
+    10,
+    9,
+    5,
+    5,
+    10,
+    5,
+    4,
+    5,
+    4,
+    5,
+    4,
+    10,
+    5,
+    4,
+    10,
+    5,
+    10,
+    10,
+    4,
+    10,
+    5,
+    10,
+    9,
+    9,
+    10,
+    10,
+    4,
+    9,
+    5,
+    10,
+    10,
+    4,
+    5,
+    10,
+    9,
+    5,
+    4,
+    10,
+    5,
+    5,
+    4,
+    5,
+    10,
+    4,
+    5,
+    4,
+    10,
+    10,
+    5,
+    9,
+    10,
+    10,
+    4,
+    5,
+    10,
+    4,
+    4,
+    5,
+    10,
+    4,
+    5,
+    5,
+    10,
+    4,
+    4,
+    5,
+    4,
+    4,
+    5,
+    5,
+    10,
+    10,
+    5,
+    4,
+    9,
+    10,
+    4,
+    10,
+    4,
+    4,
+    5,
+    5,
+    5,
+    3,
+    5,
+    5,
+    10,
+    10,
+    4,
+    10,
+    9,
+    10,
+    4,
+    4,
+    5,
+    9,
+    9,
+    4,
+    10,
+    4,
+    9,
+    10,
+    5,
+    5,
+    10,
+    5,
+    10,
+    4,
+    10,
+    10,
+    9,
+    5,
+    5,
+    10,
+    5,
+    10,
+    5,
+    5,
+    10,
+    9,
+    5,
+    9,
+    10,
+    5,
+    5,
+    10,
+    5,
+    5,
+    9,
+    10,
+    10,
+    5,
+    5,
+    4,
+    4,
+    10,
+    10,
+    9,
+    4,
+    10,
+    4,
+    4,
+    4,
+    10,
+    10,
+    10,
+    10,
+    5,
+    9,
+    5,
+    5,
+    5,
+    10,
+    4,
+    10,
+    4,
+    10,
+    5,
+    4,
+    10,
+    5,
+    5,
+    9,
+    5,
+    5,
+    5,
+    5,
+    10,
+    9,
+    4,
+    4,
+    5,
+    5,
+    10,
+    5,
+    4,
+    4,
+    10
+  ],
+  "length_match_audit": [
+    {
+      "id": "sat-replication600-easy-52",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "arithmetic-replication600-easy-65",
+      "decoded_content_lengths": {
+        "content_characters": 395,
+        "content_utf8_bytes": 395
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "sat-replication600-hard-25",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "arithmetic-replication600-hard-93",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "arithmetic-replication600-hard-45",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-94",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "arithmetic-replication600-hard-19",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-47",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 341,
+      "matched_prompt_tokens": 331
+    },
+    {
+      "id": "arithmetic-replication600-hard-40",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-32",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-97",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-hard-94",
+      "decoded_content_lengths": {
+        "content_characters": 676,
+        "content_utf8_bytes": 676
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 254,
+      "matched_prompt_tokens": 249
+    },
+    {
+      "id": "arithmetic-replication600-easy-83",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "graph-replication600-hard-18",
+      "decoded_content_lengths": {
+        "content_characters": 665,
+        "content_utf8_bytes": 665
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 246,
+      "matched_prompt_tokens": 242
+    },
+    {
+      "id": "graph-replication600-hard-46",
+      "decoded_content_lengths": {
+        "content_characters": 655,
+        "content_utf8_bytes": 655
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "graph-replication600-hard-02",
+      "decoded_content_lengths": {
+        "content_characters": 659,
+        "content_utf8_bytes": 659
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "graph-replication600-hard-87",
+      "decoded_content_lengths": {
+        "content_characters": 652,
+        "content_utf8_bytes": 652
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 234,
+      "matched_prompt_tokens": 230
+    },
+    {
+      "id": "sat-replication600-easy-40",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "arithmetic-replication600-hard-28",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "graph-replication600-easy-82",
+      "decoded_content_lengths": {
+        "content_characters": 579,
+        "content_utf8_bytes": 579
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-easy-59",
+      "decoded_content_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "sat-replication600-easy-69",
+      "decoded_content_lengths": {
+        "content_characters": 641,
+        "content_utf8_bytes": 641
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "arithmetic-replication600-hard-27",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "graph-replication600-easy-77",
+      "decoded_content_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "graph-replication600-hard-69",
+      "decoded_content_lengths": {
+        "content_characters": 653,
+        "content_utf8_bytes": 653
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "sat-replication600-hard-85",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "graph-replication600-hard-92",
+      "decoded_content_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "sat-replication600-hard-58",
+      "decoded_content_lengths": {
+        "content_characters": 825,
+        "content_utf8_bytes": 825
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 349,
+      "matched_prompt_tokens": 339
+    },
+    {
+      "id": "sat-replication600-easy-78",
+      "decoded_content_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "graph-replication600-hard-88",
+      "decoded_content_lengths": {
+        "content_characters": 652,
+        "content_utf8_bytes": 652
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "sat-replication600-hard-89",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "arithmetic-replication600-hard-94",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-29",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 331
+    },
+    {
+      "id": "arithmetic-replication600-hard-37",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-61",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "graph-replication600-easy-39",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "graph-replication600-hard-59",
+      "decoded_content_lengths": {
+        "content_characters": 653,
+        "content_utf8_bytes": 653
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "graph-replication600-easy-60",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "arithmetic-replication600-hard-09",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-16",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "arithmetic-replication600-hard-83",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-07",
+      "decoded_content_lengths": {
+        "content_characters": 639,
+        "content_utf8_bytes": 639
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "sat-replication600-hard-67",
+      "decoded_content_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 348,
+      "matched_prompt_tokens": 338
+    },
+    {
+      "id": "sat-replication600-easy-96",
+      "decoded_content_lengths": {
+        "content_characters": 641,
+        "content_utf8_bytes": 641
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-easy-01",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-easy-54",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-easy-42",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "sat-replication600-easy-26",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "arithmetic-replication600-hard-64",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-easy-63",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 224,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "arithmetic-replication600-easy-30",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-85",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-43",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-06",
+      "decoded_content_lengths": {
+        "content_characters": 587,
+        "content_utf8_bytes": 587
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 190,
+      "matched_prompt_tokens": 186
+    },
+    {
+      "id": "sat-replication600-hard-35",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "arithmetic-replication600-hard-15",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-56",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "arithmetic-replication600-easy-87",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-100",
+      "decoded_content_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "arithmetic-replication600-easy-81",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-71",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-hard-98",
+      "decoded_content_lengths": {
+        "content_characters": 811,
+        "content_utf8_bytes": 811
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 339,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "sat-replication600-easy-87",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "sat-replication600-hard-69",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 347,
+      "matched_prompt_tokens": 338
+    },
+    {
+      "id": "sat-replication600-hard-21",
+      "decoded_content_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-easy-58",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-15",
+      "decoded_content_lengths": {
+        "content_characters": 820,
+        "content_utf8_bytes": 820
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-hard-04",
+      "decoded_content_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "arithmetic-replication600-hard-76",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-95",
+      "decoded_content_lengths": {
+        "content_characters": 811,
+        "content_utf8_bytes": 811
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "sat-replication600-hard-99",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "arithmetic-replication600-easy-72",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "graph-replication600-easy-84",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "sat-replication600-hard-02",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "arithmetic-replication600-hard-08",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "arithmetic-replication600-hard-78",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-hard-64",
+      "decoded_content_lengths": {
+        "content_characters": 810,
+        "content_utf8_bytes": 810
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-easy-73",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-hard-13",
+      "decoded_content_lengths": {
+        "content_characters": 652,
+        "content_utf8_bytes": 652
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "sat-replication600-hard-24",
+      "decoded_content_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "graph-replication600-hard-76",
+      "decoded_content_lengths": {
+        "content_characters": 653,
+        "content_utf8_bytes": 653
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "arithmetic-replication600-easy-31",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "sat-replication600-hard-55",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "sat-replication600-hard-92",
+      "decoded_content_lengths": {
+        "content_characters": 827,
+        "content_utf8_bytes": 827
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 352,
+      "matched_prompt_tokens": 343
+    },
+    {
+      "id": "sat-replication600-hard-20",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "sat-replication600-easy-67",
+      "decoded_content_lengths": {
+        "content_characters": 650,
+        "content_utf8_bytes": 650
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 230,
+      "matched_prompt_tokens": 220
+    },
+    {
+      "id": "sat-replication600-easy-08",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "sat-replication600-hard-31",
+      "decoded_content_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "sat-replication600-hard-05",
+      "decoded_content_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "sat-replication600-easy-76",
+      "decoded_content_lengths": {
+        "content_characters": 649,
+        "content_utf8_bytes": 649
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 230,
+      "matched_prompt_tokens": 220
+    },
+    {
+      "id": "sat-replication600-hard-79",
+      "decoded_content_lengths": {
+        "content_characters": 822,
+        "content_utf8_bytes": 822
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "arithmetic-replication600-hard-99",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-43",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-75",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-easy-79",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 224,
+      "matched_prompt_tokens": 214
+    },
+    {
+      "id": "arithmetic-replication600-hard-07",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-01",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-30",
+      "decoded_content_lengths": {
+        "content_characters": 813,
+        "content_utf8_bytes": 813
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 338,
+      "matched_prompt_tokens": 328
+    },
+    {
+      "id": "arithmetic-replication600-hard-84",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-98",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-48",
+      "decoded_content_lengths": {
+        "content_characters": 811,
+        "content_utf8_bytes": 811
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "sat-replication600-easy-32",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "arithmetic-replication600-hard-12",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-23",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "sat-replication600-easy-50",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 230,
+      "matched_prompt_tokens": 220
+    },
+    {
+      "id": "sat-replication600-easy-37",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "sat-replication600-easy-51",
+      "decoded_content_lengths": {
+        "content_characters": 647,
+        "content_utf8_bytes": 647
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "arithmetic-replication600-hard-89",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-19",
+      "decoded_content_lengths": {
+        "content_characters": 589,
+        "content_utf8_bytes": 589
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 190,
+      "matched_prompt_tokens": 186
+    },
+    {
+      "id": "sat-replication600-hard-27",
+      "decoded_content_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-hard-55",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-18",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "graph-replication600-hard-19",
+      "decoded_content_lengths": {
+        "content_characters": 654,
+        "content_utf8_bytes": 654
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "sat-replication600-hard-77",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "arithmetic-replication600-hard-10",
+      "decoded_content_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-hard-06",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "sat-replication600-hard-91",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "graph-replication600-hard-58",
+      "decoded_content_lengths": {
+        "content_characters": 649,
+        "content_utf8_bytes": 649
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 235,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "sat-replication600-easy-64",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "arithmetic-replication600-hard-24",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-hard-38",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-hard-51",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "graph-replication600-easy-53",
+      "decoded_content_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-84",
+      "decoded_content_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 339,
+      "matched_prompt_tokens": 329
+    },
+    {
+      "id": "sat-replication600-hard-46",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "arithmetic-replication600-easy-40",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-18",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-74",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-45",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "arithmetic-replication600-hard-58",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-77",
+      "decoded_content_lengths": {
+        "content_characters": 647,
+        "content_utf8_bytes": 647
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-easy-58",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "sat-replication600-hard-57",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "sat-replication600-easy-49",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "sat-replication600-easy-56",
+      "decoded_content_lengths": {
+        "content_characters": 636,
+        "content_utf8_bytes": 636
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 222,
+      "matched_prompt_tokens": 212
+    },
+    {
+      "id": "sat-replication600-hard-59",
+      "decoded_content_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "arithmetic-replication600-hard-50",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-hard-11",
+      "decoded_content_lengths": {
+        "content_characters": 820,
+        "content_utf8_bytes": 820
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "graph-replication600-hard-07",
+      "decoded_content_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "arithmetic-replication600-hard-68",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-65",
+      "decoded_content_lengths": {
+        "content_characters": 820,
+        "content_utf8_bytes": 820
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "sat-replication600-easy-65",
+      "decoded_content_lengths": {
+        "content_characters": 639,
+        "content_utf8_bytes": 639
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "arithmetic-replication600-hard-47",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-easy-22",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "arithmetic-replication600-hard-96",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-80",
+      "decoded_content_lengths": {
+        "content_characters": 653,
+        "content_utf8_bytes": 653
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "graph-replication600-hard-54",
+      "decoded_content_lengths": {
+        "content_characters": 653,
+        "content_utf8_bytes": 653
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "arithmetic-replication600-hard-05",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-22",
+      "decoded_content_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "arithmetic-replication600-hard-54",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "arithmetic-replication600-easy-80",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-easy-53",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "graph-replication600-hard-38",
+      "decoded_content_lengths": {
+        "content_characters": 651,
+        "content_utf8_bytes": 651
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "sat-replication600-hard-17",
+      "decoded_content_lengths": {
+        "content_characters": 811,
+        "content_utf8_bytes": 811
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "graph-replication600-easy-25",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "arithmetic-replication600-easy-03",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-82",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 128,
+      "matched_prompt_tokens": 123
+    },
+    {
+      "id": "arithmetic-replication600-easy-77",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "arithmetic-replication600-hard-91",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-38",
+      "decoded_content_lengths": {
+        "content_characters": 398,
+        "content_utf8_bytes": 398
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 107,
+      "matched_prompt_tokens": 102
+    },
+    {
+      "id": "arithmetic-replication600-easy-73",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-easy-80",
+      "decoded_content_lengths": {
+        "content_characters": 649,
+        "content_utf8_bytes": 649
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "arithmetic-replication600-hard-67",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-71",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-18",
+      "decoded_content_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-hard-70",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-17",
+      "decoded_content_lengths": {
+        "content_characters": 650,
+        "content_utf8_bytes": 650
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "arithmetic-replication600-hard-100",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-34",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "sat-replication600-hard-03",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 339,
+      "matched_prompt_tokens": 329
+    },
+    {
+      "id": "arithmetic-replication600-hard-87",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-50",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-easy-66",
+      "decoded_content_lengths": {
+        "content_characters": 648,
+        "content_utf8_bytes": 648
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "arithmetic-replication600-hard-80",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-81",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-hard-97",
+      "decoded_content_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "arithmetic-replication600-hard-33",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-easy-17",
+      "decoded_content_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 223,
+      "matched_prompt_tokens": 213
+    },
+    {
+      "id": "sat-replication600-easy-39",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "arithmetic-replication600-hard-14",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "graph-replication600-easy-45",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "sat-replication600-hard-43",
+      "decoded_content_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "arithmetic-replication600-hard-17",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-96",
+      "decoded_content_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "arithmetic-replication600-hard-11",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-22",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "arithmetic-replication600-easy-27",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "graph-replication600-easy-58",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-68",
+      "decoded_content_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 341,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "arithmetic-replication600-hard-72",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-02",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-50",
+      "decoded_content_lengths": {
+        "content_characters": 806,
+        "content_utf8_bytes": 806
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 341,
+      "matched_prompt_tokens": 331
+    },
+    {
+      "id": "sat-replication600-easy-62",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "arithmetic-replication600-easy-86",
+      "decoded_content_lengths": {
+        "content_characters": 395,
+        "content_utf8_bytes": 395
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "sat-replication600-hard-74",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "graph-replication600-easy-43",
+      "decoded_content_lengths": {
+        "content_characters": 579,
+        "content_utf8_bytes": 579
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 184,
+      "matched_prompt_tokens": 180
+    },
+    {
+      "id": "graph-replication600-easy-26",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "sat-replication600-hard-09",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "sat-replication600-easy-98",
+      "decoded_content_lengths": {
+        "content_characters": 641,
+        "content_utf8_bytes": 641
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "arithmetic-replication600-hard-90",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-54",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-easy-31",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 224,
+      "matched_prompt_tokens": 214
+    },
+    {
+      "id": "arithmetic-replication600-hard-61",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "graph-replication600-easy-47",
+      "decoded_content_lengths": {
+        "content_characters": 579,
+        "content_utf8_bytes": 579
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 184,
+      "matched_prompt_tokens": 180
+    },
+    {
+      "id": "arithmetic-replication600-hard-51",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-21",
+      "decoded_content_lengths": {
+        "content_characters": 648,
+        "content_utf8_bytes": 648
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 232,
+      "matched_prompt_tokens": 228
+    },
+    {
+      "id": "arithmetic-replication600-hard-38",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-73",
+      "decoded_content_lengths": {
+        "content_characters": 659,
+        "content_utf8_bytes": 659
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 242,
+      "matched_prompt_tokens": 238
+    },
+    {
+      "id": "sat-replication600-hard-49",
+      "decoded_content_lengths": {
+        "content_characters": 822,
+        "content_utf8_bytes": 822
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 349,
+      "matched_prompt_tokens": 339
+    },
+    {
+      "id": "arithmetic-replication600-hard-36",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-95",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "sat-replication600-easy-36",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "arithmetic-replication600-hard-23",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-34",
+      "decoded_content_lengths": {
+        "content_characters": 809,
+        "content_utf8_bytes": 809
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "sat-replication600-easy-21",
+      "decoded_content_lengths": {
+        "content_characters": 648,
+        "content_utf8_bytes": 648
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-hard-29",
+      "decoded_content_lengths": {
+        "content_characters": 655,
+        "content_utf8_bytes": 655
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "sat-replication600-easy-83",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "arithmetic-replication600-hard-31",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-13",
+      "decoded_content_lengths": {
+        "content_characters": 813,
+        "content_utf8_bytes": 813
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "sat-replication600-hard-19",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "sat-replication600-easy-89",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-easy-14",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "sat-replication600-easy-74",
+      "decoded_content_lengths": {
+        "content_characters": 642,
+        "content_utf8_bytes": 642
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-easy-07",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "sat-replication600-hard-10",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "arithmetic-replication600-hard-42",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-76",
+      "decoded_content_lengths": {
+        "content_characters": 829,
+        "content_utf8_bytes": 829
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "sat-replication600-hard-54",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 347,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "graph-replication600-hard-49",
+      "decoded_content_lengths": {
+        "content_characters": 658,
+        "content_utf8_bytes": 658
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "arithmetic-replication600-hard-73",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-33",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-hard-37",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-hard-21",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-06",
+      "decoded_content_lengths": {
+        "content_characters": 658,
+        "content_utf8_bytes": 658
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "sat-replication600-hard-08",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 339,
+      "matched_prompt_tokens": 329
+    },
+    {
+      "id": "arithmetic-replication600-easy-16",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-30",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-93",
+      "decoded_content_lengths": {
+        "content_characters": 651,
+        "content_utf8_bytes": 651
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 234,
+      "matched_prompt_tokens": 230
+    },
+    {
+      "id": "arithmetic-replication600-easy-15",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-22",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "graph-replication600-hard-83",
+      "decoded_content_lengths": {
+        "content_characters": 659,
+        "content_utf8_bytes": 659
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 242,
+      "matched_prompt_tokens": 238
+    },
+    {
+      "id": "arithmetic-replication600-hard-25",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-86",
+      "decoded_content_lengths": {
+        "content_characters": 579,
+        "content_utf8_bytes": 579
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-easy-92",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "sat-replication600-hard-26",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "arithmetic-replication600-hard-62",
+      "decoded_content_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 125,
+      "matched_prompt_tokens": 120
+    },
+    {
+      "id": "sat-replication600-hard-90",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "sat-replication600-easy-10",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "sat-replication600-easy-84",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "graph-replication600-hard-45",
+      "decoded_content_lengths": {
+        "content_characters": 660,
+        "content_utf8_bytes": 660
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 242,
+      "matched_prompt_tokens": 238
+    },
+    {
+      "id": "arithmetic-replication600-easy-17",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-easy-41",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 230,
+      "matched_prompt_tokens": 220
+    },
+    {
+      "id": "graph-replication600-hard-34",
+      "decoded_content_lengths": {
+        "content_characters": 654,
+        "content_utf8_bytes": 654
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "graph-replication600-easy-100",
+      "decoded_content_lengths": {
+        "content_characters": 578,
+        "content_utf8_bytes": 578
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "arithmetic-replication600-easy-19",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "sat-replication600-hard-28",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "graph-replication600-hard-36",
+      "decoded_content_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "arithmetic-replication600-hard-95",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-44",
+      "decoded_content_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-easy-90",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-easy-35",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "graph-replication600-hard-72",
+      "decoded_content_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "arithmetic-replication600-hard-41",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "graph-replication600-hard-55",
+      "decoded_content_lengths": {
+        "content_characters": 658,
+        "content_utf8_bytes": 658
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "graph-replication600-hard-11",
+      "decoded_content_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "arithmetic-replication600-easy-28",
+      "decoded_content_lengths": {
+        "content_characters": 398,
+        "content_utf8_bytes": 398
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-29",
+      "decoded_content_lengths": {
+        "content_characters": 433,
+        "content_utf8_bytes": 433
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 128,
+      "matched_prompt_tokens": 123
+    },
+    {
+      "id": "sat-replication600-easy-60",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "sat-replication600-easy-93",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "arithmetic-replication600-hard-35",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-75",
+      "decoded_content_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-72",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 341,
+      "matched_prompt_tokens": 332
+    },
+    {
+      "id": "sat-replication600-hard-87",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "graph-replication600-hard-08",
+      "decoded_content_lengths": {
+        "content_characters": 652,
+        "content_utf8_bytes": 652
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 234,
+      "matched_prompt_tokens": 230
+    },
+    {
+      "id": "sat-replication600-hard-14",
+      "decoded_content_lengths": {
+        "content_characters": 823,
+        "content_utf8_bytes": 823
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "graph-replication600-easy-74",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "graph-replication600-easy-89",
+      "decoded_content_lengths": {
+        "content_characters": 580,
+        "content_utf8_bytes": 580
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 184,
+      "matched_prompt_tokens": 180
+    },
+    {
+      "id": "arithmetic-replication600-hard-46",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-51",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-79",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-67",
+      "decoded_content_lengths": {
+        "content_characters": 663,
+        "content_utf8_bytes": 663
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 245,
+      "matched_prompt_tokens": 242
+    },
+    {
+      "id": "arithmetic-replication600-hard-66",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "arithmetic-replication600-easy-98",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-62",
+      "decoded_content_lengths": {
+        "content_characters": 825,
+        "content_utf8_bytes": 825
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "sat-replication600-easy-75",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-easy-66",
+      "decoded_content_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 184,
+      "matched_prompt_tokens": 180
+    },
+    {
+      "id": "sat-replication600-easy-57",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 230,
+      "matched_prompt_tokens": 220
+    },
+    {
+      "id": "sat-replication600-hard-23",
+      "decoded_content_lengths": {
+        "content_characters": 812,
+        "content_utf8_bytes": 812
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 337,
+      "matched_prompt_tokens": 328
+    },
+    {
+      "id": "sat-replication600-easy-70",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "graph-replication600-easy-81",
+      "decoded_content_lengths": {
+        "content_characters": 585,
+        "content_utf8_bytes": 585
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "graph-replication600-hard-65",
+      "decoded_content_lengths": {
+        "content_characters": 656,
+        "content_utf8_bytes": 656
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 242,
+      "matched_prompt_tokens": 238
+    },
+    {
+      "id": "arithmetic-replication600-hard-60",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-45",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "sat-replication600-easy-27",
+      "decoded_content_lengths": {
+        "content_characters": 649,
+        "content_utf8_bytes": 649
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 230,
+      "matched_prompt_tokens": 221
+    },
+    {
+      "id": "graph-replication600-easy-90",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-easy-95",
+      "decoded_content_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "graph-replication600-easy-88",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-93",
+      "decoded_content_lengths": {
+        "content_characters": 833,
+        "content_utf8_bytes": 833
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 351,
+      "matched_prompt_tokens": 342
+    },
+    {
+      "id": "sat-replication600-hard-63",
+      "decoded_content_lengths": {
+        "content_characters": 821,
+        "content_utf8_bytes": 821
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "arithmetic-replication600-hard-39",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-49",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-53",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-hard-53",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 128,
+      "matched_prompt_tokens": 123
+    },
+    {
+      "id": "sat-replication600-easy-19",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "graph-replication600-easy-59",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-42",
+      "decoded_content_lengths": {
+        "content_characters": 825,
+        "content_utf8_bytes": 825
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 348,
+      "matched_prompt_tokens": 338
+    },
+    {
+      "id": "sat-replication600-hard-36",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 347,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "sat-replication600-hard-39",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-hard-26",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-57",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-03",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 227,
+      "matched_prompt_tokens": 217
+    },
+    {
+      "id": "arithmetic-replication600-hard-86",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-20",
+      "decoded_content_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "arithmetic-replication600-easy-35",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-easy-60",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 107,
+      "matched_prompt_tokens": 102
+    },
+    {
+      "id": "sat-replication600-easy-09",
+      "decoded_content_lengths": {
+        "content_characters": 640,
+        "content_utf8_bytes": 640
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "sat-replication600-hard-44",
+      "decoded_content_lengths": {
+        "content_characters": 815,
+        "content_utf8_bytes": 815
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 331
+    },
+    {
+      "id": "arithmetic-replication600-easy-95",
+      "decoded_content_lengths": {
+        "content_characters": 398,
+        "content_utf8_bytes": 398
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 107,
+      "matched_prompt_tokens": 102
+    },
+    {
+      "id": "sat-replication600-easy-38",
+      "decoded_content_lengths": {
+        "content_characters": 644,
+        "content_utf8_bytes": 644
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-easy-46",
+      "decoded_content_lengths": {
+        "content_characters": 639,
+        "content_utf8_bytes": 639
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 226,
+      "matched_prompt_tokens": 216
+    },
+    {
+      "id": "arithmetic-replication600-easy-85",
+      "decoded_content_lengths": {
+        "content_characters": 397,
+        "content_utf8_bytes": 397
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-easy-93",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "sat-replication600-hard-82",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 341,
+      "matched_prompt_tokens": 331
+    },
+    {
+      "id": "arithmetic-replication600-hard-48",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "arithmetic-replication600-easy-97",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "sat-replication600-hard-32",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 342,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "sat-replication600-hard-78",
+      "decoded_content_lengths": {
+        "content_characters": 813,
+        "content_utf8_bytes": 813
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 347,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "sat-replication600-easy-100",
+      "decoded_content_lengths": {
+        "content_characters": 647,
+        "content_utf8_bytes": 647
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "arithmetic-replication600-hard-92",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-64",
+      "decoded_content_lengths": {
+        "content_characters": 395,
+        "content_utf8_bytes": 395
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 105,
+      "matched_prompt_tokens": 100
+    },
+    {
+      "id": "graph-replication600-easy-57",
+      "decoded_content_lengths": {
+        "content_characters": 584,
+        "content_utf8_bytes": 584
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 188,
+      "matched_prompt_tokens": 184
+    },
+    {
+      "id": "graph-replication600-easy-48",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 184,
+      "matched_prompt_tokens": 180
+    },
+    {
+      "id": "sat-replication600-hard-86",
+      "decoded_content_lengths": {
+        "content_characters": 817,
+        "content_utf8_bytes": 817
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 339,
+      "matched_prompt_tokens": 329
+    },
+    {
+      "id": "sat-replication600-hard-83",
+      "decoded_content_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 336
+    },
+    {
+      "id": "sat-replication600-hard-01",
+      "decoded_content_lengths": {
+        "content_characters": 822,
+        "content_utf8_bytes": 822
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "graph-replication600-hard-33",
+      "decoded_content_lengths": {
+        "content_characters": 659,
+        "content_utf8_bytes": 659
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "sat-replication600-hard-81",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "graph-replication600-easy-10",
+      "decoded_content_lengths": {
+        "content_characters": 583,
+        "content_utf8_bytes": 583
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "graph-replication600-easy-01",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "graph-replication600-easy-78",
+      "decoded_content_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-66",
+      "decoded_content_lengths": {
+        "content_characters": 814,
+        "content_utf8_bytes": 814
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 347,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "sat-replication600-easy-13",
+      "decoded_content_lengths": {
+        "content_characters": 645,
+        "content_utf8_bytes": 645
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 228,
+      "matched_prompt_tokens": 218
+    },
+    {
+      "id": "sat-replication600-easy-68",
+      "decoded_content_lengths": {
+        "content_characters": 643,
+        "content_utf8_bytes": 643
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "sat-replication600-hard-40",
+      "decoded_content_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 347,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "arithmetic-replication600-hard-52",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-hard-80",
+      "decoded_content_lengths": {
+        "content_characters": 820,
+        "content_utf8_bytes": 820
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "arithmetic-replication600-hard-20",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-75",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-65",
+      "decoded_content_lengths": {
+        "content_characters": 432,
+        "content_utf8_bytes": 432
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-easy-34",
+      "decoded_content_lengths": {
+        "content_characters": 646,
+        "content_utf8_bytes": 646
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 229,
+      "matched_prompt_tokens": 219
+    },
+    {
+      "id": "graph-replication600-easy-05",
+      "decoded_content_lengths": {
+        "content_characters": 582,
+        "content_utf8_bytes": 582
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-12",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 344,
+      "matched_prompt_tokens": 334
+    },
+    {
+      "id": "graph-replication600-hard-95",
+      "decoded_content_lengths": {
+        "content_characters": 650,
+        "content_utf8_bytes": 650
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 234,
+      "matched_prompt_tokens": 230
+    },
+    {
+      "id": "sat-replication600-hard-73",
+      "decoded_content_lengths": {
+        "content_characters": 819,
+        "content_utf8_bytes": 819
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 343,
+      "matched_prompt_tokens": 333
+    },
+    {
+      "id": "arithmetic-replication600-hard-69",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-hard-30",
+      "decoded_content_lengths": {
+        "content_characters": 657,
+        "content_utf8_bytes": 657
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 240,
+      "matched_prompt_tokens": 236
+    },
+    {
+      "id": "sat-replication600-hard-16",
+      "decoded_content_lengths": {
+        "content_characters": 818,
+        "content_utf8_bytes": 818
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 345,
+      "matched_prompt_tokens": 335
+    },
+    {
+      "id": "arithmetic-replication600-hard-97",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "arithmetic-replication600-hard-77",
+      "decoded_content_lengths": {
+        "content_characters": 427,
+        "content_utf8_bytes": 427
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 125,
+      "matched_prompt_tokens": 120
+    },
+    {
+      "id": "sat-replication600-easy-94",
+      "decoded_content_lengths": {
+        "content_characters": 638,
+        "content_utf8_bytes": 638
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 222,
+      "matched_prompt_tokens": 213
+    },
+    {
+      "id": "arithmetic-replication600-hard-13",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-easy-90",
+      "decoded_content_lengths": {
+        "content_characters": 396,
+        "content_utf8_bytes": 396
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 106,
+      "matched_prompt_tokens": 101
+    },
+    {
+      "id": "arithmetic-replication600-hard-16",
+      "decoded_content_lengths": {
+        "content_characters": 431,
+        "content_utf8_bytes": 431
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-03",
+      "decoded_content_lengths": {
+        "content_characters": 428,
+        "content_utf8_bytes": 428
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 126,
+      "matched_prompt_tokens": 121
+    },
+    {
+      "id": "sat-replication600-easy-86",
+      "decoded_content_lengths": {
+        "content_characters": 641,
+        "content_utf8_bytes": 641
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 225,
+      "matched_prompt_tokens": 215
+    },
+    {
+      "id": "sat-replication600-hard-60",
+      "decoded_content_lengths": {
+        "content_characters": 822,
+        "content_utf8_bytes": 822
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 346,
+      "matched_prompt_tokens": 337
+    },
+    {
+      "id": "graph-replication600-hard-99",
+      "decoded_content_lengths": {
+        "content_characters": 650,
+        "content_utf8_bytes": 650
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 236,
+      "matched_prompt_tokens": 232
+    },
+    {
+      "id": "graph-replication600-hard-44",
+      "decoded_content_lengths": {
+        "content_characters": 660,
+        "content_utf8_bytes": 660
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 238,
+      "matched_prompt_tokens": 234
+    },
+    {
+      "id": "arithmetic-replication600-hard-22",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "arithmetic-replication600-hard-06",
+      "decoded_content_lengths": {
+        "content_characters": 430,
+        "content_utf8_bytes": 430
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "sat-replication600-hard-70",
+      "decoded_content_lengths": {
+        "content_characters": 816,
+        "content_utf8_bytes": 816
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    },
+    {
+      "id": "arithmetic-replication600-hard-04",
+      "decoded_content_lengths": {
+        "content_characters": 429,
+        "content_utf8_bytes": 429
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 127,
+      "matched_prompt_tokens": 122
+    },
+    {
+      "id": "graph-replication600-easy-37",
+      "decoded_content_lengths": {
+        "content_characters": 580,
+        "content_utf8_bytes": 580
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "graph-replication600-easy-21",
+      "decoded_content_lengths": {
+        "content_characters": 581,
+        "content_utf8_bytes": 581
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 186,
+      "matched_prompt_tokens": 182
+    },
+    {
+      "id": "sat-replication600-hard-07",
+      "decoded_content_lengths": {
+        "content_characters": 824,
+        "content_utf8_bytes": 824
+      },
+      "matched_lengths_equal": true,
+      "diagnostic_prompt_tokens": 340,
+      "matched_prompt_tokens": 330
+    }
+  ],
+  "length_control": "exact decoded content characters and UTF-8 bytes; NOT token-equivalent",
+  "claim_scope": "Disclosed transport/pause amendments; complete-case N<=592; no MCAR; no pooling with120/24; not a new complete Agent workflow",
+  "planned_eval_count": 600,
+  "observed_complete_cases": 592,
+  "missing_count": 8,
+  "missing_ids": [
+    "arithmetic-replication600-easy-68",
+    "arithmetic-replication600-easy-74",
+    "arithmetic-replication600-hard-88",
+    "graph-replication600-easy-29",
+    "graph-replication600-easy-56",
+    "graph-replication600-easy-64",
+    "graph-replication600-hard-51",
+    "sat-replication600-easy-30"
+  ],
+  "administrative_worker_count": 2,
+  "resume_elapsed_seconds": 357.1784575000056,
+  "statistics_computed": true,
+  "unchanged_registered600_completed": false,
+  "ledger_reset": false
+}
